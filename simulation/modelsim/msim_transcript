@@ -1,0 +1,191 @@
+# Reading pref.tcl
+# do mips_single_cycle_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/alexandre/Desktop/mips_single_cycle {C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:43:55 on Jun 16,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Desktop/mips_single_cycle" C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv 
+# -- Compiling module bne_cpu
+# -- Compiling module dmem
+# -- Compiling module imem
+# -- Compiling module mips
+# -- Compiling module controller
+# -- Compiling module maindec
+# -- Compiling module aludec
+# -- Compiling module datapath
+# -- Compiling module regfile
+# -- Compiling module adder
+# -- Compiling module sl2
+# -- Compiling module signext
+# -- Compiling module flopr
+# -- Compiling module mux2
+# -- Compiling module alu
+# -- Compiling module muxBEQBNE
+# 
+# Top level modules:
+# 	bne_cpu
+# End time: 15:43:55 on Jun 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+cd ..
+# reading C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
+cd ..
+pwd
+# C:/Users/alexandre/Desktop/mips_single_cycle
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+vlog bne_cpu.sv bne_cpu_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:44:48 on Jun 16,2025
+# vlog -reportprogress 300 bne_cpu.sv bne_cpu_tb.sv 
+# -- Compiling module bne_cpu
+# -- Compiling module dmem
+# -- Compiling module imem
+# -- Compiling module mips
+# -- Compiling module controller
+# -- Compiling module maindec
+# -- Compiling module aludec
+# -- Compiling module datapath
+# -- Compiling module regfile
+# -- Compiling module adder
+# -- Compiling module sl2
+# -- Compiling module signext
+# -- Compiling module flopr
+# -- Compiling module mux2
+# -- Compiling module alu
+# -- Compiling module muxBEQBNE
+# -- Compiling module bne_cpu_tb
+# 
+# Top level modules:
+# 	bne_cpu_tb
+# End time: 15:44:48 on Jun 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.bne_cpu_tb -c -do "run -all; quit"
+# vsim work.bne_cpu_tb -c -do "run -all; quit" 
+# Start time: 15:44:48 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.bne_cpu_tb
+# Loading work.bne_cpu
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.muxBEQBNE
+# Loading work.imem
+# Loading work.dmem
+# run -all
+# ** Warning: (vsim-PLI-3410) Illegal character 'â' in data on line 13 of file "program.txt".    : bne_cpu_tb.sv(37)
+#    Time: 0 ps  Iteration: 0  Instance: /bne_cpu_tb
+# >> IMEM loaded from program.txt
+# ** Warning: (vsim-PLI-3410) Illegal character 'â' in data on line 6 of file "data.txt".    : bne_cpu_tb.sv(43)
+#    Time: 0 ps  Iteration: 0  Instance: /bne_cpu_tb
+# >> DMEM loaded from data.txt
+# >> Inicializados: $1 = 00000003, $2 = 00000002
+# Time | PC    | Instr     | DataAdr   | MemWrite | WriteData
+#    0ns | 00000000 | 00221820 | 00000005 | 0       | 00000002
+#   25ns | 00000004 | 00221822 | 00000001 | 0       | 00000002
+#   35ns | 00000008 | 00221824 | 00000002 | 0       | 00000002
+#   45ns | 0000000c | 00221825 | 00000003 | 0       | 00000002
+#   55ns | 00000010 | 0022182a | 00000000 | 0       | 00000002
+#   65ns | 00000014 | 8c230004 | 00000007 | 0       | 00000000
+#   75ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#   85ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#   95ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  105ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  115ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  125ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  135ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  145ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  155ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  165ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  175ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  185ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  195ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  205ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  215ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  225ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  235ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  245ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  255ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  265ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  275ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  285ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  295ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  305ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  315ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  325ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  335ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  345ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  355ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  365ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  375ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  385ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  395ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  405ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  415ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  425ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  435ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  445ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  455ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+#  465ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
+#  475ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
+# address 0000000b now has data deadbeef
+# BEQ
+#  485ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
+# BNE
+#  495ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
+# Simulation complete.
+# ** Note: $finish    : bne_cpu_tb.sv(67)
+#    Time: 500 ns  Iteration: 0  Instance: /bne_cpu_tb
+# 1
+# Break in Module bne_cpu_tb at bne_cpu_tb.sv line 67
+#  quit
+# End time: 15:48:03 on Jun 16,2025, Elapsed time: 0:03:15
+# Errors: 0, Warnings: 2

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jun 16 15:40:52 2025
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : mips_single_cycle
+Top-level Entity Name : bne_cpu
+Family : Cyclone IV E
+Total logic elements : 4,062
+    Total combinational functions : 1,822
+    Dedicated logic registers : 2,310
+Total registers : 2310
+Total pins : 67
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
