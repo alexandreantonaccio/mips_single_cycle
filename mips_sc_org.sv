@@ -1,10 +1,12 @@
+//Top level do processador MIPS de ciclo unico 32 bits
+//Baseado no trabalho do Caskman, disponível em:https://github.com/Caskman/MIPS-Processor-in-Verilog
+//E também no artigo disponível em : https://medium.com/@LambdaMamba/building-a-mips-single-cycle-processor-in-verilog-9a3fac6321d
 module mips_sc_org(input  logic        clk, reset, 
 	           output logic [31:0] writedata, dataadr, 
 	           output logic        memwrite);
 	
 	  logic [31:0] pc, instr, readdata;
 	  
-	  // instantiate processor and memories
 	    mips cpu (
 		 .clk      (clk),
 		 .reset    (reset),

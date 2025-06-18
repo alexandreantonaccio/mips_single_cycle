@@ -1,0 +1,86 @@
+`timescale 1ns/1ns
+module tb_datapath_pc;
+
+    logic clk, reset;
+    logic memtoreg, pcsrc, alusrc, regdst, regwrite, jump, jr;
+    logic [2:0] alucontrol;
+    logic zeroNzero;
+    logic [31:0] pc;
+    logic [31:0] instr = 32'h00000000; // NOP
+    logic [31:0] aluout, writedata;
+    logic [31:0] readdata = 0;
+    
+    datapath dut(
+        .clk(clk),
+        .reset(reset),
+        .memtoreg(memtoreg),
+        .pcsrc(pcsrc),
+        .alusrc(alusrc),
+        .regdst(regdst),
+        .regwrite(regwrite),
+        .jump(jump),
+        .jr(jr),
+        .alucontrol(alucontrol),
+        .zeroNzero(zeroNzero),
+        .pc(pc),
+        .instr(instr),
+        .aluout(aluout),
+        .writedata(writedata),
+        .readdata(readdata)
+    );
+    
+    // Gerador de clock
+    always begin
+        clk = 0; #5;
+        clk = 1; #5;
+    end
+    
+    initial begin
+        // Inicialização
+        reset = 1;
+        memtoreg = 0;
+        pcsrc = 0;
+        alusrc = 0;
+        regdst = 0;
+        regwrite = 0;
+        jump = 0;
+        jr = 0;
+        alucontrol = 3'b010; // ADD
+        #10;
+        
+        // Teste 1: Reset
+        $display("Reset: PC = %h (Esperado: 00000000)", pc);
+        
+        // Teste 2: Incremento normal (PC+4)
+        reset = 0;
+        #10;
+        $display("Ciclo 1: PC = %h (Esperado: 00000004)", pc);
+        
+        // Teste 3: Segundo incremento
+        #10;
+        $display("Ciclo 2: PC = %h (Esperado: 00000008)", pc);
+        
+        // Teste 4: Jump
+        jump = 1;
+        instr = 32'h0800000A; // j 0x0A
+        #10;
+        $display("Jump: PC = %h (Esperado: 00000028)", pc);
+        
+        // Teste 5: Branch (beq/bne)
+        jump = 0;
+        pcsrc = 1;
+        instr = 32'h1000FFFC; // beq $0, $0, -4
+        #10;
+        $display("Branch: PC = %h (Esperado: 00000024)", pc);
+        
+        // Teste 6: JR
+        jr = 1;
+        // Configurar registrador $ra = 0x100
+        // (Isso exigiria injeção de dados no banco de registradores)
+        #10;
+        $display("JR: PC = %h (Esperado: 00000100)", pc);
+        
+        $finish;
+    end
+
+endmodule

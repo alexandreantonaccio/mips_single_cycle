@@ -27,7 +27,7 @@ module tb_imem;
         $display("Endereço 2: 22222222");
         $display("Endereço 3: 33333333");
 		  
-		  $readmemh("code_test.txt", temp_mem);
+		  $readmemh("code_test.txt", dut.RAM);
 		  
         // Testes de leitura
         a = 0;

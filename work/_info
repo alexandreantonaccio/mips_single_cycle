@@ -11,28 +11,28 @@ cModel Technology
 Z0 dC:/Users/alexa/Documents/GitHub/mips_sc_org
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1750240750
+Z2 !s110 1750266141
 !i10b 1
 !s100 BbcXPMUXa_8FC;T^6eU7D0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IdQ0SDAldLc<h?d2Z8E8nl3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
-R0
+Z5 dC:/Users/alexa/Documents/GitHub/mips_single_cycle
 w1750237999
 8adder.sv
 Fadder.sv
-!i122 9
-Z5 L0 1 4
-Z6 OV;L;2020.1;71
+!i122 19
+Z6 L0 1 4
+Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1750240750.000000
-!s107 tb_sl2.sv|tb_singext.sv|tb_imem.sv|tb_flopr.sv|tb_dmem.sv|sl2.sv|signext.sv|regfile.sv|muxBEQBNE.sv|mux2.sv|mips_sc_org.sv|mips.sv|maindec.sv|imem.sv|flopr.sv|dmem.sv|datapath.sv|cpu_tb.sv|controller.sv|aludec.sv|alu.sv|adder.sv|
-Z8 !s90 -reportprogress|300|adder.sv|alu.sv|aludec.sv|controller.sv|cpu_tb.sv|datapath.sv|dmem.sv|flopr.sv|imem.sv|maindec.sv|mips.sv|mips_sc_org.sv|mux2.sv|muxBEQBNE.sv|regfile.sv|signext.sv|sl2.sv|tb_dmem.sv|tb_flopr.sv|tb_imem.sv|tb_singext.sv|tb_sl2.sv|
+Z8 !s108 1750266141.000000
+!s107 tb_sl2.sv|tb_singext.sv|tb_shifter.sv|tb_imem.sv|tb_flopr.sv|tb_dmem.sv|tb_datapath_pc.sv|tb_adder.sv|sl2.sv|signext.sv|shifter.sv|regfile.sv|muxBEQBNE.sv|mux2.sv|mips_sc_org.sv|mips.sv|maindec.sv|imem.sv|flopr.sv|dmem.sv|datapath.sv|cpu_tb.sv|controller.sv|aludec.sv|alu.sv|adder.sv|
+Z9 !s90 -reportprogress|300|adder.sv|alu.sv|aludec.sv|controller.sv|cpu_tb.sv|datapath.sv|dmem.sv|flopr.sv|imem.sv|maindec.sv|mips.sv|mips_sc_org.sv|mux2.sv|muxBEQBNE.sv|regfile.sv|shifter.sv|signext.sv|sl2.sv|tb_adder.sv|tb_datapath_pc.sv|tb_dmem.sv|tb_flopr.sv|tb_imem.sv|tb_shifter.sv|tb_singext.sv|tb_sl2.sv|
 !i113 1
-Z9 tCvgOpt 0
+Z10 tCvgOpt 0
 valu
 R1
 R2
@@ -42,21 +42,21 @@ R3
 I^8oMjnf:NMA4mQcjP2FEE1
 R4
 S1
-R0
+R5
 w1750238166
 8alu.sv
 Falu.sv
-!i122 9
+!i122 19
 L0 1 22
-R6
+R7
 r1
 !s85 0
 31
-R7
-Z10 !s107 tb_sl2.sv|tb_singext.sv|tb_imem.sv|tb_flopr.sv|tb_dmem.sv|sl2.sv|signext.sv|regfile.sv|muxBEQBNE.sv|mux2.sv|mips_sc_org.sv|mips.sv|maindec.sv|imem.sv|flopr.sv|dmem.sv|datapath.sv|cpu_tb.sv|controller.sv|aludec.sv|alu.sv|adder.sv|
 R8
-!i113 1
+Z11 !s107 tb_sl2.sv|tb_singext.sv|tb_shifter.sv|tb_imem.sv|tb_flopr.sv|tb_dmem.sv|tb_datapath_pc.sv|tb_adder.sv|sl2.sv|signext.sv|shifter.sv|regfile.sv|muxBEQBNE.sv|mux2.sv|mips_sc_org.sv|mips.sv|maindec.sv|imem.sv|flopr.sv|dmem.sv|datapath.sv|cpu_tb.sv|controller.sv|aludec.sv|alu.sv|adder.sv|
 R9
+!i113 1
+R10
 valudec
 R1
 R2
@@ -66,21 +66,21 @@ R3
 IlEAYD9i?<T<B`dG7U:P9z0
 R4
 S1
-R0
+R5
 w1750237929
 8aludec.sv
 Faludec.sv
-!i122 9
-Z11 L0 1 21
-R6
+!i122 19
+Z12 L0 1 21
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vcontroller
 R1
 R2
@@ -90,21 +90,21 @@ R3
 IX9P0GROEWMf]0g<N48jK81
 R4
 S1
-R0
+R5
 w1750237879
 8controller.sv
 Fcontroller.sv
-!i122 9
-Z12 L0 1 17
-R6
+!i122 19
+Z13 L0 1 17
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vcpu_tb
 R1
 !s110 1750239631
@@ -116,11 +116,11 @@ R4
 S1
 R0
 w1750238706
-Z13 8cpu_tb.sv
-Z14 Fcpu_tb.sv
+Z14 8cpu_tb.sv
+Z15 Fcpu_tb.sv
 !i122 3
-Z15 L0 3 47
-R6
+Z16 L0 3 47
+R7
 r1
 !s85 0
 31
@@ -128,31 +128,31 @@ r1
 !s107 tb_sl2.sv|tb_singext.sv|tb_flopr.sv|tb_dmem.sv|sl2.sv|signext.sv|regfile.sv|muxBEQBNE.sv|mux2.sv|mips_sc_org.sv|mips.sv|maindec.sv|imem.sv|flopr.sv|dmem.sv|datapath.sv|cpu_tb.sv|controller.sv|aludec.sv|alu.sv|adder.sv|
 !s90 -reportprogress|300|adder.sv|alu.sv|aludec.sv|controller.sv|cpu_tb.sv|datapath.sv|dmem.sv|flopr.sv|imem.sv|maindec.sv|mips.sv|mips_sc_org.sv|mux2.sv|muxBEQBNE.sv|regfile.sv|signext.sv|sl2.sv|tb_dmem.sv|tb_flopr.sv|tb_singext.sv|tb_sl2.sv|
 !i113 1
-R9
+R10
 vdatapath
 R1
 R2
 !i10b 1
-!s100 J_2El?7g:Y1^KB]aLhmHk3
+!s100 _I5BDlZAFHhGL8n3?H7RW3
 R3
-I[Y7:dbRR[`aQWP0fX;amo0
+ICfJRUfg8nL9W7<l_K`ImE3
 R4
 S1
-R0
-w1750237953
+R5
+w1750264762
 8datapath.sv
 Fdatapath.sv
-!i122 9
-L0 1 45
-R6
+!i122 19
+L0 1 51
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vdmem
 R1
 R2
@@ -162,21 +162,21 @@ R3
 I;kQ7l[Dl0Ta@1KTig^7^m3
 R4
 S1
-R0
+R5
 w1750237823
 8dmem.sv
 Fdmem.sv
-!i122 9
-L0 1 14
-R6
+!i122 19
+Z17 L0 1 14
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vflopr
 R1
 R2
@@ -186,21 +186,21 @@ R3
 I;=aOKjmPbW39MPR?d<=H01
 R4
 S1
-R0
+R5
 w1750238110
 8flopr.sv
 Fflopr.sv
-!i122 9
+!i122 19
 L0 1 8
-R6
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vimem
 R1
 R2
@@ -210,21 +210,21 @@ R3
 IQbfSPiR06jjKH_21oeOf21
 R4
 S1
-R0
+R5
 w1750237836
 8imem.sv
 Fimem.sv
-!i122 9
+!i122 19
 L0 1 10
-R6
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vmaindec
 R1
 R2
@@ -234,21 +234,21 @@ R3
 IGTEXgOR@gOSO`F2odem0I3
 R4
 S1
-R0
+R5
 w1750237897
 8maindec.sv
 Fmaindec.sv
-!i122 9
+!i122 19
 L0 1 31
-R6
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vmips
 R1
 R2
@@ -258,45 +258,45 @@ R3
 IU[d^?N<8aA@F@h^mR;Ta92
 R4
 S1
-R0
+R5
 w1750237866
 8mips.sv
 Fmips.sv
-!i122 9
-R11
-R6
+!i122 19
+R12
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vmips_sc_org
 R1
 R2
 !i10b 1
-!s100 `FW8A=IE6c^5FbTgbL`OT0
+!s100 eHi7dlzfRJH;fco=i5VLU3
 R3
-Ien4M8c6cEAVQWKPk2R>i03
+Ic4Ea;[MS5dk4>Mhd<Q9`X2
 R4
 S1
-R0
-w1750237802
+R5
+w1750263036
 8mips_sc_org.sv
 Fmips_sc_org.sv
-!i122 9
-L0 1 20
-R6
+!i122 19
+L0 4 19
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vmux2
 R1
 R2
@@ -306,21 +306,21 @@ R3
 I]P4oM6MJBEjlUY]XkeNl52
 R4
 S1
-R0
+R5
 w1750238146
 8mux2.sv
 Fmux2.sv
-!i122 9
-Z16 L0 1 6
-R6
+!i122 19
+Z18 L0 1 6
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vmuxBEQBNE
 R1
 R2
@@ -330,21 +330,21 @@ R3
 IE4`>`EQaC;`C7^4BDo35K2
 R4
 S1
-R0
+R5
 w1750238204
 8muxBEQBNE.sv
 FmuxBEQBNE.sv
-!i122 9
-R16
-R6
+!i122 19
+R18
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 nmux@b@e@q@b@n@e
 vregfile
 R1
@@ -355,21 +355,45 @@ R3
 IYJN3Q0C5PX`biO=4QPEi22
 R4
 S1
-R0
+R5
 w1750237976
 8regfile.sv
 Fregfile.sv
-!i122 9
-R12
-R6
+!i122 19
+R13
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
+vshifter
+R1
+R2
+!i10b 1
+!s100 626QH9U3J`8iXA7FQbjQD3
+R3
+I>6cC><G_>da537T]:X_=>3
+R4
+S1
+R5
+w1750263465
+8shifter.sv
+Fshifter.sv
+!i122 19
+R17
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
 vsignext
 R1
 R2
@@ -379,21 +403,21 @@ R3
 IGeQUKSIRmL6AggIRTaO_51
 R4
 S1
-R0
+R5
 w1750238090
 8signext.sv
 Fsignext.sv
-!i122 9
-R5
+!i122 19
 R6
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vsl2
 R1
 R2
@@ -403,21 +427,45 @@ R3
 I^Ag8jXU6:[WCnj98`cm?90
 R4
 S1
-R0
+R5
 w1750238014
 8sl2.sv
 Fsl2.sv
-!i122 9
-R5
+!i122 19
 R6
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
+vtb_adder
+R1
+R2
+!i10b 1
+!s100 m7^CM>T[mmDXRL0agmoUM0
+R3
+IlnJ2oDYzLnWW8[4^DfVGS0
+R4
+S1
+R5
+w1750262316
+8tb_adder.sv
+Ftb_adder.sv
+!i122 19
+L0 2 29
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
 vtb_cpu
 R1
 R2
@@ -427,21 +475,45 @@ R3
 I^YdB;G62LT;l;z36defgb1
 R4
 S1
-R0
+R5
 w1750239916
-R13
 R14
-!i122 9
 R15
-R6
+!i122 19
+R16
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
+vtb_datapath_pc
+R1
+R2
+!i10b 1
+!s100 4OX<S[<g?E4;:jz>G_7YH0
+R3
+Iac1UmE=I0jDHE6fN@7IPa2
+R4
+S1
+R5
+w1750265972
+8tb_datapath_pc.sv
+Ftb_datapath_pc.sv
+!i122 19
+L0 2 105
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
 vtb_dmem
 R1
 R2
@@ -451,21 +523,21 @@ R3
 IFhPFGG^k0l01@_04>]JMX0
 R4
 S1
-R0
+R5
 w1750239958
 8tb_dmem.sv
 Ftb_dmem.sv
-!i122 9
+!i122 19
 L0 1 77
-R6
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vtb_flopr
 R1
 R2
@@ -475,45 +547,69 @@ R3
 I79HmADn`>z26Ikd<oYZ923
 R4
 S1
-R0
+R5
 w1750239944
 8tb_flopr.sv
 Ftb_flopr.sv
-!i122 9
-Z17 L0 1 62
-R6
+!i122 19
+Z19 L0 1 62
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vtb_imem
 R1
 R2
 !i10b 1
-!s100 M<T^gYkSblPKfh?Yi8o`K3
+!s100 j1@NRW97Do==BGm;g02O=3
 R3
-I;NzF`:P_SZU[ekm152Z]W0
+Icfj_z6QJ]gh27h@TlBgX73
 R4
 S1
-R0
-w1750240704
+R5
+w1750266093
 8tb_imem.sv
 Ftb_imem.sv
-!i122 9
+!i122 19
 L0 1 66
-R6
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
+vtb_shifter
+R1
+R2
+!i10b 1
+!s100 `MmThR2dMSCHE]aWQ;f4n2
+R3
+I;9FOfdfch``b4M1XR4ZHo0
+R4
+S1
+R5
+w1750263713
+8tb_shifter.sv
+Ftb_shifter.sv
+!i122 19
+L0 3 150
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
 vtb_signext
 R1
 R2
@@ -523,21 +619,21 @@ R3
 IEDA^Zo9gSI5W9W]QDl8<V3
 R4
 S1
-R0
+R5
 w1750239965
 8tb_singext.sv
 Ftb_singext.sv
-!i122 9
+!i122 19
 L0 1 57
-R6
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
 vtb_sl2
 R1
 R2
@@ -547,18 +643,18 @@ R3
 IEamM]iZKb>3SZOzk@BLZf3
 R4
 S1
-R0
+R5
 w1750239972
 8tb_sl2.sv
 Ftb_sl2.sv
-!i122 9
-R17
-R6
+!i122 19
+R19
+R7
 r1
 !s85 0
 31
-R7
-R10
 R8
-!i113 1
+R11
 R9
+!i113 1
+R10
