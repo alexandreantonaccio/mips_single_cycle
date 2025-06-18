@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips_single_cycle
-Mon Jun 16 15:40:52 2025
+Tue Jun 17 23:51:41 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -23,12 +23,13 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  15. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:wrmux
  16. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:resmux
  17. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:srcbmux
- 18. Port Connectivity Checks: "mips:cpu|datapath:dp|mux2:pcmux"
- 19. Port Connectivity Checks: "mips:cpu|datapath:dp|adder:pcadd1"
- 20. Port Connectivity Checks: "mips:cpu"
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
+ 18. Port Connectivity Checks: "mips:cpu|datapath:dp|muxBEQBNE:muxBEQBNE"
+ 19. Port Connectivity Checks: "mips:cpu|datapath:dp|mux2:pcmux"
+ 20. Port Connectivity Checks: "mips:cpu|datapath:dp|adder:pcadd1"
+ 21. Port Connectivity Checks: "mips:cpu"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
 
 
 
@@ -55,15 +56,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 16 15:40:52 2025       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 17 23:51:41 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; mips_single_cycle                           ;
 ; Top-level Entity Name              ; bne_cpu                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4,062                                       ;
-;     Total combinational functions  ; 1,822                                       ;
-;     Dedicated logic registers      ; 2,310                                       ;
-; Total registers                    ; 2310                                        ;
+; Total logic elements               ; 483                                         ;
+;     Total combinational functions  ; 324                                         ;
+;     Dedicated logic registers      ; 197                                         ;
+; Total registers                    ; 197                                         ;
 ; Total pins                         ; 67                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -162,28 +163,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                            ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
-; bne_cpu.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv ;         ;
-; code.txt                         ; yes             ; Auto-Found File              ; C:/Users/alexandre/Desktop/mips_single_cycle/code.txt   ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
+; bne_cpu.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv ;         ;
+; code.txt                         ; yes             ; Auto-Found File              ; C:/Users/alexa/Documents/GitHub/mips_single_cycle/code.txt   ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -191,20 +190,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,062     ;
+; Estimated Total logic elements              ; 483       ;
 ;                                             ;           ;
-; Total combinational functions               ; 1822      ;
+; Total combinational functions               ; 324       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1716      ;
-;     -- 3 input functions                    ; 41        ;
-;     -- <=2 input functions                  ; 65        ;
+;     -- 4 input functions                    ; 194       ;
+;     -- 3 input functions                    ; 90        ;
+;     -- <=2 input functions                  ; 40        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1785      ;
+;     -- normal mode                          ; 287       ;
 ;     -- arithmetic mode                      ; 37        ;
 ;                                             ;           ;
-; Total registers                             ; 2310      ;
-;     -- Dedicated logic registers            ; 2310      ;
+; Total registers                             ; 197       ;
+;     -- Dedicated logic registers            ; 197       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 67        ;
@@ -212,31 +211,28 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 2310      ;
-; Total fan-out                               ; 14178     ;
-; Average fan-out                             ; 3.32      ;
+; Maximum fan-out                             ; 197       ;
+; Total fan-out                               ; 1847      ;
+; Average fan-out                             ; 2.82      ;
 +---------------------------------------------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
-; |bne_cpu                   ; 1822 (0)            ; 2310 (0)                  ; 0           ; 0            ; 0       ; 0         ; 67   ; 0            ; |bne_cpu                                   ; bne_cpu     ; work         ;
-;    |dmem:dmem|             ; 1389 (1389)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|dmem:dmem                         ; dmem        ; work         ;
-;    |imem:imem|             ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|imem:imem                         ; imem        ; work         ;
-;    |mips:cpu|              ; 422 (0)             ; 262 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu                          ; mips        ; work         ;
-;       |controller:c|       ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c             ; controller  ; work         ;
-;          |aludec:ad|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c|aludec:ad   ; aludec      ; work         ;
-;          |maindec:md|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c|maindec:md  ; maindec     ; work         ;
-;       |datapath:dp|        ; 416 (0)             ; 262 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp              ; datapath    ; work         ;
-;          |alu:alu|         ; 97 (97)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|alu:alu      ; alu         ; work         ;
-;          |flopr:pcreg|     ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|flopr:pcreg  ; flopr       ; work         ;
-;          |mux2:resmux|     ; 80 (80)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|mux2:resmux  ; mux2        ; work         ;
-;          |mux2:srcbmux|    ; 28 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|mux2:srcbmux ; mux2        ; work         ;
-;          |regfile:rf|      ; 205 (205)           ; 256 (256)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|regfile:rf   ; regfile     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
+; |bne_cpu                   ; 324 (0)             ; 197 (0)                   ; 0           ; 0            ; 0       ; 0         ; 67   ; 0            ; |bne_cpu                                  ; bne_cpu     ; work         ;
+;    |imem:imem|             ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|imem:imem                        ; imem        ; work         ;
+;    |mips:cpu|              ; 316 (0)             ; 197 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu                         ; mips        ; work         ;
+;       |controller:c|       ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c            ; controller  ; work         ;
+;          |aludec:ad|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c|aludec:ad  ; aludec      ; work         ;
+;          |maindec:md|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c|maindec:md ; maindec     ; work         ;
+;       |datapath:dp|        ; 311 (0)             ; 197 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp             ; datapath    ; work         ;
+;          |alu:alu|         ; 98 (98)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|alu:alu     ; alu         ; work         ;
+;          |flopr:pcreg|     ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|flopr:pcreg ; flopr       ; work         ;
+;          |regfile:rf|      ; 207 (207)           ; 191 (191)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|regfile:rf  ; regfile     ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1016,18 +1012,85 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; mips:cpu|datapath:dp|regfile:rf|rf~1022   ; Lost fanout                                       ;
 ; mips:cpu|datapath:dp|regfile:rf|rf~1023   ; Lost fanout                                       ;
 ; mips:cpu|datapath:dp|flopr:pcreg|q[8..31] ; Lost fanout                                       ;
-; Total Number of Removed Registers = 794   ;                                                   ;
+; mips:cpu|datapath:dp|regfile:rf|rf~0      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~1      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~2      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~3      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~4      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~5      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~6      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~7      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~8      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~9      ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~10     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~11     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~12     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~13     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~14     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~15     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~16     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~17     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~18     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~19     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~20     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~21     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~22     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~23     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~24     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~25     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~26     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~27     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~28     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~29     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~30     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~31     ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~352    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~353    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~354    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~355    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~356    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~357    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~358    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~359    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~360    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~361    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~362    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~363    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~364    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~365    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~366    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~367    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~368    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~369    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~370    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~371    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~372    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~373    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~374    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~375    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~376    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~377    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~378    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~379    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~380    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~381    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~382    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~383    ; Stuck at GND due to stuck port clock_enable       ;
+; mips:cpu|datapath:dp|regfile:rf|rf~96     ; Lost fanout                                       ;
+; Total Number of Removed Registers = 859   ;                                                   ;
 +-------------------------------------------+---------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                ;
-+---------------------------------------+---------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal        ; Registers Removed due to This Register ;
-+---------------------------------------+---------------------------+----------------------------------------+
-; mips:cpu|datapath:dp|flopr:pcreg|q[1] ; Stuck at GND              ; mips:cpu|datapath:dp|flopr:pcreg|q[24] ;
-;                                       ; due to stuck port data_in ;                                        ;
-+---------------------------------------+---------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                     ;
++---------------------------------------+--------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal             ; Registers Removed due to This Register ;
++---------------------------------------+--------------------------------+----------------------------------------+
+; mips:cpu|datapath:dp|flopr:pcreg|q[1] ; Stuck at GND                   ; mips:cpu|datapath:dp|flopr:pcreg|q[24] ;
+;                                       ; due to stuck port data_in      ;                                        ;
+; mips:cpu|datapath:dp|regfile:rf|rf~0  ; Stuck at GND                   ; mips:cpu|datapath:dp|regfile:rf|rf~96  ;
+;                                       ; due to stuck port clock_enable ;                                        ;
++---------------------------------------+--------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1035,23 +1098,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2310  ;
+; Total registers                              ; 197   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2304  ;
+; Number of registers using Clock Enable       ; 191   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |bne_cpu|mips:cpu|datapath:dp|alu:alu|Mux30 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |bne_cpu|mips:cpu|datapath:dp|alu:alu|condinvb[0] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |bne_cpu|mips:cpu|datapath:dp|alu:alu|condinvb[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -1114,6 +1178,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mips:cpu|datapath:dp|muxBEQBNE:muxBEQBNE"                                                                                                                                         ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                          ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; BeqBne ; Input ; Warning  ; Input port expression (2 bits) is wider than the input port (1 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------+
 ; Port Connectivity Checks: "mips:cpu|datapath:dp|mux2:pcmux" ;
 +----------+-------+----------+-------------------------------+
@@ -1150,21 +1223,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 67                          ;
-; cycloneiii_ff         ; 2310                        ;
+; cycloneiii_ff         ; 197                         ;
 ;     CLR               ; 6                           ;
-;     ENA               ; 2304                        ;
-; cycloneiii_lcell_comb ; 1823                        ;
+;     ENA               ; 191                         ;
+; cycloneiii_lcell_comb ; 325                         ;
 ;     arith             ; 37                          ;
 ;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 32                          ;
-;     normal            ; 1786                        ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 59                          ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 1716                        ;
+;     normal            ; 288                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 58                          ;
+;         4 data inputs ; 194                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 16.70                       ;
-; Average LUT depth     ; 9.55                        ;
+; Max LUT depth         ; 10.90                       ;
+; Average LUT depth     ; 7.93                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1173,7 +1247,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -1183,68 +1257,71 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jun 16 15:40:34 2025
+    Info: Processing started: Tue Jun 17 23:51:34 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips_single_cycle -c mips_single_cycle
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 16 design units, including 16 entities, in source file bne_cpu.sv
-    Info (12023): Found entity 1: bne_cpu File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 1
-    Info (12023): Found entity 2: dmem File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 22
-    Info (12023): Found entity 3: imem File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 37
-    Info (12023): Found entity 4: mips File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 48
-    Info (12023): Found entity 5: controller File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 70
-    Info (12023): Found entity 6: maindec File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 94
-    Info (12023): Found entity 7: aludec File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 126
-    Info (12023): Found entity 8: datapath File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 145
-    Info (12023): Found entity 9: regfile File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 194
-    Info (12023): Found entity 10: adder File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 235
-    Info (12023): Found entity 11: sl2 File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 241
-    Info (12023): Found entity 12: signext File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 248
-    Info (12023): Found entity 13: flopr File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 254
-    Info (12023): Found entity 14: mux2 File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 264
-    Info (12023): Found entity 15: alu File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 272
-    Info (12023): Found entity 16: muxBEQBNE File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 297
+    Info (12023): Found entity 1: bne_cpu File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 1
+    Info (12023): Found entity 2: dmem File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 22
+    Info (12023): Found entity 3: imem File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 37
+    Info (12023): Found entity 4: mips File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 48
+    Info (12023): Found entity 5: controller File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 70
+    Info (12023): Found entity 6: maindec File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 94
+    Info (12023): Found entity 7: aludec File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 126
+    Info (12023): Found entity 8: datapath File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 146
+    Info (12023): Found entity 9: regfile File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 195
+    Info (12023): Found entity 10: adder File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 242
+    Info (12023): Found entity 11: sl2 File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 248
+    Info (12023): Found entity 12: signext File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 255
+    Info (12023): Found entity 13: flopr File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 261
+    Info (12023): Found entity 14: mux2 File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 271
+    Info (12023): Found entity 15: alu File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 279
+    Info (12023): Found entity 16: muxBEQBNE File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 303
 Info (12021): Found 1 design units, including 1 entities, in source file bne_cpu_tb.sv
-    Info (12023): Found entity 1: bne_cpu_tb File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu_tb.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at bne_cpu.sv(181): created implicit net for "zero" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 181
-Warning (10236): Verilog HDL Implicit Net warning at bne_cpu.sv(181): created implicit net for "notzero" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 181
+    Info (12023): Found entity 1: bne_cpu_tb File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu_tb.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at bne_cpu.sv(182): created implicit net for "zero" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 182
+Warning (10236): Verilog HDL Implicit Net warning at bne_cpu.sv(182): created implicit net for "notzero" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 182
 Info (12127): Elaborating entity "bne_cpu" for the top level hierarchy
-Info (12128): Elaborating entity "mips" for hierarchy "mips:cpu" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 17
-Info (12128): Elaborating entity "controller" for hierarchy "mips:cpu|controller:c" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 62
-Info (12128): Elaborating entity "maindec" for hierarchy "mips:cpu|controller:c|maindec:md" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 82
-Info (12128): Elaborating entity "aludec" for hierarchy "mips:cpu|controller:c|aludec:ad" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 83
-Info (12128): Elaborating entity "datapath" for hierarchy "mips:cpu|datapath:dp" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 67
-Info (12128): Elaborating entity "flopr" for hierarchy "mips:cpu|datapath:dp|flopr:pcreg" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 163
-Info (12128): Elaborating entity "adder" for hierarchy "mips:cpu|datapath:dp|adder:pcadd1" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 164
-Info (12128): Elaborating entity "sl2" for hierarchy "mips:cpu|datapath:dp|sl2:immsh" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 165
-Info (12128): Elaborating entity "mux2" for hierarchy "mips:cpu|datapath:dp|mux2:pcbrmux" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 167
-Info (12128): Elaborating entity "regfile" for hierarchy "mips:cpu|datapath:dp|regfile:rf" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 173
-Info (12128): Elaborating entity "mux2" for hierarchy "mips:cpu|datapath:dp|mux2:wrmux" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 175
-Info (12128): Elaborating entity "signext" for hierarchy "mips:cpu|datapath:dp|signext:se" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 177
-Info (12128): Elaborating entity "alu" for hierarchy "mips:cpu|datapath:dp|alu:alu" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 181
-Info (12128): Elaborating entity "muxBEQBNE" for hierarchy "mips:cpu|datapath:dp|muxBEQBNE:muxBEQBNE" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 190
-Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 18
-Warning (10850): Verilog HDL warning at bne_cpu.sv(43): number of words (6) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 43
-Warning (10030): Net "RAM.data_a" at bne_cpu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 40
-Warning (10030): Net "RAM.waddr_a" at bne_cpu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 40
-Warning (10030): Net "RAM.we_a" at bne_cpu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 40
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 19
+Info (12128): Elaborating entity "mips" for hierarchy "mips:cpu" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 17
+Info (12128): Elaborating entity "controller" for hierarchy "mips:cpu|controller:c" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 62
+Info (12128): Elaborating entity "maindec" for hierarchy "mips:cpu|controller:c|maindec:md" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 82
+Info (12128): Elaborating entity "aludec" for hierarchy "mips:cpu|controller:c|aludec:ad" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 83
+Info (12128): Elaborating entity "datapath" for hierarchy "mips:cpu|datapath:dp" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 67
+Info (12128): Elaborating entity "flopr" for hierarchy "mips:cpu|datapath:dp|flopr:pcreg" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 164
+Info (12128): Elaborating entity "adder" for hierarchy "mips:cpu|datapath:dp|adder:pcadd1" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 165
+Info (12128): Elaborating entity "sl2" for hierarchy "mips:cpu|datapath:dp|sl2:immsh" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 166
+Info (12128): Elaborating entity "mux2" for hierarchy "mips:cpu|datapath:dp|mux2:pcbrmux" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 168
+Info (12128): Elaborating entity "regfile" for hierarchy "mips:cpu|datapath:dp|regfile:rf" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 174
+Info (12128): Elaborating entity "mux2" for hierarchy "mips:cpu|datapath:dp|mux2:wrmux" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 176
+Info (12128): Elaborating entity "signext" for hierarchy "mips:cpu|datapath:dp|signext:se" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 178
+Info (12128): Elaborating entity "alu" for hierarchy "mips:cpu|datapath:dp|alu:alu" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 182
+Info (12128): Elaborating entity "muxBEQBNE" for hierarchy "mips:cpu|datapath:dp|muxBEQBNE:muxBEQBNE" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 191
+Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 18
+Warning (10850): Verilog HDL warning at bne_cpu.sv(43): number of words (3) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 43
+Warning (10030): Net "RAM.data_a" at bne_cpu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 40
+Warning (10030): Net "RAM.waddr_a" at bne_cpu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 40
+Warning (10030): Net "RAM.we_a" at bne_cpu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 40
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 19
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "mips:cpu|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 200
-    Info (276007): RAM logic "dmem:dmem|RAM" is uninferred due to asynchronous read logic File: C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv Line: 26
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/alexandre/Desktop/mips_single_cycle/db/mips_single_cycle.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Info (276007): RAM logic "mips:cpu|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 201
+    Info (276007): RAM logic "dmem:dmem|RAM" is uninferred due to asynchronous read logic File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 26
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/alexa/Documents/GitHub/mips_single_cycle/db/mips_single_cycle.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "memwrite" is stuck at GND File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 3
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 792 registers lost all their fanouts during netlist optimizations.
+Info (17049): 793 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4193 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 582 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 65 output pins
-    Info (21061): Implemented 4126 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4790 megabytes
-    Info: Processing ended: Mon Jun 16 15:40:52 2025
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:34
+    Info (21061): Implemented 515 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Tue Jun 17 23:51:41 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:14
 
 

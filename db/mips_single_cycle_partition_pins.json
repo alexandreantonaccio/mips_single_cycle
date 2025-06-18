@@ -260,10 +260,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "memwrite",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				},

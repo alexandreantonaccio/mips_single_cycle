@@ -116,9 +116,9 @@
 				controls <= 9'b000100001; // BNE has same controls as BEQ
 				$display("BNE");
 			end
-	      6'b001000: controls <= 9'b101000000; // ADDI
+	      6'b001010: controls <= 9'b101000011; // SLTI (novo!) 
+			6'b001000: controls <= 9'b101000000; // ADDI
 	      6'b000010: controls <= 9'b000000100; // J
-			
 	      default:   controls <= 9'bxxxxxxxxx; // illegal op
 	    endcase
 	endmodule
@@ -129,8 +129,9 @@
 	
 	  always_comb
 	    case(aluop)
-	      2'b00: alucontrol <= 3'b010;  // add (for lw/sw/addi)
+	      2'b00: alucontrol <= 3'b010;   // add (for lw/sw/addi)
 	      2'b01: alucontrol <= 3'b110;  // sub (for beq and bne )
+			2'b11: alucontrol <= 3'b111; // slti
 	      default: case(funct)          // R-type instructions
 	          6'b100000: alucontrol <= 3'b010; // add
 	          6'b100010: alucontrol <= 3'b110; // sub
@@ -183,7 +184,7 @@
 	  //mux to pick zero or notzero depending on BEQ or BNE
 	    // usa apenas o bit [26] (é 1 para BNE, 0 para BEQ)
 	  muxBEQBNE muxBEQBNE (
-		 .BeqBne    (instr[26]),
+		 .BeqBne    (instr[27:26]),
 		 .zero      (zero),
 		 .notzero   (notzero),
 		 .zeroNzero (zeroNzero)
@@ -198,8 +199,7 @@
 	               output logic [31:0] rd1, rd2);
 	
 	  logic [31:0] rf[31:0];
-	  
-	  logic [4:0] regname;
+	 
 	
 	  // three ported register file
 	  // read two ports combinationally
@@ -209,8 +209,9 @@
 	  // on falling edge of clk
 	
 	  always_ff @(posedge clk)
+	  
 	  begin
-	    if (we3) 
+	    if (we3 && wa3 != 0) 
 		 begin 
 			rf[wa3] <= wd3;
 			case(wa3)
@@ -221,6 +222,12 @@
 				5'b10100: $display("content of $s4 = %h", wd3);
 				5'b01000: $display("content of $t0 = %h", wd3);
 				5'b01001: $display("content of $t1 = %h", wd3);
+				5'b01010: $display("content of $t2 = %h", wd3);
+				5'b01011: $display("content of $t3 = %h", wd3);
+				5'b01100: $display("content of $t4 = %h", wd3);
+				5'b01101: $display("content of $t5 = %h", wd3);
+				5'b01110: $display("content of $t6 = %h", wd3);
+				5'b01111: $display("content of $t7 = %h", wd3);
 				//default: $display("no");
 			endcase
 		 end
@@ -279,7 +286,6 @@
 	
 	  assign condinvb = alucontrol[2] ? ~b : b;
 	  assign sum = a + condinvb + alucontrol[2];
-	
 	  always_comb
 	    case (alucontrol[1:0])
 	      2'b00: result = a & b;
@@ -300,7 +306,7 @@
 						  output logic zeroNzero);
 						  
 				assign zeroNzero = BeqBne ? notzero : zero;
-				//always_ff @(zeroNzero) $display("BeqBne=%b, zero=%b, notzero=%b, zeroNzero=%b", BeqBne, zero, notzero, zeroNzero);
+				//always_ff @(zeroNzero) $("BeqBne=%b, zero=%b, notzero=%b, zeroNzero=%b", BeqBne, zero, notzero, zeroNzero);
 	
 	endmodule
 	

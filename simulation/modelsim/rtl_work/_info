@@ -8,40 +8,40 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/alexandre/Desktop/mips_single_cycle/simulation/modelsim
+Z0 dC:/Users/alexa/Documents/GitHub/mips_single_cycle/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1750103035
+Z2 !s110 1750218742
 !i10b 1
-!s100 RFH_nkoWZkJzTIj496^;Z2
+!s100 R4d^cN`7nXRgFUI^^3aCg0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-II^bn>^2ARUgmFo^cWzK1U2
+ITTSDcjSe<idE>Ji7P]S`[2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1750100613
-Z6 8C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv
-Z7 FC:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv
+Z5 w1750218692
+Z6 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv
+Z7 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv
 !i122 0
-L0 235 5
+L0 242 5
 Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1750103035.000000
-!s107 C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv|
-Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexandre/Desktop/mips_single_cycle|C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv|
+Z9 !s108 1750218742.000000
+!s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle|C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv|
 !i113 1
 Z11 o-sv -work work
-Z12 !s92 -sv -work work +incdir+C:/Users/alexandre/Desktop/mips_single_cycle
+Z12 !s92 -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle
 Z13 tCvgOpt 0
 valu
 R1
 R2
 !i10b 1
-!s100 ooNaSI[mWQEiaPM@k;c3B1
+!s100 kgYeL7zN^69J?7GDSCl:z0
 R3
-I54SaD];NGAnHY9MIgKYDg0
+IZ9bfD]5cRN?T=eM2Fh:o?3
 R4
 S1
 R0
@@ -49,13 +49,13 @@ R5
 R6
 R7
 !i122 0
-L0 272 22
+L0 279 21
 R8
 r1
 !s85 0
 31
 R9
-Z14 !s107 C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv|
+Z14 !s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv|
 R10
 !i113 1
 R11
@@ -65,9 +65,9 @@ valudec
 R1
 R2
 !i10b 1
-!s100 U3TdOD?PQii;eXoZP>gJU1
+!s100 gdh:=HjKM91b?<Akc:FC:1
 R3
-IgomG]WV;k_e:S84gd418I2
+I@Bn49lT`>PjA[Kjc5:F8S1
 R4
 S1
 R0
@@ -75,7 +75,7 @@ R5
 R6
 R7
 !i122 0
-L0 126 18
+L0 126 19
 R8
 r1
 !s85 0
@@ -93,7 +93,7 @@ R2
 !i10b 1
 !s100 >a1X`n6:CH3=zWkf=Fg[M2
 R3
-I`c60okU0:AU@2S[nZD1;Q3
+IOm<?6CO^XF;N[ee;]kYoW1
 R4
 S1
 R0
@@ -119,7 +119,7 @@ R2
 !i10b 1
 !s100 ]Y=c=S]o3`oUe^3LJ9oMn0
 R3
-I[0fR=_5HW4i=VHde_NJ0^1
+IDOWYPia3G^9A<f7dlY2LU2
 R4
 S1
 R0
@@ -143,9 +143,9 @@ vdatapath
 R1
 R2
 !i10b 1
-!s100 O[==c543zZMXJGg[@=`L43
+!s100 K7Z7Ck[febWjIcc1GWLa62
 R3
-ImDZZ8S^Bofd=576TY3dh=3
+IE?LfhU=;m:U9=zKa0eUOP1
 R4
 S1
 R0
@@ -153,7 +153,7 @@ R5
 R6
 R7
 !i122 0
-L0 145 48
+L0 146 48
 R8
 r1
 !s85 0
@@ -171,7 +171,7 @@ R2
 !i10b 1
 !s100 OOkD[K1XbZTE@LJX_`@Q?3
 R3
-IQVcBSW9U6fYITa`]:BC]W1
+I0gSdD9Q<F`[=_B[Gj<=ic2
 R4
 S1
 R0
@@ -195,9 +195,9 @@ vflopr
 R1
 R2
 !i10b 1
-!s100 W=OHS9XAJO]kU46Bjz=0F2
+!s100 I`Dj;[1QBEFcCmOF1b1Jg0
 R3
-I328I1[KN49i_BM3b_NTTa3
+In]4a3RF=LzA4R06kcQ[zP1
 R4
 S1
 R0
@@ -205,7 +205,7 @@ R5
 R6
 R7
 !i122 0
-L0 254 9
+L0 261 9
 R8
 r1
 !s85 0
@@ -223,7 +223,7 @@ R2
 !i10b 1
 !s100 S@]JmnlDH]on;LW2Pm<X01
 R3
-I<8]6;_DO@8XFG5f9hJjNH1
+ImR:5=EU4zEEW_I=hW9:2X1
 R4
 S1
 R0
@@ -247,9 +247,9 @@ vmaindec
 R1
 R2
 !i10b 1
-!s100 ;II4nL5DL;^[==UDiX?Rz2
+!s100 3mThM3KChh?zK1810nJ:53
 R3
-IP52TnaiHX=^K@9e6@lN5:1
+I4QIVKBV^]nP;C2X?4gMJ01
 R4
 S1
 R0
@@ -275,7 +275,7 @@ R2
 !i10b 1
 !s100 Rd=9O^:jFVFh_Qe[AaGAD0
 R3
-I:g8jzP=UX:boNOmz7i[S@0
+I]6lgLzfRgI09D^k2AOA?X0
 R4
 S1
 R0
@@ -299,9 +299,9 @@ vmux2
 R1
 R2
 !i10b 1
-!s100 obhDgWJRm`IbTmh[@7TE[3
+!s100 7TPUA?EHiL62G[>zmXCoC3
 R3
-I=H9A7eFlNlG8K<k`hlFM70
+I_bDgCchVXn0mcd6fL@Uze2
 R4
 S1
 R0
@@ -309,7 +309,7 @@ R5
 R6
 R7
 !i122 0
-L0 264 7
+L0 271 7
 R8
 r1
 !s85 0
@@ -325,9 +325,9 @@ vmuxBEQBNE
 R1
 R2
 !i10b 1
-!s100 hIkAlb>FQ`4e1<::?V_hI0
+!s100 UMgPb?3iOMc7Dc2`[SWYm1
 R3
-IUGSDheY]KPO>Hm2b0LRk00
+IZM?fm8K6XXM6?9z?DC7GL3
 R4
 S1
 R0
@@ -335,7 +335,7 @@ R5
 R6
 R7
 !i122 0
-L0 297 9
+L0 303 9
 R8
 r1
 !s85 0
@@ -352,9 +352,9 @@ vregfile
 R1
 R2
 !i10b 1
-!s100 lBl_BX[;5jPlfR]RiD5Og1
+!s100 <^5dFEOo;6jhbNzN9?JFH0
 R3
-IMbLC]d[KQmFSiC?8S[eSe1
+I@NHZ6EO;L9aCgDgBEkJ@[2
 R4
 S1
 R0
@@ -362,7 +362,7 @@ R5
 R6
 R7
 !i122 0
-L0 194 40
+L0 195 46
 R8
 r1
 !s85 0
@@ -378,9 +378,9 @@ vsignext
 R1
 R2
 !i10b 1
-!s100 e:?O1?U7kV1T8iTWWRglD0
+!s100 N5H9_YVP6UMek><Sl3LJW1
 R3
-IaJMzaQEb[]P<:T1b7d5MY0
+I1[HFI9CdJa@eGMmEA2c>01
 R4
 S1
 R0
@@ -388,7 +388,7 @@ R5
 R6
 R7
 !i122 0
-L0 248 5
+L0 255 5
 R8
 r1
 !s85 0
@@ -404,9 +404,9 @@ vsl2
 R1
 R2
 !i10b 1
-!s100 LlB4bBNLb47mfKfzANz1j1
+!s100 CZ:j<A=WdePnLC727F:Pf2
 R3
-I4<[CM7zREUDC2>1e_obQ^1
+IjMR>OGcaJ>aHZF2=n5EU81
 R4
 S1
 R0
@@ -414,7 +414,7 @@ R5
 R6
 R7
 !i122 0
-L0 241 6
+L0 248 6
 R8
 r1
 !s85 0

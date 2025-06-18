@@ -11,55 +11,55 @@ cModel Technology
 Z0 dC:/Users/alexandre/Desktop/mips_single_cycle
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1750103088
+Z2 !s110 1750218766
 !i10b 1
-!s100 RFH_nkoWZkJzTIj496^;Z2
+!s100 R4d^cN`7nXRgFUI^^3aCg0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IEaZ2N3iZE^`m2=GmSDPZ`3
+I[QJ3QhFdLFc`1SUHe19_o1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
-R0
-Z5 w1750100613
-Z6 8bne_cpu.sv
-Z7 Fbne_cpu.sv
-!i122 14
-L0 235 5
-Z8 OV;L;2020.1;71
+Z5 dC:/Users/alexa/Documents/GitHub/mips_single_cycle
+Z6 w1750218692
+Z7 8bne_cpu.sv
+Z8 Fbne_cpu.sv
+!i122 49
+L0 242 5
+Z9 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1750103088.000000
-Z10 !s107 bne_cpu_tb.sv|bne_cpu.sv|
-Z11 !s90 -reportprogress|300|bne_cpu.sv|bne_cpu_tb.sv|
+Z10 !s108 1750218766.000000
+Z11 !s107 bne_cpu_tb.sv|bne_cpu.sv|
+Z12 !s90 -reportprogress|300|bne_cpu.sv|bne_cpu_tb.sv|
 !i113 1
-Z12 tCvgOpt 0
+Z13 tCvgOpt 0
 valu
 R1
 R2
 !i10b 1
-!s100 ooNaSI[mWQEiaPM@k;c3B1
+!s100 kgYeL7zN^69J?7GDSCl:z0
 R3
-I<bo5VaAFaleGn3L@GO7ID1
+IZ6NKCIGn^X^fJLG[LS1gB1
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 272 22
 R8
+!i122 49
+L0 279 21
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 valu_control
 R1
-Z13 !s110 1750086575
+Z14 !s110 1750086575
 !i10b 1
 !s100 0nT`0i1he@9cDT4]:3BKR3
 R3
@@ -67,44 +67,44 @@ I^`FB3YWB?;SI`P]8k3^SF0
 R4
 S1
 R0
-Z14 w1750085495
-R6
+Z15 w1750085495
 R7
+R8
 !i122 0
 L0 213 24
-R8
+R9
 r1
 !s85 0
 31
-Z15 !s108 1750086574.000000
-Z16 !s107 mips_sc_tb.sv|bne_cpu.sv|
-Z17 !s90 -reportprogress|300|bne_cpu.sv|mips_sc_tb.sv|
+Z16 !s108 1750086574.000000
+Z17 !s107 mips_sc_tb.sv|bne_cpu.sv|
+Z18 !s90 -reportprogress|300|bne_cpu.sv|mips_sc_tb.sv|
 !i113 1
-R12
+R13
 valudec
 R1
 R2
 !i10b 1
-!s100 U3TdOD?PQii;eXoZP>gJU1
+!s100 gdh:=HjKM91b?<Akc:FC:1
 R3
-Ik3kYL^K`fUmSUSzGgnJ>d0
+ID9`eR?NNR817zYO<RO`AL0
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 126 18
 R8
+!i122 49
+L0 126 19
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vbne_cpu
 R1
 R2
@@ -114,48 +114,48 @@ R3
 ISHcc?`J71dafGYVfW4W2[0
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 1 20
 R8
+!i122 49
+L0 1 20
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vbne_cpu_tb
 R1
 R2
 !i10b 1
-!s100 `SQ[UOK2W2Yb8CcIbc;z82
+!s100 TcQn9G93<;m7J4mZ??E6m2
 R3
-IDfB]`0<HHV3T3_VO>R1QH3
+Ii7=C^3N:Icj4Oz0JdQKf]1
 R4
 S1
-R0
-w1750102831
-Z18 8bne_cpu_tb.sv
-Z19 Fbne_cpu_tb.sv
-!i122 14
-Z20 L0 3 67
-R8
+R5
+w1750217836
+Z19 8bne_cpu_tb.sv
+Z20 Fbne_cpu_tb.sv
+!i122 49
+Z21 L0 3 78
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vcontrol_unit
 R1
-Z21 !s110 1750086574
+Z22 !s110 1750086574
 !i10b 1
 !s100 IAga:6InXD9V]JUz;Hg=60
 R3
@@ -163,20 +163,20 @@ IEJQn2>[:VLZ121d<FVSfF3
 R4
 S1
 R0
-R14
-R6
+R15
 R7
+R8
 !i122 0
 L0 139 73
-R8
+R9
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !i113 1
-R12
+R13
 vcontroller
 R1
 R2
@@ -186,24 +186,24 @@ R3
 IHaMYafo0Kk66:=cQXRSbH3
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 70 23
 R8
+!i122 49
+L0 70 23
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vcontroller_ext
 R1
-Z22 !s110 1750099398
+Z23 !s110 1750099398
 !i10b 1
 !s100 aVG<`RjKLz39[ahlR5O>10
 R3
@@ -211,47 +211,47 @@ I4S<PL]>PB6QJ^DM;bG3@P1
 R4
 S1
 R0
-Z23 w1750099233
-R6
+Z24 w1750099233
 R7
+R8
 !i122 3
 L0 103 22
-R8
+R9
 r1
 !s85 0
 31
-Z24 !s108 1750099398.000000
-Z25 !s107 bne_cpu.sv|
-Z26 !s90 -reportprogress|300|bne_cpu.sv|
+Z25 !s108 1750099398.000000
+Z26 !s107 bne_cpu.sv|
+Z27 !s90 -reportprogress|300|bne_cpu.sv|
 !i113 1
-R12
+R13
 vdatapath
 R1
 R2
 !i10b 1
-!s100 O[==c543zZMXJGg[@=`L43
+!s100 K7Z7Ck[febWjIcc1GWLa62
 R3
-IU3l<6C[MCz[4123dhOZ@h1
+IWMg@:n1Y:[=^^2Y=SO@Ll1
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 145 48
 R8
+!i122 49
+L0 146 48
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vdatapath_ext
 R1
-R22
+R23
 !i10b 1
 !s100 13ggo=h2K`6^oMM2PAXAl2
 R3
@@ -259,20 +259,20 @@ IO1^eAbP3J<`;^nWLH;TUE0
 R4
 S1
 R0
-R23
-R6
+R24
 R7
+R8
 !i122 3
 L0 175 49
-R8
+R9
 r1
 !s85 0
 31
-R24
 R25
 R26
+R27
 !i113 1
-R12
+R13
 vdmem
 R1
 R2
@@ -282,45 +282,45 @@ R3
 I4G;;>o8IQBJ0I^P0hCfzk0
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 22 14
 R8
+!i122 49
+L0 22 14
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vflopr
 R1
 R2
 !i10b 1
-!s100 W=OHS9XAJO]kU46Bjz=0F2
+!s100 I`Dj;[1QBEFcCmOF1b1Jg0
 R3
-IlXL[Xk2=;jOj9emeZz6jS2
+IZEnDW_iBkIdbKigQeP7c[0
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 254 9
 R8
+!i122 49
+L0 261 9
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vimem
 R1
 R2
@@ -330,48 +330,48 @@ R3
 I=j2]n6VKY=Q>GBiAKYz<A0
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 37 10
 R8
+!i122 49
+L0 37 10
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vmaindec
 R1
 R2
 !i10b 1
-!s100 ;II4nL5DL;^[==UDiX?Rz2
+!s100 3mThM3KChh?zK1810nJ:53
 R3
-IWPgC;<YbTbkn:GBHWJeP>0
+IbHKeXgPY^7P;DTXE0:T?S3
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 94 31
 R8
+!i122 49
+L0 94 31
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vmaindec_ext
 R1
-R22
+R23
 !i10b 1
 !s100 LBgC;i?47cHCB?Hf7gN@i3
 R3
@@ -379,20 +379,20 @@ I0fMW:l>V[HfI2D[C13ni=2
 R4
 S1
 R0
-R23
-R6
+R24
 R7
+R8
 !i122 3
 L0 126 24
-R8
+R9
 r1
 !s85 0
 31
-R24
 R25
 R26
+R27
 !i113 1
-R12
+R13
 vmips
 R1
 R2
@@ -402,24 +402,24 @@ R3
 IjLSj;BIGGT98cXgNX4Mjz0
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 48 21
 R8
+!i122 49
+L0 48 21
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vmips_extended
 R1
-R22
+R23
 !i10b 1
 !s100 106i7?Wm;<HBMco?4T8mE3
 R3
@@ -427,23 +427,23 @@ I?Tc0VG<kVWhm[?lj:g4`X0
 R4
 S1
 R0
-R23
-R6
+R24
 R7
+R8
 !i122 3
 L0 70 28
-R8
+R9
 r1
 !s85 0
 31
-R24
 R25
 R26
+R27
 !i113 1
-R12
+R13
 vmips_sc_tb
 R1
-R13
+R14
 !i10b 1
 !s100 9m>8G6<?g=Vh5hQe1hXBU2
 R3
@@ -456,15 +456,15 @@ w1750085517
 Fmips_sc_tb.sv
 !i122 0
 L0 1 146
-R8
+R9
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !i113 1
-R12
+R13
 vmips_single_cycle
 R1
 !s110 1750099107
@@ -476,95 +476,95 @@ R4
 S1
 R0
 w1750098952
-R6
 R7
+R8
 !i122 2
 L0 5 16
-R8
+R9
 r1
 !s85 0
 31
 !s108 1750099107.000000
-R25
 R26
+R27
 !i113 1
-R12
+R13
 vmux2
 R1
 R2
 !i10b 1
-!s100 obhDgWJRm`IbTmh[@7TE[3
+!s100 7TPUA?EHiL62G[>zmXCoC3
 R3
-IJzKP9ONOG6cA3@fGcGWKW3
+IV[klelT?0f88g3D9P[S=b1
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 264 7
 R8
+!i122 49
+L0 271 7
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vmuxBEQBNE
 R1
 R2
 !i10b 1
-!s100 hIkAlb>FQ`4e1<::?V_hI0
+!s100 UMgPb?3iOMc7Dc2`[SWYm1
 R3
-IcW;PGSEPXBd4F_B8dE^]f1
+I1kb;`l?5hHXjVhUKjG:ZJ0
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 297 9
 R8
+!i122 49
+L0 303 9
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 nmux@b@e@q@b@n@e
 vregfile
 R1
 R2
 !i10b 1
-!s100 lBl_BX[;5jPlfR]RiD5Og1
+!s100 <^5dFEOo;6jhbNzN9?JFH0
 R3
-Ic=b_X?zIg6zbECZik^BU42
+I8P_9SgO67VjIOZOEB3Y?a2
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 194 40
 R8
+!i122 49
+L0 195 46
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vregister_file
 R1
-R21
+R22
 !i10b 1
 !s100 gN7]fBlHKTCCOPQjl9kj20
 R3
@@ -572,23 +572,23 @@ I[VJz9MIV>LjkmcS9ZbVd32
 R4
 S1
 R0
-R14
-R6
+R15
 R7
+R8
 !i122 0
 L0 113 16
-R8
+R9
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !i113 1
-R12
+R13
 vsign_extend
 R1
-R21
+R22
 !i10b 1
 !s100 Wj0;i>g7bO;MU_ODnm[z02
 R3
@@ -596,89 +596,113 @@ I`elP5Cm?acdC?0;1_>O<c0
 R4
 S1
 R0
-R14
-R6
+R15
 R7
+R8
 !i122 0
 L0 130 8
-R8
+R9
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !i113 1
-R12
+R13
 vsignext
 R1
 R2
 !i10b 1
-!s100 e:?O1?U7kV1T8iTWWRglD0
+!s100 N5H9_YVP6UMek><Sl3LJW1
 R3
-I5De;[XAFghVVm=RZMRG2d3
+Ikan24k`h^7]9QnCR@38[m0
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 248 5
 R8
+!i122 49
+L0 255 5
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 vsl2
 R1
 R2
 !i10b 1
-!s100 LlB4bBNLb47mfKfzANz1j1
+!s100 CZ:j<A=WdePnLC727F:Pf2
 R3
-IJ2TNmcI?z500o:b8>B@lo1
+I6fzdiFW:U:IzoHTZE8HhV0
 R4
 S1
-R0
 R5
 R6
 R7
-!i122 14
-L0 241 6
 R8
+!i122 49
+L0 248 6
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
-vtb_bne_cpu
+!i113 1
+R13
+vslti_cpu_tb
 R1
-!s110 1750102699
+!s110 1750128024
 !i10b 1
-!s100 [5=_`CC@4zZPcJez7lcQc2
+!s100 >0@iQ_LlElgFne8N1gX;T2
 R3
-IWlfYalafF]LKY^<D2EAR>3
+IT4U[=SSf<En7VWo];Bmg;0
 R4
 S1
-R0
-w1750102363
-R18
+R5
+w1750127882
 R19
-!i122 13
 R20
-R8
+!i122 17
+L0 3 66
+R9
 r1
 !s85 0
 31
-!s108 1750102699.000000
-R10
+!s108 1750128023.000000
 R11
-!i113 1
 R12
+!i113 1
+R13
+vtb_bne_cpu
+R1
+!s110 1750212613
+!i10b 1
+!s100 5MUClO6KSP4UG0Kh<ion@2
+R3
+I10a0<5JEY39Vca9hGAf4Y2
+R4
+S1
+R5
+w1750209111
+R19
+R20
+!i122 45
+R21
+R9
+r1
+!s85 0
+31
+!s108 1750212612.000000
+R11
+R12
+!i113 1
+R13

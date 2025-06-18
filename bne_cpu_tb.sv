@@ -1,69 +1,80 @@
 `timescale 1ns/1ps
 
-module bne_cpu_tb;
-  // Clock and reset
-  logic clk;
-  logic reset;
-  
-  // CPU outputs
-  logic [31:0] writedata;
-  logic [31:0] dataadr;
-  logic        memwrite;
+module bne_cpu_tb();
 
-  // Instantiate DUT
-  bne_cpu dut (
-    .clk(clk),
-    .reset(reset),
-    .writedata(writedata),
-    .dataadr(dataadr),
-    .memwrite(memwrite)
-  );
+    logic clk, reset;
+    logic [31:0] writedata, dataadr;
+    logic memwrite;
+    
+    // Instanciação da CPU
+    bne_cpu dut (
+        .clk(clk),
+        .reset(reset),
+        .writedata(writedata),
+        .dataadr(dataadr),
+        .memwrite(memwrite)
+    );
+    
+    // Gerador de clock (período 10ns)
+    always begin
+        clk = 1; #5;
+        clk = 0; #5;
+    end
+    
+    // Inicialização e sequência de teste
+    initial begin
+        // Inicializa registros e memórias
+        reset = 1;
+        #10; 
+        reset = 0;
+        
+        // Aguarda execução completa (ajustar conforme necessidade)
+        #1000;
+        
+        $finish;
+    end
+    initial begin
+		  forever @(negedge clk) begin
+			 if (!reset) begin
+				$display("t0=%h t1=%h t2=%h t3=%h t4=%h t5=%h t6=%h",
+							dut.cpu.dp.rf.rf[8],  // $t0
+							dut.cpu.dp.rf.rf[9],  // $t1
+							dut.cpu.dp.rf.rf[10], // $t2
+							dut.cpu.dp.rf.rf[11], // $t3
+							dut.cpu.dp.rf.rf[12], // $t4
+							dut.cpu.dp.rf.rf[13], // $t5
+							dut.cpu.dp.rf.rf[14]);// $t6
+							
+			 end
+		  end
+		end
 
-  // Clock generation: 10ns period
-  initial begin
-    clk = 0;
-    forever #5 clk = ~clk;
-  end
-
-  // Reset pulse
-  initial begin
-    reset = 1;
-    #20;
-    reset = 0;
-  end
-
-  // Instruction memory initialization via file
-  initial begin
-    $readmemh("program.txt", dut.imem.RAM);
-    $display(">> IMEM loaded from program.txt");
-  end
-
-  // Data memory initialization via file
-  initial begin
-    $readmemh("data.txt", dut.dmem.RAM);
-    $display(">> DMEM loaded from data.txt");
-  end
-
-  // Registers initialization
-  initial begin
-    dut.cpu.dp.rf.rf[1] = 32'h00000003; // $1 = 3
-    dut.cpu.dp.rf.rf[2] = 32'h00000002; // $2 = 2
-    $display(">> Inicializados: $1 = %h, $2 = %h",
-             dut.cpu.dp.rf.rf[1], dut.cpu.dp.rf.rf[2]);
-  end
-
-  // Monitor outputs
-  initial begin
-    $display("Time | PC    | Instr     | DataAdr   | MemWrite | WriteData");
-    $monitor("%4dns | %h | %h | %h | %b       | %h",
-             $time, dut.pc, dut.instr, dut.dataadr,
-             memwrite, writedata);
-  end
-
-  // Run simulation
-  initial begin
-    #500; // enough cycles to exercise all ops
-    $display("Simulation complete.");
-    $finish;
-  end
+    initial begin
+        $display("Tempo\t PC       \t Instr\t\t Operação\t Reg/Mem\t Dados");
+        $display("------------------------------------------------------------------");
+        
+        // Formatação personalizada para visualização
+        forever @(negedge clk) begin
+            if (!reset) begin
+                $write("%4d:\t %h\t %h\t", $time, dut.pc, dut.instr);
+                
+                // Decodificação básica para exibição
+                casez (dut.instr[31:26])
+                    6'b000000: $write("R-type\t\t");
+                    6'b100011: $write("LW    \t\t");
+                    6'b101011: $write("SW    \t\t");
+                    6'b000100: $write("BEQ   \t\t");
+                    6'b000101: $write("BNE   \t\t");
+                    6'b001000: $write("ADDI  \t\t");
+                    6'b000010: $write("J     \t\t");
+                    default:   $write("Unknown\t\t");
+                endcase
+                
+                if (memwrite) begin
+                    $write("Mem[%h] = %h", dataadr, writedata);
+                end
+                $display();
+            end
+        end
+    end
 endmodule

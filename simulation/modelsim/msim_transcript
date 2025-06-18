@@ -10,10 +10,10 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/alexandre/Desktop/mips_single_cycle {C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv}
+# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:43:55 on Jun 16,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Desktop/mips_single_cycle" C:/Users/alexandre/Desktop/mips_single_cycle/bne_cpu.sv 
+# Start time: 23:52:22 on Jun 17,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv 
 # -- Compiling module bne_cpu
 # -- Compiling module dmem
 # -- Compiling module imem
@@ -33,19 +33,17 @@
 # 
 # Top level modules:
 # 	bne_cpu
-# End time: 15:43:55 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 23:52:22 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 cd ..
 # reading C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
 cd ..
-pwd
-# C:/Users/alexandre/Desktop/mips_single_cycle
 vlib work
 # ** Warning: (vlib-34) Library already exists at "work".
 vlog bne_cpu.sv bne_cpu_tb.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:44:48 on Jun 16,2025
+# Start time: 23:52:46 on Jun 17,2025
 # vlog -reportprogress 300 bne_cpu.sv bne_cpu_tb.sv 
 # -- Compiling module bne_cpu
 # -- Compiling module dmem
@@ -67,11 +65,11 @@ vlog bne_cpu.sv bne_cpu_tb.sv
 # 
 # Top level modules:
 # 	bne_cpu_tb
-# End time: 15:44:48 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 23:52:46 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.bne_cpu_tb -c -do "run -all; quit"
-# vsim work.bne_cpu_tb -c -do "run -all; quit" 
-# Start time: 15:44:48 on Jun 16,2025
+vsim bne_cpu_tb
+# vsim bne_cpu_tb 
+# Start time: 23:52:53 on Jun 17,2025
 # Loading sv_std.std
 # Loading work.bne_cpu_tb
 # Loading work.bne_cpu
@@ -90,102 +88,217 @@ vsim work.bne_cpu_tb -c -do "run -all; quit"
 # Loading work.muxBEQBNE
 # Loading work.imem
 # Loading work.dmem
-# run -all
-# ** Warning: (vsim-PLI-3410) Illegal character '‚' in data on line 13 of file "program.txt".    : bne_cpu_tb.sv(37)
-#    Time: 0 ps  Iteration: 0  Instance: /bne_cpu_tb
-# >> IMEM loaded from program.txt
-# ** Warning: (vsim-PLI-3410) Illegal character '‚' in data on line 6 of file "data.txt".    : bne_cpu_tb.sv(43)
-#    Time: 0 ps  Iteration: 0  Instance: /bne_cpu_tb
-# >> DMEM loaded from data.txt
-# >> Inicializados: $1 = 00000003, $2 = 00000002
-# Time | PC    | Instr     | DataAdr   | MemWrite | WriteData
-#    0ns | 00000000 | 00221820 | 00000005 | 0       | 00000002
-#   25ns | 00000004 | 00221822 | 00000001 | 0       | 00000002
-#   35ns | 00000008 | 00221824 | 00000002 | 0       | 00000002
-#   45ns | 0000000c | 00221825 | 00000003 | 0       | 00000002
-#   55ns | 00000010 | 0022182a | 00000000 | 0       | 00000002
-#   65ns | 00000014 | 8c230004 | 00000007 | 0       | 00000000
-#   75ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#   85ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#   95ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  105ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  115ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  125ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  135ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  145ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  155ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  165ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  175ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  185ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  195ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  205ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  215ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  225ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  235ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  245ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  255ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  265ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  275ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  285ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  295ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  305ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  315ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  325ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  335ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  345ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  355ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  365ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  375ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  385ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  395ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  405ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  415ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  425ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  435ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  445ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  455ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-#  465ns | 00000014 | 8c230004 | 00000007 | 0       | deadbeef
-#  475ns | 00000018 | ac230008 | 0000000b | 1       | deadbeef
-# address 0000000b now has data deadbeef
-# BEQ
-#  485ns | 0000001c | 1002fffc | fffffffe | 0       | 00000002
-# BNE
-#  495ns | 00000020 | 1402fffc | fffffffe | 0       | 00000002
-# Simulation complete.
-# ** Note: $finish    : bne_cpu_tb.sv(67)
-#    Time: 500 ns  Iteration: 0  Instance: /bne_cpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'BeqBne'. The port definition is at: bne_cpu.sv(303).
+#    Time: 0 ps  Iteration: 0  Instance: /bne_cpu_tb/dut/cpu/dp/muxBEQBNE File: bne_cpu.sv Line: 186
+run -all
+# Tempo	 PC       	 Instr		 Opera√ß√£o	 Reg/Mem	 Dados
+# ------------------------------------------------------------------
+# content of $t0 = 00000005
+# t0=00000005 t1=xxxxxxxx t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#   15:	 00000004	 29090003	Unknown		 
+# content of $t1 = 00000000
+#   25:	 00000008	 290a0007	Unknown		 
+# t0=00000005 t1=00000000 t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# content of $t2 = 00000001
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#   35:	 0000000c	 xxxxxxxx	Unknown		 
+#   45:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#   55:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#   65:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#   75:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#   85:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#   95:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  105:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  115:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  125:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  135:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  145:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  155:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  165:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  175:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  185:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  195:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  205:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  215:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  225:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  235:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  245:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  255:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  265:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  275:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  285:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  295:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  305:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  315:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  325:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  335:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  345:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  355:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  365:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  375:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  385:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  395:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  405:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  415:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  425:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  435:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  445:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  455:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  465:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  475:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  485:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  495:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  505:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  515:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  525:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  535:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  545:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  555:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  565:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  575:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  585:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  595:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  605:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  615:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  625:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  635:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  645:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  655:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  665:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  675:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  685:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  695:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  705:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  715:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  725:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  735:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  745:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  755:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  765:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  775:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  785:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  795:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  805:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  815:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  825:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  835:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  845:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  855:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  865:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  875:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  885:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  895:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  905:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  915:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  925:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  935:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  945:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  955:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  965:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  975:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+#  985:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+#  995:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# 1005:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# ** Note: $finish    : bne_cpu_tb.sv(34)
+#    Time: 1010 ns  Iteration: 0  Instance: /bne_cpu_tb
 # 1
-# Break in Module bne_cpu_tb at bne_cpu_tb.sv line 67
-#  quit
-# End time: 15:48:03 on Jun 16,2025, Elapsed time: 0:03:15
-# Errors: 0, Warnings: 2
+# Break in Module bne_cpu_tb at bne_cpu_tb.sv line 34
+# End time: 23:53:19 on Jun 17,2025, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 1
