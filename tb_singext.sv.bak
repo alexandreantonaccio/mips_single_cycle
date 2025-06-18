@@ -1,0 +1,36 @@
+module tb_signext;
+    logic [15:0] a;
+    logic [31:0] y;
+    
+    signext dut (.a(a), .y(y));
+    
+    initial begin
+        // Teste 1: Número positivo
+        a = 16'h7FFF;
+        #10;
+        assert(y === 32'h00007FFF) else $error("Extensão positiva falhou");
+        
+        // Teste 2: Número negativo
+        a = 16'h8000;
+        #10;
+        assert(y === 32'hFFFF8000) else $error("Extensão negativa falhou");
+        
+        // Teste 3: Zero
+        a = 16'h0000;
+        #10;
+        assert(y === 32'h00000000) else $error("Extensão zero falhou");
+        
+        // Teste 4: Valor máximo negativo
+        a = 16'hFFFF;
+        #10;
+        assert(y === 32'hFFFFFFFF) else $error("Extensão FFFF falhou");
+        
+        // Teste 5: Valor intermediário
+        a = 16'h1234;
+        #10;
+        assert(y === 32'h00001234) else $error("Extensão 1234 falhou");
+        
+        $display("Todos os testes do signext passaram!");
+        $finish;
+    end
+endmodule

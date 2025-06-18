@@ -1,0 +1,57 @@
+module tb_imem;
+    logic [5:0] a;
+    logic [31:0] rd;
+    
+    imem dut (.a(a), .rd(rd));
+    
+    initial begin
+        $display("===================================");
+        $display(" INÍCIO DO TESTE PARA IMEM");
+        $display("===================================");
+        
+        // Crie um arquivo code.txt de teste
+        $writememh("code.txt", '{32'h00000000, 32'h11111111, 32'h22222222, 32'h33333333});
+        $display("Memória inicializada com valores:");
+        $display("Endereço 0: 00000000");
+        $display("Endereço 1: 11111111");
+        $display("Endereço 2: 22222222");
+        $display("Endereço 3: 33333333");
+        
+        // Teste 1: Leitura endereço 0
+        a = 0;
+        #10;
+        $display("\n[TESTE 1] Leitura endereço 0");
+        $display("Entrada: a=%d", a);
+        $display("Saída: rd=%h", rd);
+        assert(rd === 32'h00000000) else $error("Leitura addr 0 falhou");
+        
+        // Teste 2: Leitura endereço 1
+        a = 1;
+        #10;
+        $display("\n[TESTE 2] Leitura endereço 1");
+        $display("Entrada: a=%d", a);
+        $display("Saída: rd=%h", rd);
+        assert(rd === 32'h11111111) else $error("Leitura addr 1 falhou");
+        
+        // Teste 3: Leitura endereço 2
+        a = 2;
+        #10;
+        $display("\n[TESTE 3] Leitura endereço 2");
+        $display("Entrada: a=%d", a);
+        $display("Saída: rd=%h", rd);
+        assert(rd === 32'h22222222) else $error("Leitura addr 2 falhou");
+        
+        // Teste 4: Leitura fora do range (deve ser X)
+        a = 64;
+        #10;
+        $display("\n[TESTE 4] Leitura endereço fora do range (64)");
+        $display("Entrada: a=%d", a);
+        $display("Saída: rd=%h", rd);
+        assert($isunknown(rd)) else $error("Leitura fora do range falhou");
+        
+        $display("\n===================================");
+        $display(" TODOS OS TESTES DA IMEM PASSARAM!");
+        $display("===================================");
+        $finish;
+    end
+endmodule

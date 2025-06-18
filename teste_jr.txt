@@ -1,0 +1,40 @@
+// Teste da função JR (Jump Register)
+// Arquivo: code.txt
+
+// Endereço 0x00: Inicialização
+20080018  // addi $t0, $zero, 0x18    # $t0 = endereço da função (0x18 = 24 = linha 6)
+20090001  // addi $t1, $zero, 1       # $t1 = 1 (valor de teste)
+200a0002  // addi $t2, $zero, 2       # $t2 = 2 (valor de teste)
+
+// Endereço 0x0C: Chamada de função usando JR
+01000008  // jr $t0                   # Salta para o endereço em $t0 (0x18)
+
+// Endereço 0x10: Código que não deve ser executado
+200b00ff  // addi $t3, $zero, 255     # Esta instrução não deve ser executada
+
+// Endereço 0x14: Mais código que não deve ser executado  
+200c00aa  // addi $t4, $zero, 0xAA    # Esta instrução não deve ser executada
+
+// Endereço 0x18: Início da "função" (destino do JR)
+012a5820  // add $t3, $t1, $t2        # $t3 = $t1 + $t2 = 1 + 2 = 3
+200d0020  // addi $t5, $zero, 0x20    # $t5 = endereço de retorno (0x20 = 32)
+
+// Endereço 0x20: Continuação após JR
+200e0099  // addi $t6, $zero, 0x99    # $t6 = 0x99 (sinal de que chegou aqui)
+
+// Teste de JR com endereço calculado
+20080028  // addi $t0, $zero, 0x28    # $t0 = novo endereço (0x28 = 40)
+01000008  // jr $t0                   # Salta para 0x28
+
+// Esta área não deve ser executada
+200f00bb  // addi $t7, $zero, 0xBB    # Não deve ser executado
+
+// Endereço 0x28: Segunda função
+01695020  // add $t2, $t3, $t1        # $t2 = $t3 + $t1 = 3 + 1 = 4
+
+// Teste de JR para loop infinito (simulação de retorno)
+20080030  // addi $t0, $zero, 0x30    # $t0 = 0x30 (endereço do loop)
+01000008  // jr $t0                   # Vai para o loop
+
+// Endereço 0x30: Loop infinito para terminar simulação
+0800000c  // j 0x30                   # Loop infinito (jump para si mesmo)

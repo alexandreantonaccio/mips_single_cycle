@@ -8,421 +8,421 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/alexa/Documents/GitHub/mips_single_cycle/simulation/modelsim
+Z0 dC:/Users/alexa/Documents/GitHub/mips_sc_org/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1750230818
+Z2 !s110 1750240638
 !i10b 1
-!s100 ^UZbdjA1_HMeWkn[kKDcz2
+!s100 BbcXPMUXa_8FC;T^6eU7D0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IEHJn]Qc3PIS?Pe4WE5b^72
+IOgiTi]@VTO?dA;BR;hhfM0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1750230781
-Z6 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv
-Z7 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv
-!i122 0
-L0 249 5
-Z8 OV;L;2020.1;71
+w1750237999
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/adder.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/adder.sv
+!i122 8
+Z5 L0 1 4
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1750230818.000000
-!s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv|
-Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle|C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv|
+Z7 !s108 1750240638.000000
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/adder.sv|
 !i113 1
-Z11 o-sv -work work
-Z12 !s92 -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle
-Z13 tCvgOpt 0
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org
+Z10 tCvgOpt 0
 valu
 R1
-R2
+Z11 !s110 1750240639
 !i10b 1
-!s100 39:nLS2OPbZAl^fF:1jBj3
+!s100 Yja@:G^c2zcK?E:0cASA[0
 R3
-Ijha2X6625biU9QgK8Ggbh3
+I00hAg6VGmMD<O>WkRNEN20
 R4
 S1
 R0
-R5
+w1750238166
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/alu.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/alu.sv
+!i122 13
+L0 1 22
 R6
-R7
-!i122 0
-L0 286 26
-R8
 r1
 !s85 0
 31
-R9
-Z14 !s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv|
-R10
+Z12 !s108 1750240639.000000
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/alu.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 valudec
 R1
 R2
 !i10b 1
-!s100 Yk7eYZkM_YJV=LPYEAkJ=2
+!s100 R[z@jM7HmS[Je>UkILo>C3
 R3
-I@;E7N9f;7d>aWJ9U@N:eg1
+Ik=bkOk^Sb;WiWCB[B4<hY3
 R4
 S1
 R0
-R5
+w1750237929
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/aludec.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/aludec.sv
+!i122 5
+Z13 L0 1 21
 R6
-R7
-!i122 0
-L0 126 21
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
-!i113 1
-R11
-R12
-R13
-vbne_cpu
-R1
-R2
-!i10b 1
-!s100 >a1X`n6:CH3=zWkf=Fg[M2
-R3
-IOm<?6CO^XF;N[ee;]kYoW1
-R4
-S1
-R0
-R5
-R6
 R7
-!i122 0
-L0 1 20
-R8
-r1
-!s85 0
-31
-R9
-R14
-R10
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/aludec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/aludec.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 vcontroller
 R1
 R2
 !i10b 1
-!s100 Cm0ek8C[d>^P^^=h2od5G1
+!s100 mLofUCPS^OA>;F5Nkb]0o3
 R3
-IURh6>ZGnA37=<G37T1hN[0
+IdSX?HJ?EMSSDll[H[];2P2
 R4
 S1
 R0
-R5
+w1750237879
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/controller.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/controller.sv
+!i122 3
+Z14 L0 1 17
 R6
-R7
-!i122 0
-L0 70 23
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+R7
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/controller.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 vdatapath
 R1
 R2
 !i10b 1
-!s100 hZWNZcz_koB=K@PI[5>KG3
+!s100 J_2El?7g:Y1^KB]aLhmHk3
 R3
-Izo9R;@aW:Z=m:b=^c[iO>3
+I0NBAk;?K>[HTTXnRM6_aZ1
 R4
 S1
 R0
-R5
+w1750237953
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/datapath.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/datapath.sv
+!i122 6
+L0 1 45
 R6
-R7
-!i122 0
-L0 148 53
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+R7
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/datapath.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 vdmem
 R1
-R2
+Z15 !s110 1750240637
 !i10b 1
-!s100 OOkD[K1XbZTE@LJX_`@Q?3
+!s100 [1JMmV1fLk48_meA@;BCb1
 R3
-I0gSdD9Q<F`[=_B[Gj<=ic2
+IQe1355TJVZMG_GXb;GAV32
 R4
 S1
 R0
-R5
+w1750237823
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/dmem.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/dmem.sv
+!i122 1
+L0 1 14
 R6
-R7
-!i122 0
-L0 22 14
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+Z16 !s108 1750240637.000000
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/dmem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/dmem.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 vflopr
 R1
 R2
 !i10b 1
-!s100 GX7WWDXP^fRIcR>B<n>Jj2
+!s100 O[7JFKZPJ7Di;LZ=UJN[N2
 R3
-IhFZ24UWEO5aP]D_]F2Q2d2
+IaK]XmmGIDHO[Z9Z2`oU^D1
 R4
 S1
 R0
-R5
+w1750238110
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/flopr.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/flopr.sv
+!i122 11
+L0 1 8
 R6
-R7
-!i122 0
-L0 268 9
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+R7
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/flopr.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 vimem
 R1
-R2
+R11
 !i10b 1
-!s100 S@]JmnlDH]on;LW2Pm<X01
+!s100 [4=HG?DP:lgjODkb7MUL]1
 R3
-ImR:5=EU4zEEW_I=hW9:2X1
+Ial=G3Q9Xh=268aGU_UkcY3
 R4
 S1
 R0
-R5
+w1750237836
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/imem.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/imem.sv
+!i122 15
+L0 1 10
 R6
-R7
-!i122 0
-L0 37 10
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
-!i113 1
-R11
 R12
-R13
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/imem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/imem.sv|
+!i113 1
+R8
+R9
+R10
 vmaindec
 R1
 R2
 !i10b 1
-!s100 ;=F]XifSW5;m<BfGmO8@22
+!s100 XK^CgDd]A0HUQWL@6<la12
 R3
-IaNhCeYS`JH6HaS<f`JbP80
+INY;Df<?[^biJ?3Te77>o43
 R4
 S1
 R0
-R5
+w1750237897
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/maindec.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/maindec.sv
+!i122 4
+L0 1 31
 R6
-R7
-!i122 0
-L0 94 31
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+R7
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/maindec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/maindec.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 vmips
 R1
-R2
+R15
 !i10b 1
-!s100 2WhE1Uo`QaDB^KH@T1OiX3
+!s100 ^e>7z=WM4QzZAeH6;eAIE1
 R3
-IkF[9CFH`b1KD=6KWa78h_3
+IYYIoQQ=zC:0>YQKMzOE=50
 R4
 S1
 R0
-R5
+w1750237866
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/mips.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/mips.sv
+!i122 2
+R13
 R6
-R7
-!i122 0
-L0 48 21
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+R16
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/mips.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/mips.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
+vmips_sc_org
+R1
+R15
+!i10b 1
+!s100 `FW8A=IE6c^5FbTgbL`OT0
+R3
+ID2JaWZ9m6?0Ui9<<R1TUH3
+R4
+S1
+R0
+w1750237802
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/mips_sc_org.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/mips_sc_org.sv
+!i122 0
+L0 1 20
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/mips_sc_org.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/mips_sc_org.sv|
+!i113 1
+R8
+R9
+R10
 vmux2
 R1
-R2
+R11
 !i10b 1
-!s100 ?G::@39oA2gED1<<=zA6j2
+!s100 z[W@h;8OJV8ISY^9aZPL12
 R3
-I<Vbl?;06G:b<m=AUo=;Q>1
+IPHJ`_dT7D]<cDKhk;<0NA0
 R4
 S1
 R0
-R5
+w1750238146
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/mux2.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/mux2.sv
+!i122 12
+Z17 L0 1 6
 R6
-R7
-!i122 0
-L0 278 7
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+R7
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/mux2.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 vmuxBEQBNE
 R1
-R2
+R11
 !i10b 1
-!s100 ^IcckX@O:QOD?3@NI7fag2
+!s100 MfCjal_hiQRo:S7B5G<S20
 R3
-I0a9UNKQ4EU=kAdmIlCR670
+IWKb4l7Qh0cDiK@0^O<h^P3
 R4
 S1
 R0
-R5
+w1750238204
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/muxBEQBNE.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/muxBEQBNE.sv
+!i122 14
+R17
 R6
-R7
-!i122 0
-L0 315 9
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
-!i113 1
-R11
 R12
-R13
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/muxBEQBNE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/muxBEQBNE.sv|
+!i113 1
+R8
+R9
+R10
 nmux@b@e@q@b@n@e
 vregfile
 R1
 R2
 !i10b 1
-!s100 OIn5ogP<>2E^HTN7e0eN80
+!s100 `N1`DmVQcBj;]Zz1<D=:H1
 R3
-IdTLEzUFPzmOAnLlYg^cj=3
+Ie[0bOR:>7oB3ZMI`]n_fA1
 R4
 S1
 R0
-R5
+w1750237976
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/regfile.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/regfile.sv
+!i122 7
+R14
 R6
-R7
-!i122 0
-L0 202 46
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+R7
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/regfile.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 vsignext
 R1
 R2
 !i10b 1
-!s100 kZ[=Il]Qce3e<^OzZj@dI1
+!s100 kT2@iZbha93I]2eP8=Og03
 R3
-IXCZIgaKA`NhNfiKVjQ[7X1
+IlR;1_<1?M[8zX_fEGZB2Q3
 R4
 S1
 R0
+w1750238090
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/signext.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/signext.sv
+!i122 10
 R5
 R6
-R7
-!i122 0
-L0 262 5
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+R7
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/signext.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/signext.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10
 vsl2
 R1
 R2
 !i10b 1
-!s100 3`?4NhiKl1:^1eBnlb53d3
+!s100 _1VfPT?`oBX90gnY`E9BX2
 R3
-I8iD:Fg<=OckEF8S7^T^fa2
+I6n]75E<77n_ZUl@nQSM8M3
 R4
 S1
 R0
+w1750238014
+8C:/Users/alexa/Documents/GitHub/mips_sc_org/sl2.sv
+FC:/Users/alexa/Documents/GitHub/mips_sc_org/sl2.sv
+!i122 9
 R5
 R6
-R7
-!i122 0
-L0 255 6
-R8
 r1
 !s85 0
 31
-R9
-R14
-R10
+R7
+!s107 C:/Users/alexa/Documents/GitHub/mips_sc_org/sl2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_sc_org|C:/Users/alexa/Documents/GitHub/mips_sc_org/sl2.sv|
 !i113 1
-R11
-R12
-R13
+R8
+R9
+R10

@@ -1,0 +1,54 @@
+module tb_dmem;
+    logic clk, we;
+    logic [31:0] a, wd;
+    logic [31:0] rd;
+    
+    dmem dut (.clk(clk), .we(we), .a(a), .wd(wd), .rd(rd));
+    
+    // Gerador de clock
+    always begin
+        clk = 0; #5;
+        clk = 1; #5;
+    end
+    
+    initial begin
+        we = 0;
+        a = 0;
+        wd = 0;
+        
+        // Teste 1: Leitura inicial (deve ser X)
+        #10;
+        assert($isunknown(rd)) else $error("Leitura inicial falhou");
+        
+        // Teste 2: Escrita e leitura
+        we = 1;
+        a = 4;  // Endereço 4 (word-aligned)
+        wd = 32'hA5A5A5A5;
+        #10;  // Espera borda de subida
+        
+        we = 0;
+        #10;
+        assert(rd === 32'hA5A5A5A5) else $error("Escrita/leitura 1 falhou");
+        
+        // Teste 3: Escrita em outro endereço
+        we = 1;
+        a = 8;
+        wd = 32'h5A5A5A5A;
+        #10;
+        
+        we = 0;
+        a = 8;
+        #10;
+        assert(rd === 32'h5A5A5A5A) else $error("Escrita/leitura 2 falhou");
+        
+        // Teste 4: Não escrita com we=0
+        we = 0;
+        a = 4;
+        wd = 32'hDEADBEEF;
+        #10;
+        assert(rd === 32'hA5A5A5A5) else $error("Proteção escrita falhou");
+        
+        $display("Todos os testes da dmem passaram!");
+        $finish;
+    end
+endmodule

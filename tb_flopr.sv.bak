@@ -1,0 +1,40 @@
+module tb_flopr;
+    logic clk, reset;
+    logic [31:0] d, q;
+    
+    flopr #(32) dut (.clk(clk), .reset(reset), .d(d), .q(q));
+    
+    // Gerador de clock
+    always begin
+        clk = 0; #5;
+        clk = 1; #5;
+    end
+    
+    initial begin
+        // Teste 1: Reset
+        reset = 1;
+        d = 32'h12345678;
+        #10;
+        assert(q === 32'h0) else $error("Reset falhou");
+        
+        // Teste 2: Carregamento normal
+        reset = 0;
+        #10;
+        assert(q === 32'h12345678) else $error("Carregamento falhou");
+        
+        // Teste 3: Novo valor
+        d = 32'hABCDEF01;
+        #10;
+        assert(q === 32'hABCDEF01) else $error("Atualização falhou");
+        
+        // Teste 4: Reset assíncrono
+        d = 32'hDEADBEEF;
+        #5;
+        reset = 1;
+        #5;
+        assert(q === 32'h0) else $error("Reset assíncrono falhou");
+        
+        $display("Todos os testes do flopr passaram!");
+        $finish;
+    end
+endmodule
