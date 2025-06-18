@@ -12,7 +12,7 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:52:22 on Jun 17,2025
+# Start time: 03:13:38 on Jun 18,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv 
 # -- Compiling module bne_cpu
 # -- Compiling module dmem
@@ -33,17 +33,15 @@
 # 
 # Top level modules:
 # 	bne_cpu
-# End time: 23:52:22 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 03:13:38 on Jun 18,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 cd ..
 # reading C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
 cd ..
-vlib work
-# ** Warning: (vlib-34) Library already exists at "work".
 vlog bne_cpu.sv bne_cpu_tb.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:52:46 on Jun 17,2025
+# Start time: 03:14:08 on Jun 18,2025
 # vlog -reportprogress 300 bne_cpu.sv bne_cpu_tb.sv 
 # -- Compiling module bne_cpu
 # -- Compiling module dmem
@@ -65,11 +63,11 @@ vlog bne_cpu.sv bne_cpu_tb.sv
 # 
 # Top level modules:
 # 	bne_cpu_tb
-# End time: 23:52:46 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 03:14:08 on Jun 18,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim bne_cpu_tb
 # vsim bne_cpu_tb 
-# Start time: 23:52:53 on Jun 17,2025
+# Start time: 03:14:12 on Jun 18,2025
 # Loading sv_std.std
 # Loading work.bne_cpu_tb
 # Loading work.bne_cpu
@@ -88,217 +86,521 @@ vsim bne_cpu_tb
 # Loading work.muxBEQBNE
 # Loading work.imem
 # Loading work.dmem
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'BeqBne'. The port definition is at: bne_cpu.sv(303).
-#    Time: 0 ps  Iteration: 0  Instance: /bne_cpu_tb/dut/cpu/dp/muxBEQBNE File: bne_cpu.sv Line: 186
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'BeqBne'. The port definition is at: bne_cpu.sv(315).
+#    Time: 0 ps  Iteration: 0  Instance: /bne_cpu_tb/dut/cpu/dp/muxBEQBNE File: bne_cpu.sv Line: 193
 run -all
 # Tempo	 PC       	 Instr		 Operação	 Reg/Mem	 Dados
 # ------------------------------------------------------------------
-# content of $t0 = 00000005
-# t0=00000005 t1=xxxxxxxx t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#   15:	 00000004	 29090003	Unknown		 
-# content of $t1 = 00000000
-#   25:	 00000008	 290a0007	Unknown		 
-# t0=00000005 t1=00000000 t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# content of $t2 = 00000001
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#   35:	 0000000c	 xxxxxxxx	Unknown		 
-#   45:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#   55:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-#   65:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#   75:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-#   85:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#   95:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-#  105:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#  115:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-#  125:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#  135:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-#  145:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#  155:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-#  165:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#  175:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-#  185:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#  195:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-#  205:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#  215:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-#  225:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-#  235:	 xxxxxxxx	 xxxxxxxx	Unknown		 
+# content of $t0 = 00000001
+# t0=00000001 t1=xxxxxxxx t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+#   15:	 00000004	 20090002	ADDI  		 
+# content of $t1 = 00000002
+#   25:	 00000008	 200a0004	ADDI  		 
+# t0=00000001 t1=00000002 t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+# content of $t2 = 00000004
+# t0=00000001 t1=00000002 t2=00000004 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+#   35:	 0000000c	 200b0008	ADDI  		 
+# content of $t3 = 00000008
+#   45:	 00000010	 200c00ff	ADDI  		 
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+# content of $t4 = 000000ff
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+#   55:	 00000014	 200d8000	ADDI  		 
+# content of $t5 = ffff8000
+#   65:	 00000018	 01086840	R-type		 
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=ffff8000 t6=xxxxxxxx t7=xxxxxxxx
+# content of $t5 = 00000002
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=00000002 t6=xxxxxxxx t7=xxxxxxxx
+#   75:	 0000001c	 01087080	R-type		 
+# content of $t6 = 00000004
+#   85:	 00000020	 010878c0	R-type		 
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=00000002 t6=00000004 t7=xxxxxxxx
+# content of $t7 = 00000008
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=00000002 t6=00000004 t7=00000008
+#   95:	 00000024	 01286840	R-type		 
+# content of $t5 = 00000004
+#  105:	 00000028	 01287080	R-type		 
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=00000004 t6=00000004 t7=00000008
+# content of $t6 = 00000008
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=00000004 t6=00000008 t7=00000008
+#  115:	 0000002c	 012878c0	R-type		 
+# content of $t7 = 00000010
+#  125:	 00000030	 01886840	R-type		 
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=00000004 t6=00000008 t7=00000010
+# content of $t5 = 000001fe
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=000001fe t6=00000008 t7=00000010
+#  135:	 00000034	 01887080	R-type		 
+# content of $t6 = 000003fc
+#  145:	 00000038	 018878c0	R-type		 
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=000001fe t6=000003fc t7=00000010
+# content of $t7 = 000007f8
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=000001fe t6=000003fc t7=000007f8
+#  155:	 0000003c	 01882040	R-type		 
+#  165:	 00000040	 01884040	R-type		 
+# t0=00000001 t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=000001fe t6=000003fc t7=000007f8
+# content of $t0 = 000001fe
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000000ff t5=000001fe t6=000003fc t7=000007f8
+#  175:	 00000044	 01886040	R-type		 
+# content of $t4 = 000001fe
+#  185:	 00000048	 ac0d0000	SW    		Mem[00000000] = 000001fe 
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# address 00000000 now has data 000001fe
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+#  195:	 0000004c	 ac0e0004	SW    		Mem[00000004] = 000003fc 
+# address 00000004 now has data 000003fc
+#  205:	 00000050	 ac0f0008	SW    		Mem[00000008] = 000007f8 
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# address 00000008 now has data 000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+#  215:	 00000054	 ac08000c	SW    		Mem[0000000c] = 000001fe 
+# address 0000000c now has data 000001fe
+#  225:	 00000058	 08000017	J     		 
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+#  235:	 0000005c	 xxxxxxxx	Unknown		 
 #  245:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  255:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  265:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  275:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  285:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  295:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  305:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  315:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  325:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  335:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  345:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  355:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  365:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  375:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  385:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  395:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  405:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  415:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  425:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  435:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  445:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  455:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  465:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  475:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  485:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  495:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  505:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  515:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  525:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  535:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  545:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  555:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  565:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  575:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  585:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  595:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  605:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  615:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  625:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  635:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  645:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  655:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  665:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  675:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  685:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  695:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  705:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  715:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  725:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  735:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  745:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  755:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  765:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  775:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  785:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  795:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  805:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  815:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  825:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  835:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  845:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  855:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  865:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  875:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  885:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  895:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  905:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  915:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  925:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  935:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  945:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  955:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  965:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  975:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 #  985:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 #  995:	 xxxxxxxx	 xxxxxxxx	Unknown		 
 # 1005:	 xxxxxxxx	 xxxxxxxx	Unknown		 
-# t0=00000005 t1=00000000 t2=00000001 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx
+# t0=000001fe t1=00000002 t2=00000004 t3=00000008 t4=000001fe t5=000001fe t6=000003fc t7=000007f8
 # ** Note: $finish    : bne_cpu_tb.sv(34)
 #    Time: 1010 ns  Iteration: 0  Instance: /bne_cpu_tb
 # 1
 # Break in Module bne_cpu_tb at bne_cpu_tb.sv line 34
-# End time: 23:53:19 on Jun 17,2025, Elapsed time: 0:00:26
+vsim bne_cpu_tb
+# End time: 03:14:54 on Jun 18,2025, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 1
+# vsim bne_cpu_tb 
+# Start time: 03:14:54 on Jun 18,2025
+# Loading sv_std.std
+# Loading work.bne_cpu_tb
+# Loading work.bne_cpu
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.muxBEQBNE
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'BeqBne'. The port definition is at: bne_cpu.sv(315).
+#    Time: 0 ps  Iteration: 0  Instance: /bne_cpu_tb/dut/cpu/dp/muxBEQBNE File: bne_cpu.sv Line: 193
+run -all
+# Tempo	 PC       	 Instr		 Operação	 Reg/Mem	 Dados
+# ------------------------------------------------------------------
+# content of $t0 = 00000018
+# t0=00000018 t1=xxxxxxxx t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+#   15:	 00000004	 20090001	ADDI  		 
+# content of $t1 = 00000001
+#   25:	 00000008	 200a0002	ADDI  		 
+# t0=00000018 t1=00000001 t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+# content of $t2 = 00000002
+# t0=00000018 t1=00000001 t2=00000002 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+#   35:	 0000000c	 01000008	R-type		 
+#   45:	 00000010	 200b00ff	ADDI  		 
+# t0=00000018 t1=00000001 t2=00000002 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+# content of $t3 = 000000ff
+# t0=00000018 t1=00000001 t2=00000002 t3=000000ff t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+#   55:	 00000014	 200c00aa	ADDI  		 
+# content of $t4 = 000000aa
+#   65:	 00000018	 012a5820	R-type		 
+# t0=00000018 t1=00000001 t2=00000002 t3=000000ff t4=000000aa t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+# content of $t3 = 00000003
+# t0=00000018 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
+#   75:	 0000001c	 200d0020	ADDI  		 
+# content of $t5 = 00000020
+#   85:	 00000020	 200e0099	ADDI  		 
+# t0=00000018 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=xxxxxxxx t7=xxxxxxxx
+# content of $t6 = 00000099
+# t0=00000018 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=xxxxxxxx
+#   95:	 00000024	 20080028	ADDI  		 
+# content of $t0 = 00000028
+#  105:	 00000028	 01000008	R-type		 
+# t0=00000028 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=xxxxxxxx
+# t0=00000028 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=xxxxxxxx
+#  115:	 0000002c	 200f00bb	ADDI  		 
+# content of $t7 = 000000bb
+#  125:	 00000030	 01695020	R-type		 
+# t0=00000028 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000028 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  135:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  145:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  155:	 0000003c	 0800000c	J     		 
+#  165:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  175:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  185:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  195:	 0000003c	 0800000c	J     		 
+#  205:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  215:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  225:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  235:	 0000003c	 0800000c	J     		 
+#  245:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  255:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  265:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  275:	 0000003c	 0800000c	J     		 
+#  285:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  295:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  305:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  315:	 0000003c	 0800000c	J     		 
+#  325:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  335:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  345:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  355:	 0000003c	 0800000c	J     		 
+#  365:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  375:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  385:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  395:	 0000003c	 0800000c	J     		 
+#  405:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  415:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  425:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  435:	 0000003c	 0800000c	J     		 
+#  445:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  455:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  465:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  475:	 0000003c	 0800000c	J     		 
+#  485:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  495:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  505:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  515:	 0000003c	 0800000c	J     		 
+#  525:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  535:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  545:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  555:	 0000003c	 0800000c	J     		 
+#  565:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  575:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  585:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  595:	 0000003c	 0800000c	J     		 
+#  605:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  615:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  625:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  635:	 0000003c	 0800000c	J     		 
+#  645:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  655:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  665:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  675:	 0000003c	 0800000c	J     		 
+#  685:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  695:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  705:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  715:	 0000003c	 0800000c	J     		 
+#  725:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  735:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  745:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  755:	 0000003c	 0800000c	J     		 
+#  765:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  775:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  785:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  795:	 0000003c	 0800000c	J     		 
+#  805:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  815:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  825:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  835:	 0000003c	 0800000c	J     		 
+#  845:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  855:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  865:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  875:	 0000003c	 0800000c	J     		 
+#  885:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  895:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  905:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  915:	 0000003c	 0800000c	J     		 
+#  925:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  935:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  945:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  955:	 0000003c	 0800000c	J     		 
+#  965:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# content of $t2 = 00000004
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  975:	 00000034	 20080030	ADDI  		 
+# content of $t0 = 00000030
+#  985:	 00000038	 01000008	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+#  995:	 0000003c	 0800000c	J     		 
+# 1005:	 00000030	 01695020	R-type		 
+# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
+# ** Note: $finish    : bne_cpu_tb.sv(34)
+#    Time: 1010 ns  Iteration: 0  Instance: /bne_cpu_tb
+# 1
+# Break in Module bne_cpu_tb at bne_cpu_tb.sv line 34
+# End time: 03:19:19 on Jun 18,2025, Elapsed time: 0:04:25
 # Errors: 0, Warnings: 1

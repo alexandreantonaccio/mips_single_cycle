@@ -36,14 +36,15 @@ module bne_cpu_tb();
     initial begin
 		  forever @(negedge clk) begin
 			 if (!reset) begin
-				$display("t0=%h t1=%h t2=%h t3=%h t4=%h t5=%h t6=%h",
+				$display("t0=%h t1=%h t2=%h t3=%h t4=%h t5=%h t6=%h t7=%h",
 							dut.cpu.dp.rf.rf[8],  // $t0
 							dut.cpu.dp.rf.rf[9],  // $t1
 							dut.cpu.dp.rf.rf[10], // $t2
 							dut.cpu.dp.rf.rf[11], // $t3
 							dut.cpu.dp.rf.rf[12], // $t4
 							dut.cpu.dp.rf.rf[13], // $t5
-							dut.cpu.dp.rf.rf[14]);// $t6
+							dut.cpu.dp.rf.rf[14], // $t6
+							dut.cpu.dp.rf.rf[15]);// $t7
 							
 			 end
 		  end

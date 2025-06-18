@@ -1,0 +1,43 @@
+// Teste da função SLL (Shift Left Logical)
+// Arquivo: code.txt
+
+// Inicialização de registradores com valores de teste
+20080001  // addi $t0, $zero, 1      # $t0 = 0x00000001
+20090002  // addi $t1, $zero, 2      # $t1 = 0x00000002  
+200a0004  // addi $t2, $zero, 4      # $t2 = 0x00000004
+200b0008  // addi $t3, $zero, 8      # $t3 = 0x00000008
+200c00ff  // addi $t4, $zero, 255    # $t4 = 0x000000FF
+200d8000  // addi $t5, $zero, 32768  # $t5 = 0x00008000
+
+// Testes SLL com diferentes valores de shamt
+01086840  // sll $t5, $t0, 1         # $t5 = $t0 << 1 = 0x00000002
+01087080  // sll $t6, $t0, 2         # $t6 = $t0 << 2 = 0x00000004
+010878c0  // sll $t7, $t0, 3         # $t7 = $t0 << 3 = 0x00000008
+
+// Teste com valor maior
+01286840  // sll $t5, $t2, 1         # $t5 = $t2 << 1 = 0x00000008
+01287080  // sll $t6, $t2, 2         # $t6 = $t2 << 2 = 0x00000010
+012878c0  // sll $t7, $t2, 3         # $t7 = $t2 << 3 = 0x00000020
+
+// Teste com valor 0xFF
+01886840  // sll $t5, $t4, 1         # $t5 = $t4 << 1 = 0x000001FE
+01887080  // sll $t6, $t4, 2         # $t6 = $t4 << 2 = 0x000003FC
+018878c0  // sll $t7, $t4, 3         # $t7 = $t4 << 3 = 0x000007F8
+
+// Teste com shift grande (8 bits)
+01882040  // sll $t0, $t4, 8         # $t0 = $t4 << 8 = 0x0000FF00
+
+// Teste com shift muito grande (16 bits)  
+01884040  // sll $t0, $t4, 16        # $t0 = $t4 << 16 = 0x00FF0000
+
+// Teste de overflow (shift de 24 bits)
+01886040  // sll $t0, $t4, 24        # $t0 = $t4 << 24 = 0xFF000000
+
+// Salvamento dos resultados na memória para verificação
+ac0d0000  // sw $t5, 0($zero)        # Salva $t5 no endereço 0
+ac0e0004  // sw $t6, 4($zero)        # Salva $t6 no endereço 4  
+ac0f0008  // sw $t7, 8($zero)        # Salva $t7 no endereço 8
+ac08000c  // sw $t0, 12($zero)       # Salva $t0 no endereço 12
+
+// Loop infinito para parar a simulação
+08000017  // j 0x17                  # Jump para si mesmo (loop infinito)

@@ -53,15 +53,15 @@
 	            input  logic [31:0] readdata);
 	
 	  logic       memtoreg, alusrc, regdst, 
-	              regwrite, jump, pcsrc, zeroNzero;
+	              regwrite, jump, pcsrc, zeroNzero, jr;
 	  logic [2:0] alucontrol;
 	
 	  controller c(instr[31:26], instr[5:0], zeroNzero,
 	               memtoreg, memwrite, pcsrc,
-	               alusrc, regdst, regwrite, jump,
+	               alusrc, regdst, regwrite, jump, jr,
 	               alucontrol);
 	  datapath dp(clk, reset, memtoreg, pcsrc,
-	              alusrc, regdst, regwrite, jump,
+	              alusrc, regdst, regwrite, jump, jr,
 	              alucontrol,
 	              zeroNzero, pc, instr,
 	              aluout, writedata, readdata);
@@ -72,14 +72,14 @@
 	                  output logic       memtoreg, memwrite,
 	                  output logic       pcsrc, alusrc,
 	                  output logic       regdst, regwrite,
-	                  output logic       jump,
+	                  output logic       jump, jr,
 	                  output logic [2:0] alucontrol);
 	
 	  logic [1:0] aluop;
 	  logic       branch;
 	
 	  maindec md(op, memtoreg, memwrite, branch,
-	             alusrc, regdst, regwrite, jump, aluop);
+	             alusrc, regdst, regwrite, jump, jr, aluop);
 	  aludec  ad(funct, aluop, alucontrol);
 	
 	  //assign pcsrc = branch & zero;
@@ -95,31 +95,31 @@
 	               output logic       memtoreg, memwrite,
 	               output logic       branch, alusrc,
 	               output logic       regdst, regwrite,
-	               output logic       jump,
+	               output logic       jump, jr,
 	               output logic [1:0] aluop);
 	
-	  logic [8:0] controls;
+	  logic [9:0] controls;
 	
 	  assign {regwrite, regdst, alusrc, branch, memwrite,
-	          memtoreg, jump, aluop} = controls;
+	          memtoreg, jump,jr, aluop} = controls;
 	
 	  always_comb
 	    case(op)
-	      6'b000000: controls <= 9'b110000010; // RTYPE
-	      6'b100011: controls <= 9'b101001000; // LW
-	      6'b101011: controls <= 9'b001010000; // SW
+	      6'b000000: controls <= 10'b1100000010; // RTYPE
+	      6'b100011: controls <= 10'b1010010000; // LW
+	      6'b101011: controls <= 10'b0010100000; // SW
 	      6'b000100: begin
-				controls <= 9'b000100001; // BEQ
+				controls <= 10'b0001000001; // BEQ
 				$display("BEQ");
 			end
 			6'b000101: begin
-				controls <= 9'b000100001; // BNE has same controls as BEQ
+				controls <= 10'b0001000001; // BNE has same controls as BEQ
 				$display("BNE");
 			end
-	      6'b001010: controls <= 9'b101000011; // SLTI (novo!) 
-			6'b001000: controls <= 9'b101000000; // ADDI
-	      6'b000010: controls <= 9'b000000100; // J
-	      default:   controls <= 9'bxxxxxxxxx; // illegal op
+	      6'b001010: controls <= 10'b1010000011; // SLTI (novo!) 
+			6'b001000: controls <= 10'b1010000000; // ADDI
+	      6'b000010: controls <= 10'b0000001000; // J
+	      default:   controls <= 10'bxxxxxxxxx; // illegal op
 	    endcase
 	endmodule
 	
@@ -133,7 +133,9 @@
 	      2'b01: alucontrol <= 3'b110;  // sub (for beq and bne )
 			2'b11: alucontrol <= 3'b111; // slti
 	      default: case(funct)          // R-type instructions
-	          6'b100000: alucontrol <= 3'b010; // add
+	          6'b000000: alucontrol <= 3'b011; // SLL
+				 6'b001000: alucontrol <= 3'bxxx; // JR
+				 6'b100000: alucontrol <= 3'b010; // add
 	          6'b100010: alucontrol <= 3'b110; // sub
 	          6'b100100: alucontrol <= 3'b000; // and
 	          6'b100101: alucontrol <= 3'b001; // or
@@ -146,7 +148,7 @@
 	module datapath(input  logic        clk, reset,
 	                input  logic        memtoreg, pcsrc,
 	                input  logic        alusrc, regdst,
-	                input  logic        regwrite, jump,
+	                input  logic        regwrite, jump, jr,
 	                input  logic [2:0]  alucontrol,
 	                output logic        zeroNzero,
 	                output logic [31:0] pc,
@@ -155,7 +157,7 @@
 	                input  logic [31:0] readdata);
 	
 	  logic [4:0]  writereg;
-	  logic [31:0] pcnext, pcnextbr, pcplus4, pcbranch;
+	  logic [31:0] pcnext, pcnextbr, pcplus4, pcbranch, pcjump;
 	  logic [31:0] signimm, signimmsh;
 	  logic [31:0] srca, srcb;
 	  logic [31:0] result;
@@ -166,8 +168,13 @@
 	  sl2         immsh(signimm, signimmsh);
 	  adder       pcadd2(pcplus4, signimmsh, pcbranch);
 	  mux2 #(32)  pcbrmux(pcplus4, pcbranch, pcsrc, pcnextbr);
-	  mux2 #(32)  pcmux(pcnextbr, {pcplus4[31:28], 
-	                    instr[25:0], 2'b00}, jump, pcnext);
+	  // ← NOVO: Mux para escolher entre jump normal e jump register
+	  mux2 #(32)  pcjumpmux(  {pcplus4[31:28], instr[25:0], 2'b00},  // jump normal
+									  srca,                                    // jr (endereço do registrador)
+									  jr & (instr[5:0] == 6'b001000),         // seleciona jr quando funct=001000
+									  pcjump);
+									  
+	  mux2 #(32)  pcmux(pcnextbr, pcjump, jump | jr, pcnext);  // ← MODIFICADO: jump OR jr
 	
 	  // register file logic
 	  regfile     rf(clk, regwrite, instr[25:21], instr[20:16], 
@@ -179,7 +186,7 @@
 	
 	  // ALU logic
 	  mux2 #(32)  srcbmux(writedata, signimm, alusrc, srcb);
-	  alu         alu(srca, srcb, alucontrol, aluout, zero, notzero);
+	  alu         alu(srca, srcb,instr[10:6], alucontrol, aluout, zero, notzero);
 	  
 	  //mux to pick zero or notzero depending on BEQ or BNE
 	    // usa apenas o bit [26] (é 1 para BNE, 0 para BEQ)
@@ -277,6 +284,7 @@
 	endmodule
 	
 	module alu(input  logic [31:0] a, b,
+				  input logic [4:0] shamt,
 	           input  logic [2:0]  alucontrol,
 	           output logic [31:0] result,
 	           output logic        zero,
@@ -286,13 +294,17 @@
 	
 	  assign condinvb = alucontrol[2] ? ~b : b;
 	  assign sum = a + condinvb + alucontrol[2];
-	  always_comb
-	    case (alucontrol[1:0])
-	      2'b00: result = a & b;
-	      2'b01: result = a | b;
-	      2'b10: result = sum;
-	      2'b11: result = sum[31];
-	    endcase
+	    always_comb begin
+			 case(alucontrol)
+				3'b010: result = a + b;         		// ADD
+				3'b110: result = a - b;         		// SUB
+				3'b000: result = a & b;         		// AND
+				3'b001: result = a | b;         		// OR
+				3'b111: result = (a < b) ? 1 : 0; 	// SLT
+				3'b011: result = a << shamt;    		// SLL 
+				default: result = 32'bx;
+			 endcase
+		  end
 	
 	  assign zero = (result == 32'b0);
 	  assign notzero = (result != 32'b0);

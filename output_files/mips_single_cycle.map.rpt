@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips_single_cycle
-Tue Jun 17 23:51:41 2025
+Wed Jun 18 03:13:12 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -19,17 +19,19 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
  12. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|flopr:pcreg
  13. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:pcbrmux
- 14. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:pcmux
- 15. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:wrmux
- 16. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:resmux
- 17. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:srcbmux
- 18. Port Connectivity Checks: "mips:cpu|datapath:dp|muxBEQBNE:muxBEQBNE"
- 19. Port Connectivity Checks: "mips:cpu|datapath:dp|mux2:pcmux"
- 20. Port Connectivity Checks: "mips:cpu|datapath:dp|adder:pcadd1"
- 21. Port Connectivity Checks: "mips:cpu"
- 22. Post-Synthesis Netlist Statistics for Top Partition
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+ 14. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:pcjumpmux
+ 15. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:pcmux
+ 16. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:wrmux
+ 17. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:resmux
+ 18. Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:srcbmux
+ 19. Port Connectivity Checks: "mips:cpu|datapath:dp|muxBEQBNE:muxBEQBNE"
+ 20. Port Connectivity Checks: "mips:cpu|datapath:dp|mux2:pcjumpmux"
+ 21. Port Connectivity Checks: "mips:cpu|datapath:dp|adder:pcadd1"
+ 22. Port Connectivity Checks: "mips:cpu"
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
+ 26. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -56,15 +58,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 17 23:51:41 2025       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 18 03:13:12 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; mips_single_cycle                           ;
 ; Top-level Entity Name              ; bne_cpu                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 483                                         ;
-;     Total combinational functions  ; 324                                         ;
-;     Dedicated logic registers      ; 197                                         ;
-; Total registers                    ; 197                                         ;
+; Total logic elements               ; 1,469                                       ;
+;     Total combinational functions  ; 989                                         ;
+;     Dedicated logic registers      ; 518                                         ;
+; Total registers                    ; 518                                         ;
 ; Total pins                         ; 67                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -171,7 +173,14 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -190,20 +199,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 483       ;
+; Estimated Total logic elements              ; 1,469     ;
 ;                                             ;           ;
-; Total combinational functions               ; 324       ;
+; Total combinational functions               ; 989       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 194       ;
-;     -- 3 input functions                    ; 90        ;
-;     -- <=2 input functions                  ; 40        ;
+;     -- 4 input functions                    ; 757       ;
+;     -- 3 input functions                    ; 152       ;
+;     -- <=2 input functions                  ; 80        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 287       ;
-;     -- arithmetic mode                      ; 37        ;
+;     -- normal mode                          ; 921       ;
+;     -- arithmetic mode                      ; 68        ;
 ;                                             ;           ;
-; Total registers                             ; 197       ;
-;     -- Dedicated logic registers            ; 197       ;
+; Total registers                             ; 518       ;
+;     -- Dedicated logic registers            ; 518       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 67        ;
@@ -211,28 +220,32 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 197       ;
-; Total fan-out                               ; 1847      ;
-; Average fan-out                             ; 2.82      ;
+; Maximum fan-out                             ; 518       ;
+; Total fan-out                               ; 5329      ;
+; Average fan-out                             ; 3.25      ;
 +---------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
-; |bne_cpu                   ; 324 (0)             ; 197 (0)                   ; 0           ; 0            ; 0       ; 0         ; 67   ; 0            ; |bne_cpu                                  ; bne_cpu     ; work         ;
-;    |imem:imem|             ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|imem:imem                        ; imem        ; work         ;
-;    |mips:cpu|              ; 316 (0)             ; 197 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu                         ; mips        ; work         ;
-;       |controller:c|       ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c            ; controller  ; work         ;
-;          |aludec:ad|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c|aludec:ad  ; aludec      ; work         ;
-;          |maindec:md|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c|maindec:md ; maindec     ; work         ;
-;       |datapath:dp|        ; 311 (0)             ; 197 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp             ; datapath    ; work         ;
-;          |alu:alu|         ; 98 (98)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|alu:alu     ; alu         ; work         ;
-;          |flopr:pcreg|     ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|flopr:pcreg ; flopr       ; work         ;
-;          |regfile:rf|      ; 207 (207)           ; 191 (191)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|regfile:rf  ; regfile     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
+; |bne_cpu                   ; 989 (0)             ; 518 (0)                   ; 0           ; 0            ; 0       ; 0         ; 67   ; 0            ; |bne_cpu                                   ; bne_cpu     ; work         ;
+;    |imem:imem|             ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|imem:imem                         ; imem        ; work         ;
+;    |mips:cpu|              ; 948 (0)             ; 518 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu                          ; mips        ; work         ;
+;       |controller:c|       ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c             ; controller  ; work         ;
+;          |aludec:ad|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c|aludec:ad   ; aludec      ; work         ;
+;          |maindec:md|      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|controller:c|maindec:md  ; maindec     ; work         ;
+;       |datapath:dp|        ; 931 (0)             ; 518 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp              ; datapath    ; work         ;
+;          |adder:pcadd1|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|adder:pcadd1 ; adder       ; work         ;
+;          |alu:alu|         ; 301 (301)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|alu:alu      ; alu         ; work         ;
+;          |flopr:pcreg|     ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|flopr:pcreg  ; flopr       ; work         ;
+;          |mux2:pcmux|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|mux2:pcmux   ; mux2        ; work         ;
+;          |mux2:srcbmux|    ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|mux2:srcbmux ; mux2        ; work         ;
+;          |mux2:wrmux|      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|mux2:wrmux   ; mux2        ; work         ;
+;          |regfile:rf|      ; 575 (575)           ; 512 (512)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bne_cpu|mips:cpu|datapath:dp|regfile:rf   ; regfile     ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -243,262 +256,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+---------------------------------------------------+
 ; mips:cpu|datapath:dp|flopr:pcreg|q[0]     ; Merged with mips:cpu|datapath:dp|flopr:pcreg|q[1] ;
 ; mips:cpu|datapath:dp|flopr:pcreg|q[1]     ; Stuck at GND due to stuck port data_in            ;
-; mips:cpu|datapath:dp|regfile:rf|rf~128    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~129    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~130    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~131    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~132    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~133    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~134    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~135    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~136    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~137    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~138    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~139    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~140    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~141    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~142    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~143    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~144    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~145    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~146    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~147    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~148    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~149    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~150    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~151    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~152    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~153    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~154    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~155    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~156    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~157    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~158    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~159    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~160    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~161    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~162    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~163    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~164    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~165    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~166    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~167    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~168    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~169    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~170    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~171    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~172    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~173    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~174    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~175    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~176    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~177    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~178    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~179    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~180    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~181    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~182    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~183    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~184    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~185    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~186    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~187    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~188    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~189    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~190    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~191    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~192    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~193    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~194    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~195    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~196    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~197    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~198    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~199    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~200    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~201    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~202    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~203    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~204    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~205    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~206    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~207    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~208    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~209    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~210    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~211    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~212    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~213    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~214    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~215    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~216    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~217    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~218    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~219    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~220    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~221    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~222    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~223    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~224    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~225    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~226    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~227    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~228    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~229    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~230    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~231    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~232    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~233    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~234    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~235    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~236    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~237    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~238    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~239    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~240    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~241    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~242    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~243    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~244    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~245    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~246    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~247    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~248    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~249    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~250    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~251    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~252    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~253    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~254    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~255    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~384    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~385    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~386    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~387    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~388    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~389    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~390    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~391    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~392    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~393    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~394    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~395    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~396    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~397    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~398    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~399    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~400    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~401    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~402    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~403    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~404    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~405    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~406    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~407    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~408    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~409    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~410    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~411    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~412    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~413    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~414    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~415    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~416    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~417    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~418    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~419    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~420    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~421    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~422    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~423    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~424    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~425    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~426    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~427    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~428    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~429    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~430    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~431    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~432    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~433    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~434    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~435    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~436    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~437    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~438    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~439    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~440    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~441    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~442    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~443    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~444    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~445    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~446    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~447    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~448    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~449    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~450    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~451    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~452    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~453    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~454    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~455    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~456    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~457    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~458    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~459    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~460    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~461    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~462    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~463    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~464    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~465    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~466    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~467    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~468    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~469    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~470    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~471    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~472    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~473    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~474    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~475    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~476    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~477    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~478    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~479    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~480    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~481    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~482    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~483    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~484    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~485    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~486    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~487    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~488    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~489    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~490    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~491    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~492    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~493    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~494    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~495    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~496    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~497    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~498    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~499    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~500    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~501    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~502    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~503    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~504    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~505    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~506    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~507    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~508    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~509    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~510    ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~511    ; Lost fanout                                       ;
 ; mips:cpu|datapath:dp|regfile:rf|rf~512    ; Lost fanout                                       ;
 ; mips:cpu|datapath:dp|regfile:rf|rf~513    ; Lost fanout                                       ;
 ; mips:cpu|datapath:dp|regfile:rf|rf~514    ; Lost fanout                                       ;
@@ -1012,85 +769,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; mips:cpu|datapath:dp|regfile:rf|rf~1022   ; Lost fanout                                       ;
 ; mips:cpu|datapath:dp|regfile:rf|rf~1023   ; Lost fanout                                       ;
 ; mips:cpu|datapath:dp|flopr:pcreg|q[8..31] ; Lost fanout                                       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~0      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~2      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~3      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~4      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~5      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~6      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~7      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~8      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~9      ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~10     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~11     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~12     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~13     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~14     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~15     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~16     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~17     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~18     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~19     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~20     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~21     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~22     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~23     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~24     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~25     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~26     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~27     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~28     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~29     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~30     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~31     ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~352    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~353    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~354    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~355    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~356    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~357    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~358    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~359    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~360    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~361    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~362    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~363    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~364    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~365    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~366    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~367    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~368    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~369    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~370    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~371    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~372    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~373    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~374    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~375    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~376    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~377    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~378    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~379    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~380    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~381    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~382    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~383    ; Stuck at GND due to stuck port clock_enable       ;
-; mips:cpu|datapath:dp|regfile:rf|rf~96     ; Lost fanout                                       ;
-; Total Number of Removed Registers = 859   ;                                                   ;
+; Total Number of Removed Registers = 538   ;                                                   ;
 +-------------------------------------------+---------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                     ;
-+---------------------------------------+--------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal             ; Registers Removed due to This Register ;
-+---------------------------------------+--------------------------------+----------------------------------------+
-; mips:cpu|datapath:dp|flopr:pcreg|q[1] ; Stuck at GND                   ; mips:cpu|datapath:dp|flopr:pcreg|q[24] ;
-;                                       ; due to stuck port data_in      ;                                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~0  ; Stuck at GND                   ; mips:cpu|datapath:dp|regfile:rf|rf~96  ;
-;                                       ; due to stuck port clock_enable ;                                        ;
-+---------------------------------------+--------------------------------+----------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                ;
++---------------------------------------+---------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------------------+---------------------------+----------------------------------------+
+; mips:cpu|datapath:dp|flopr:pcreg|q[1] ; Stuck at GND              ; mips:cpu|datapath:dp|flopr:pcreg|q[24] ;
+;                                       ; due to stuck port data_in ;                                        ;
++---------------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1098,24 +788,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 197   ;
+; Total registers                              ; 518   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 191   ;
+; Number of registers using Clock Enable       ; 512   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |bne_cpu|mips:cpu|datapath:dp|alu:alu|condinvb[0] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |bne_cpu|mips:cpu|datapath:dp|alu:alu|condinvb[2] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |bne_cpu|mips:cpu|controller:c|aludec:ad|Mux0 ;
+; 7:1                ; 28 bits   ; 112 LEs       ; 112 LEs              ; 0 LEs                  ; No         ; |bne_cpu|mips:cpu|datapath:dp|alu:alu|Mux17   ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |bne_cpu|mips:cpu|datapath:dp|alu:alu|Mux0    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -1135,6 +826,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; WIDTH          ; 32    ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu|datapath:dp|mux2:pcjumpmux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1187,13 +888,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------+
-; Port Connectivity Checks: "mips:cpu|datapath:dp|mux2:pcmux" ;
-+----------+-------+----------+-------------------------------+
-; Port     ; Type  ; Severity ; Details                       ;
-+----------+-------+----------+-------------------------------+
-; d1[1..0] ; Input ; Info     ; Stuck at GND                  ;
-+----------+-------+----------+-------------------------------+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "mips:cpu|datapath:dp|mux2:pcjumpmux" ;
++----------+-------+----------+-----------------------------------+
+; Port     ; Type  ; Severity ; Details                           ;
++----------+-------+----------+-----------------------------------+
+; d0[1..0] ; Input ; Info     ; Stuck at GND                      ;
++----------+-------+----------+-----------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -1223,22 +924,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 67                          ;
-; cycloneiii_ff         ; 197                         ;
+; cycloneiii_ff         ; 518                         ;
 ;     CLR               ; 6                           ;
-;     ENA               ; 191                         ;
-; cycloneiii_lcell_comb ; 325                         ;
-;     arith             ; 37                          ;
+;     ENA               ; 512                         ;
+; cycloneiii_lcell_comb ; 990                         ;
+;     arith             ; 68                          ;
 ;         2 data inputs ; 5                           ;
-;         3 data inputs ; 32                          ;
-;     normal            ; 288                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 34                          ;
-;         3 data inputs ; 58                          ;
-;         4 data inputs ; 194                         ;
+;         3 data inputs ; 63                          ;
+;     normal            ; 922                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 74                          ;
+;         3 data inputs ; 89                          ;
+;         4 data inputs ; 757                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.90                       ;
-; Average LUT depth     ; 7.93                        ;
+; Max LUT depth         ; 14.90                       ;
+; Average LUT depth     ; 11.02                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1247,7 +947,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1257,7 +957,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 17 23:51:34 2025
+    Info: Processing started: Wed Jun 18 03:13:05 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips_single_cycle -c mips_single_cycle
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1269,59 +969,65 @@ Info (12021): Found 16 design units, including 16 entities, in source file bne_c
     Info (12023): Found entity 5: controller File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 70
     Info (12023): Found entity 6: maindec File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 94
     Info (12023): Found entity 7: aludec File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 126
-    Info (12023): Found entity 8: datapath File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 146
-    Info (12023): Found entity 9: regfile File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 195
-    Info (12023): Found entity 10: adder File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 242
-    Info (12023): Found entity 11: sl2 File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 248
-    Info (12023): Found entity 12: signext File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 255
-    Info (12023): Found entity 13: flopr File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 261
-    Info (12023): Found entity 14: mux2 File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 271
-    Info (12023): Found entity 15: alu File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 279
-    Info (12023): Found entity 16: muxBEQBNE File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 303
+    Info (12023): Found entity 8: datapath File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 148
+    Info (12023): Found entity 9: regfile File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 202
+    Info (12023): Found entity 10: adder File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 249
+    Info (12023): Found entity 11: sl2 File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 255
+    Info (12023): Found entity 12: signext File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 262
+    Info (12023): Found entity 13: flopr File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 268
+    Info (12023): Found entity 14: mux2 File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 278
+    Info (12023): Found entity 15: alu File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 286
+    Info (12023): Found entity 16: muxBEQBNE File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 315
 Info (12021): Found 1 design units, including 1 entities, in source file bne_cpu_tb.sv
     Info (12023): Found entity 1: bne_cpu_tb File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu_tb.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at bne_cpu.sv(182): created implicit net for "zero" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 182
-Warning (10236): Verilog HDL Implicit Net warning at bne_cpu.sv(182): created implicit net for "notzero" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 182
+Warning (10236): Verilog HDL Implicit Net warning at bne_cpu.sv(189): created implicit net for "zero" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 189
+Warning (10236): Verilog HDL Implicit Net warning at bne_cpu.sv(189): created implicit net for "notzero" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 189
 Info (12127): Elaborating entity "bne_cpu" for the top level hierarchy
 Info (12128): Elaborating entity "mips" for hierarchy "mips:cpu" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 17
 Info (12128): Elaborating entity "controller" for hierarchy "mips:cpu|controller:c" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 62
 Info (12128): Elaborating entity "maindec" for hierarchy "mips:cpu|controller:c|maindec:md" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 82
 Info (12128): Elaborating entity "aludec" for hierarchy "mips:cpu|controller:c|aludec:ad" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 83
 Info (12128): Elaborating entity "datapath" for hierarchy "mips:cpu|datapath:dp" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 67
-Info (12128): Elaborating entity "flopr" for hierarchy "mips:cpu|datapath:dp|flopr:pcreg" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 164
-Info (12128): Elaborating entity "adder" for hierarchy "mips:cpu|datapath:dp|adder:pcadd1" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 165
-Info (12128): Elaborating entity "sl2" for hierarchy "mips:cpu|datapath:dp|sl2:immsh" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 166
-Info (12128): Elaborating entity "mux2" for hierarchy "mips:cpu|datapath:dp|mux2:pcbrmux" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 168
-Info (12128): Elaborating entity "regfile" for hierarchy "mips:cpu|datapath:dp|regfile:rf" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 174
-Info (12128): Elaborating entity "mux2" for hierarchy "mips:cpu|datapath:dp|mux2:wrmux" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 176
-Info (12128): Elaborating entity "signext" for hierarchy "mips:cpu|datapath:dp|signext:se" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 178
-Info (12128): Elaborating entity "alu" for hierarchy "mips:cpu|datapath:dp|alu:alu" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 182
-Info (12128): Elaborating entity "muxBEQBNE" for hierarchy "mips:cpu|datapath:dp|muxBEQBNE:muxBEQBNE" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 191
+Info (12128): Elaborating entity "flopr" for hierarchy "mips:cpu|datapath:dp|flopr:pcreg" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 166
+Info (12128): Elaborating entity "adder" for hierarchy "mips:cpu|datapath:dp|adder:pcadd1" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 167
+Info (12128): Elaborating entity "sl2" for hierarchy "mips:cpu|datapath:dp|sl2:immsh" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 168
+Info (12128): Elaborating entity "mux2" for hierarchy "mips:cpu|datapath:dp|mux2:pcbrmux" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 170
+Info (12128): Elaborating entity "regfile" for hierarchy "mips:cpu|datapath:dp|regfile:rf" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 181
+Info (12128): Elaborating entity "mux2" for hierarchy "mips:cpu|datapath:dp|mux2:wrmux" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 183
+Info (12128): Elaborating entity "signext" for hierarchy "mips:cpu|datapath:dp|signext:se" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 185
+Info (12128): Elaborating entity "alu" for hierarchy "mips:cpu|datapath:dp|alu:alu" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 189
+Warning (10036): Verilog HDL or VHDL warning at bne_cpu.sv(293): object "sum" assigned a value but never read File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 293
+Info (12128): Elaborating entity "muxBEQBNE" for hierarchy "mips:cpu|datapath:dp|muxBEQBNE:muxBEQBNE" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 198
 Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 18
-Warning (10850): Verilog HDL warning at bne_cpu.sv(43): number of words (3) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 43
+Warning (10850): Verilog HDL warning at bne_cpu.sv(43): number of words (23) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 43
 Warning (10030): Net "RAM.data_a" at bne_cpu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 40
 Warning (10030): Net "RAM.waddr_a" at bne_cpu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 40
 Warning (10030): Net "RAM.we_a" at bne_cpu.sv(40) has no driver or initial value, using a default initial value '0' File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 40
 Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 19
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "mips:cpu|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 201
+    Info (276007): RAM logic "mips:cpu|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 208
     Info (276007): RAM logic "dmem:dmem|RAM" is uninferred due to asynchronous read logic File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 26
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/alexa/Documents/GitHub/mips_single_cycle/db/mips_single_cycle.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "memwrite" is stuck at GND File: C:/Users/alexa/Documents/GitHub/mips_single_cycle/bne_cpu.sv Line: 3
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 793 registers lost all their fanouts during netlist optimizations.
+Info (17049): 536 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/alexa/Documents/GitHub/mips_single_cycle/output_files/mips_single_cycle.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 582 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1568 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 65 output pins
-    Info (21061): Implemented 515 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Tue Jun 17 23:51:41 2025
+    Info (21061): Implemented 1501 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4834 megabytes
+    Info: Processing ended: Wed Jun 18 03:13:12 2025
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:14
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/alexa/Documents/GitHub/mips_single_cycle/output_files/mips_single_cycle.map.smsg.
 
 
