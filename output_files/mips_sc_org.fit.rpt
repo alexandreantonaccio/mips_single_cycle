@@ -1,5 +1,5 @@
 Fitter report for mips_sc_org
-Wed Jun 18 13:02:11 2025
+Sun Jul 06 20:07:25 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -66,17 +66,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Jun 18 13:02:11 2025       ;
+; Fitter Status                      ; Successful - Sun Jul 06 20:07:25 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; mips_sc_org                                 ;
 ; Top-level Entity Name              ; mips_sc_org                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6F17C6                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,139 / 6,272 ( 18 % )                      ;
-;     Total combinational functions  ; 958 / 6,272 ( 15 % )                        ;
-;     Dedicated logic registers      ; 518 / 6,272 ( 8 % )                         ;
-; Total registers                    ; 518                                         ;
+; Total logic elements               ; 20 / 6,272 ( < 1 % )                        ;
+;     Total combinational functions  ; 20 / 6,272 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 10 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 10                                          ;
 ; Total pins                         ; 67 / 180 ( 37 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
@@ -150,35 +150,28 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.15        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.5%      ;
-;     Processor 3            ;   1.4%      ;
-;     Processor 4            ;   1.4%      ;
-;     Processor 5            ;   1.4%      ;
-;     Processor 6            ;   1.4%      ;
-;     Processor 7            ;   1.3%      ;
-;     Processor 8            ;   1.3%      ;
-;     Processors 9-12        ;   1.2%      ;
+;     Processors 2-12        ;   0.3%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Incremental Compilation Preservation Summary                                                      ;
-+---------------------+---------------------+----------------------------+--------------------------+
-; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
-+---------------------+---------------------+----------------------------+--------------------------+
-; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 1623 ) ; 0.00 % ( 0 / 1623 )        ; 0.00 % ( 0 / 1623 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 1623 ) ; 0.00 % ( 0 / 1623 )        ; 0.00 % ( 0 / 1623 )      ;
-;                     ;                     ;                            ;                          ;
-; Routing (by net)    ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-;     -- Achieved     ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-+---------------------+---------------------+----------------------------+--------------------------+
++--------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                     ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Placement (by node) ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 177 ) ; 0.00 % ( 0 / 177 )         ; 0.00 % ( 0 / 177 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 177 ) ; 0.00 % ( 0 / 177 )         ; 0.00 % ( 0 / 177 )       ;
+;                     ;                    ;                            ;                          ;
+; Routing (by net)    ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+--------------------+----------------------------+--------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -196,7 +189,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 1613 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 167 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -207,127 +200,127 @@ https://fpgasoftware.intel.com/eula.
 The pin-out file can be found in C:/Users/alexa/Documents/GitHub/mips_single_cycle/output_files/mips_sc_org.pin.
 
 
-+----------------------------------------------------------------------+
-; Fitter Resource Usage Summary                                        ;
-+---------------------------------------------+------------------------+
-; Resource                                    ; Usage                  ;
-+---------------------------------------------+------------------------+
-; Total logic elements                        ; 1,139 / 6,272 ( 18 % ) ;
-;     -- Combinational with no register       ; 621                    ;
-;     -- Register only                        ; 181                    ;
-;     -- Combinational with a register        ; 337                    ;
-;                                             ;                        ;
-; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 728                    ;
-;     -- 3 input functions                    ; 170                    ;
-;     -- <=2 input functions                  ; 60                     ;
-;     -- Register only                        ; 181                    ;
-;                                             ;                        ;
-; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 890                    ;
-;     -- arithmetic mode                      ; 68                     ;
-;                                             ;                        ;
-; Total registers*                            ; 518 / 7,124 ( 7 % )    ;
-;     -- Dedicated logic registers            ; 518 / 6,272 ( 8 % )    ;
-;     -- I/O registers                        ; 0 / 852 ( 0 % )        ;
-;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 90 / 392 ( 23 % )      ;
-; Virtual pins                                ; 0                      ;
-; I/O pins                                    ; 67 / 180 ( 37 % )      ;
-;     -- Clock pins                           ; 2 / 3 ( 67 % )         ;
-;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )          ;
-;                                             ;                        ;
-; M9Ks                                        ; 0 / 30 ( 0 % )         ;
-; Total block memory bits                     ; 0 / 276,480 ( 0 % )    ;
-; Total block memory implementation bits      ; 0 / 276,480 ( 0 % )    ;
-; Embedded Multiplier 9-bit elements          ; 0 / 30 ( 0 % )         ;
-; PLLs                                        ; 0 / 2 ( 0 % )          ;
-; Global signals                              ; 2                      ;
-;     -- Global clocks                        ; 2 / 10 ( 20 % )        ;
-; JTAGs                                       ; 0 / 1 ( 0 % )          ;
-; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
-; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
-; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
-; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 7.0% / 6.6% / 7.5%     ;
-; Peak interconnect usage (total/H/V)         ; 10.8% / 10.4% / 11.4%  ;
-; Maximum fan-out                             ; 518                    ;
-; Highest non-global fan-out                  ; 125                    ;
-; Total fan-out                               ; 5414                   ;
-; Average fan-out                             ; 3.00                   ;
-+---------------------------------------------+------------------------+
++--------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                      ;
++---------------------------------------------+----------------------+
+; Resource                                    ; Usage                ;
++---------------------------------------------+----------------------+
+; Total logic elements                        ; 20 / 6,272 ( < 1 % ) ;
+;     -- Combinational with no register       ; 10                   ;
+;     -- Register only                        ; 0                    ;
+;     -- Combinational with a register        ; 10                   ;
+;                                             ;                      ;
+; Logic element usage by number of LUT inputs ;                      ;
+;     -- 4 input functions                    ; 10                   ;
+;     -- 3 input functions                    ; 3                    ;
+;     -- <=2 input functions                  ; 7                    ;
+;     -- Register only                        ; 0                    ;
+;                                             ;                      ;
+; Logic elements by mode                      ;                      ;
+;     -- normal mode                          ; 15                   ;
+;     -- arithmetic mode                      ; 5                    ;
+;                                             ;                      ;
+; Total registers*                            ; 10 / 7,124 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 10 / 6,272 ( < 1 % ) ;
+;     -- I/O registers                        ; 0 / 852 ( 0 % )      ;
+;                                             ;                      ;
+; Total LABs:  partially or completely used   ; 2 / 392 ( < 1 % )    ;
+; Virtual pins                                ; 0                    ;
+; I/O pins                                    ; 67 / 180 ( 37 % )    ;
+;     -- Clock pins                           ; 2 / 3 ( 67 % )       ;
+;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )        ;
+;                                             ;                      ;
+; M9Ks                                        ; 0 / 30 ( 0 % )       ;
+; Total block memory bits                     ; 0 / 276,480 ( 0 % )  ;
+; Total block memory implementation bits      ; 0 / 276,480 ( 0 % )  ;
+; Embedded Multiplier 9-bit elements          ; 0 / 30 ( 0 % )       ;
+; PLLs                                        ; 0 / 2 ( 0 % )        ;
+; Global signals                              ; 2                    ;
+;     -- Global clocks                        ; 2 / 10 ( 20 % )      ;
+; JTAGs                                       ; 0 / 1 ( 0 % )        ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )        ;
+; ASMI blocks                                 ; 0 / 1 ( 0 % )        ;
+; Oscillator blocks                           ; 0 / 1 ( 0 % )        ;
+; Impedance control blocks                    ; 0 / 4 ( 0 % )        ;
+; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%   ;
+; Peak interconnect usage (total/H/V)         ; 0.1% / 0.1% / 0.1%   ;
+; Maximum fan-out                             ; 10                   ;
+; Highest non-global fan-out                  ; 10                   ;
+; Total fan-out                               ; 186                  ;
+; Average fan-out                             ; 1.06                 ;
++---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Fitter Partition Statistics                                                                         ;
-+---------------------------------------------+----------------------+--------------------------------+
-; Statistic                                   ; Top                  ; hard_block:auto_generated_inst ;
-+---------------------------------------------+----------------------+--------------------------------+
-; Difficulty Clustering Region                ; Low                  ; Low                            ;
-;                                             ;                      ;                                ;
-; Total logic elements                        ; 1139 / 6272 ( 18 % ) ; 0 / 6272 ( 0 % )               ;
-;     -- Combinational with no register       ; 621                  ; 0                              ;
-;     -- Register only                        ; 181                  ; 0                              ;
-;     -- Combinational with a register        ; 337                  ; 0                              ;
-;                                             ;                      ;                                ;
-; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 728                  ; 0                              ;
-;     -- 3 input functions                    ; 170                  ; 0                              ;
-;     -- <=2 input functions                  ; 60                   ; 0                              ;
-;     -- Register only                        ; 181                  ; 0                              ;
-;                                             ;                      ;                                ;
-; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 890                  ; 0                              ;
-;     -- arithmetic mode                      ; 68                   ; 0                              ;
-;                                             ;                      ;                                ;
-; Total registers                             ; 518                  ; 0                              ;
-;     -- Dedicated logic registers            ; 518 / 6272 ( 8 % )   ; 0 / 6272 ( 0 % )               ;
-;     -- I/O registers                        ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 90 / 392 ( 23 % )    ; 0 / 392 ( 0 % )                ;
-;                                             ;                      ;                                ;
-; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 67                   ; 0                              ;
-; Embedded Multiplier 9-bit elements          ; 0 / 30 ( 0 % )       ; 0 / 30 ( 0 % )                 ;
-; Total memory bits                           ; 0                    ; 0                              ;
-; Total RAM block bits                        ; 0                    ; 0                              ;
-; Clock control block                         ; 2 / 12 ( 16 % )      ; 0 / 12 ( 0 % )                 ;
-;                                             ;                      ;                                ;
-; Connections                                 ;                      ;                                ;
-;     -- Input Connections                    ; 0                    ; 0                              ;
-;     -- Registered Input Connections         ; 0                    ; 0                              ;
-;     -- Output Connections                   ; 0                    ; 0                              ;
-;     -- Registered Output Connections        ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 5409                 ; 5                              ;
-;     -- Registered Connections               ; 955                  ; 0                              ;
-;                                             ;                      ;                                ;
-; External Connections                        ;                      ;                                ;
-;     -- Top                                  ; 0                    ; 0                              ;
-;     -- hard_block:auto_generated_inst       ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Partition Interface                         ;                      ;                                ;
-;     -- Input Ports                          ; 2                    ; 0                              ;
-;     -- Output Ports                         ; 65                   ; 0                              ;
-;     -- Bidir Ports                          ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Registered Ports                            ;                      ;                                ;
-;     -- Registered Input Ports               ; 0                    ; 0                              ;
-;     -- Registered Output Ports              ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Port Connectivity                           ;                      ;                                ;
-;     -- Input Ports driven by GND            ; 0                    ; 0                              ;
-;     -- Output Ports driven by GND           ; 0                    ; 0                              ;
-;     -- Input Ports driven by VCC            ; 0                    ; 0                              ;
-;     -- Output Ports driven by VCC           ; 0                    ; 0                              ;
-;     -- Input Ports with no Source           ; 0                    ; 0                              ;
-;     -- Output Ports with no Source          ; 0                    ; 0                              ;
-;     -- Input Ports with no Fanout           ; 0                    ; 0                              ;
-;     -- Output Ports with no Fanout          ; 0                    ; 0                              ;
-+---------------------------------------------+----------------------+--------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                        ;
++---------------------------------------------+---------------------+--------------------------------+
+; Statistic                                   ; Top                 ; hard_block:auto_generated_inst ;
++---------------------------------------------+---------------------+--------------------------------+
+; Difficulty Clustering Region                ; Low                 ; Low                            ;
+;                                             ;                     ;                                ;
+; Total logic elements                        ; 20 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
+;     -- Combinational with no register       ; 10                  ; 0                              ;
+;     -- Register only                        ; 0                   ; 0                              ;
+;     -- Combinational with a register        ; 10                  ; 0                              ;
+;                                             ;                     ;                                ;
+; Logic element usage by number of LUT inputs ;                     ;                                ;
+;     -- 4 input functions                    ; 10                  ; 0                              ;
+;     -- 3 input functions                    ; 3                   ; 0                              ;
+;     -- <=2 input functions                  ; 7                   ; 0                              ;
+;     -- Register only                        ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Logic elements by mode                      ;                     ;                                ;
+;     -- normal mode                          ; 15                  ; 0                              ;
+;     -- arithmetic mode                      ; 5                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Total registers                             ; 10                  ; 0                              ;
+;     -- Dedicated logic registers            ; 10 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
+;     -- I/O registers                        ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Total LABs:  partially or completely used   ; 2 / 392 ( < 1 % )   ; 0 / 392 ( 0 % )                ;
+;                                             ;                     ;                                ;
+; Virtual pins                                ; 0                   ; 0                              ;
+; I/O pins                                    ; 67                  ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 30 ( 0 % )      ; 0 / 30 ( 0 % )                 ;
+; Total memory bits                           ; 0                   ; 0                              ;
+; Total RAM block bits                        ; 0                   ; 0                              ;
+; Clock control block                         ; 2 / 12 ( 16 % )     ; 0 / 12 ( 0 % )                 ;
+;                                             ;                     ;                                ;
+; Connections                                 ;                     ;                                ;
+;     -- Input Connections                    ; 0                   ; 0                              ;
+;     -- Registered Input Connections         ; 0                   ; 0                              ;
+;     -- Output Connections                   ; 0                   ; 0                              ;
+;     -- Registered Output Connections        ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Internal Connections                        ;                     ;                                ;
+;     -- Total Connections                    ; 181                 ; 5                              ;
+;     -- Registered Connections               ; 45                  ; 0                              ;
+;                                             ;                     ;                                ;
+; External Connections                        ;                     ;                                ;
+;     -- Top                                  ; 0                   ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Partition Interface                         ;                     ;                                ;
+;     -- Input Ports                          ; 2                   ; 0                              ;
+;     -- Output Ports                         ; 65                  ; 0                              ;
+;     -- Bidir Ports                          ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Registered Ports                            ;                     ;                                ;
+;     -- Registered Input Ports               ; 0                   ; 0                              ;
+;     -- Registered Output Ports              ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Port Connectivity                           ;                     ;                                ;
+;     -- Input Ports driven by GND            ; 0                   ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                   ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                   ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                   ; 0                              ;
+;     -- Input Ports with no Source           ; 0                   ; 0                              ;
+;     -- Output Ports with no Source          ; 0                   ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                   ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                   ; 0                              ;
++---------------------------------------------+---------------------+--------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -335,8 +328,8 @@ The pin-out file can be found in C:/Users/alexa/Documents/GitHub/mips_single_cyc
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clk   ; E1    ; 1        ; 0            ; 11           ; 7            ; 518                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; reset ; M2    ; 2        ; 0            ; 11           ; 14           ; 6                     ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; clk   ; E1    ; 1        ; 0            ; 11           ; 7            ; 10                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; reset ; M2    ; 2        ; 0            ; 11           ; 14           ; 10                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -345,71 +338,71 @@ The pin-out file can be found in C:/Users/alexa/Documents/GitHub/mips_single_cyc
 +---------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; dataadr[0]    ; J15   ; 5        ; 34           ; 10           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[10]   ; C6    ; 8        ; 9            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[11]   ; N15   ; 5        ; 34           ; 7            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[12]   ; J16   ; 5        ; 34           ; 9            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[13]   ; L14   ; 5        ; 34           ; 7            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[14]   ; L15   ; 5        ; 34           ; 8            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[15]   ; J6    ; 2        ; 0            ; 10           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[16]   ; L16   ; 5        ; 34           ; 8            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[17]   ; L8    ; 3        ; 13           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[18]   ; K16   ; 5        ; 34           ; 9            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[19]   ; P11   ; 4        ; 28           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[1]    ; B16   ; 6        ; 34           ; 18           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[20]   ; K15   ; 5        ; 34           ; 9            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[21]   ; T11   ; 4        ; 23           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[22]   ; C14   ; 7        ; 32           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[23]   ; J11   ; 5        ; 34           ; 9            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[24]   ; R12   ; 4        ; 23           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[25]   ; P16   ; 5        ; 34           ; 5            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[26]   ; T12   ; 4        ; 25           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[27]   ; K2    ; 2        ; 0            ; 8            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[28]   ; J14   ; 5        ; 34           ; 10           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[29]   ; K10   ; 4        ; 25           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[2]    ; E8    ; 8        ; 13           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[30]   ; M7    ; 3        ; 9            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[31]   ; R16   ; 5        ; 34           ; 5            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[3]    ; N16   ; 5        ; 34           ; 7            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[4]    ; K12   ; 5        ; 34           ; 3            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[5]    ; A10   ; 7        ; 21           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[6]    ; L13   ; 5        ; 34           ; 8            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[7]    ; E11   ; 7        ; 28           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[8]    ; L1    ; 2        ; 0            ; 8            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataadr[9]    ; N8    ; 3        ; 16           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; memwrite      ; D8    ; 8        ; 13           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[0]  ; A15   ; 7        ; 21           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[10] ; F11   ; 7        ; 23           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[11] ; R9    ; 4        ; 18           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[12] ; G11   ; 6        ; 34           ; 20           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[13] ; B12   ; 7        ; 25           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[14] ; B6    ; 8        ; 9            ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[15] ; R6    ; 3        ; 11           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[16] ; A12   ; 7        ; 25           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[0]    ; D3    ; 8        ; 1            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[10]   ; A4    ; 8        ; 5            ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[11]   ; A12   ; 7        ; 25           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[12]   ; N8    ; 3        ; 16           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[13]   ; F10   ; 7        ; 23           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[14]   ; N6    ; 3        ; 7            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[15]   ; R14   ; 4        ; 30           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[16]   ; R8    ; 3        ; 16           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[17]   ; M11   ; 4        ; 32           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[18]   ; T8    ; 3        ; 16           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[19]   ; K6    ; 2        ; 0            ; 9            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[1]    ; D5    ; 8        ; 3            ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[20]   ; R10   ; 4        ; 21           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[21]   ; G1    ; 1        ; 0            ; 18           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[22]   ; T7    ; 3        ; 13           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[23]   ; N16   ; 5        ; 34           ; 7            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[24]   ; P6    ; 3        ; 7            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[25]   ; T15   ; 4        ; 30           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[26]   ; T5    ; 3        ; 9            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[27]   ; F13   ; 6        ; 34           ; 17           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[28]   ; L14   ; 5        ; 34           ; 7            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[29]   ; F9    ; 7        ; 23           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[2]    ; F2    ; 1        ; 0            ; 19           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[30]   ; N11   ; 4        ; 30           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[31]   ; A10   ; 7        ; 21           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[3]    ; A6    ; 8        ; 9            ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[4]    ; L16   ; 5        ; 34           ; 8            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[5]    ; D6    ; 8        ; 3            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[6]    ; G5    ; 1        ; 0            ; 19           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[7]    ; D1    ; 1        ; 0            ; 21           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[8]    ; A3    ; 8        ; 3            ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataadr[9]    ; B3    ; 8        ; 3            ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; memwrite      ; D4    ; 1        ; 0            ; 23           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[0]  ; E5    ; 1        ; 0            ; 23           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[10] ; M10   ; 4        ; 28           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[11] ; P1    ; 2        ; 0            ; 4            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[12] ; P11   ; 4        ; 28           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[13] ; R9    ; 4        ; 18           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[14] ; B11   ; 7        ; 25           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[15] ; T11   ; 4        ; 23           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[16] ; B12   ; 7        ; 25           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; writedata[17] ; L9    ; 4        ; 18           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[18] ; F13   ; 6        ; 34           ; 17           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[18] ; M6    ; 3        ; 7            ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; writedata[19] ; K9    ; 4        ; 18           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[1]  ; M9    ; 4        ; 21           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[20] ; T9    ; 4        ; 18           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[21] ; R11   ; 4        ; 23           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[22] ; C8    ; 8        ; 13           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[23] ; T8    ; 3        ; 16           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[24] ; R10   ; 4        ; 21           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[25] ; J13   ; 5        ; 34           ; 11           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[26] ; C9    ; 7        ; 18           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[27] ; D9    ; 7        ; 18           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[28] ; P8    ; 3        ; 16           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[29] ; N14   ; 5        ; 34           ; 4            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[2]  ; F9    ; 7        ; 23           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[30] ; M8    ; 3        ; 13           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[31] ; C15   ; 6        ; 34           ; 20           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[3]  ; C11   ; 7        ; 23           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[4]  ; F10   ; 7        ; 23           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[5]  ; N6    ; 3        ; 7            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[6]  ; F15   ; 6        ; 34           ; 18           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[7]  ; E9    ; 7        ; 18           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[8]  ; C16   ; 6        ; 34           ; 20           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; writedata[9]  ; R8    ; 3        ; 16           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[1]  ; C3    ; 8        ; 1            ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[20] ; N14   ; 5        ; 34           ; 4            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[21] ; P16   ; 5        ; 34           ; 5            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[22] ; E10   ; 7        ; 28           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[23] ; K12   ; 5        ; 34           ; 3            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[24] ; G16   ; 6        ; 34           ; 17           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[25] ; T10   ; 4        ; 21           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[26] ; M9    ; 4        ; 21           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[27] ; M8    ; 3        ; 13           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[28] ; T6    ; 3        ; 11           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[29] ; A13   ; 7        ; 30           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[2]  ; B4    ; 8        ; 5            ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[30] ; T9    ; 4        ; 18           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[31] ; B6    ; 8        ; 9            ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[3]  ; L15   ; 5        ; 34           ; 8            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[4]  ; T13   ; 4        ; 28           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[5]  ; B5    ; 8        ; 5            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[6]  ; A2    ; 8        ; 5            ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[7]  ; B1    ; 1        ; 0            ; 22           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[8]  ; C2    ; 1        ; 0            ; 22           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writedata[9]  ; F5    ; 1        ; 0            ; 23           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -425,16 +418,13 @@ The pin-out file can be found in C:/Users/alexa/Documents/GitHub/mips_single_cyc
 ; H2       ; DATA0                       ; As input tri-stated      ; ~ALTERA_DATA0~          ; Dual Purpose Pin          ;
 ; H5       ; nCONFIG                     ; -                        ; -                       ; Dedicated Programming Pin ;
 ; J3       ; nCE                         ; -                        ; -                       ; Dedicated Programming Pin ;
-; J16      ; DIFFIO_R7n, DEV_OE          ; Use as regular IO        ; dataadr[12]             ; Dual Purpose Pin          ;
-; J15      ; DIFFIO_R7p, DEV_CLRn        ; Use as regular IO        ; dataadr[0]              ; Dual Purpose Pin          ;
 ; H14      ; CONF_DONE                   ; -                        ; -                       ; Dedicated Programming Pin ;
 ; H13      ; MSEL0                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; H12      ; MSEL1                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; G12      ; MSEL2                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; G12      ; MSEL3                       ; -                        ; -                       ; Dedicated Programming Pin ;
+; G16      ; DIFFIO_R4n, INIT_DONE       ; Use as regular IO        ; writedata[24]           ; Dual Purpose Pin          ;
 ; F16      ; DIFFIO_R3n, nCEO            ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
-; F15      ; DIFFIO_R3p, CLKUSR          ; Use as regular IO        ; writedata[6]            ; Dual Purpose Pin          ;
-; E8       ; DIFFIO_T10n, DATA2          ; Use as regular IO        ; dataadr[2]              ; Dual Purpose Pin          ;
 +----------+-----------------------------+--------------------------+-------------------------+---------------------------+
 
 
@@ -443,14 +433,14 @@ The pin-out file can be found in C:/Users/alexa/Documents/GitHub/mips_single_cyc
 +----------+------------------+---------------+--------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
-; 1        ; 5 / 17 ( 29 % )  ; 2.5V          ; --           ;
-; 2        ; 4 / 19 ( 21 % )  ; 2.5V          ; --           ;
-; 3        ; 9 / 26 ( 35 % )  ; 2.5V          ; --           ;
-; 4        ; 12 / 27 ( 44 % ) ; 2.5V          ; --           ;
-; 5        ; 17 / 25 ( 68 % ) ; 2.5V          ; --           ;
-; 6        ; 7 / 14 ( 50 % )  ; 2.5V          ; --           ;
-; 7        ; 13 / 26 ( 50 % ) ; 2.5V          ; --           ;
-; 8        ; 5 / 26 ( 19 % )  ; 2.5V          ; --           ;
+; 1        ; 14 / 17 ( 82 % ) ; 2.5V          ; --           ;
+; 2        ; 3 / 19 ( 16 % )  ; 2.5V          ; --           ;
+; 3        ; 10 / 26 ( 38 % ) ; 2.5V          ; --           ;
+; 4        ; 15 / 27 ( 56 % ) ; 2.5V          ; --           ;
+; 5        ; 7 / 25 ( 28 % )  ; 2.5V          ; --           ;
+; 6        ; 3 / 14 ( 21 % )  ; 2.5V          ; --           ;
+; 7        ; 8 / 26 ( 31 % )  ; 2.5V          ; --           ;
+; 8        ; 12 / 26 ( 46 % ) ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -460,62 +450,62 @@ The pin-out file can be found in C:/Users/alexa/Documents/GitHub/mips_single_cyc
 ; Location ; Pad Number ; I/O Bank ; Pin Name/Usage                                            ; Dir.   ; I/O Standard ; Voltage ; I/O Type   ; User Assignment ; Bus Hold ; Weak Pull Up ;
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 ; A1       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; A2       ; 194        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A3       ; 200        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A4       ; 196        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A2       ; 194        ; 8        ; writedata[6]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A3       ; 200        ; 8        ; dataadr[8]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A4       ; 196        ; 8        ; dataadr[10]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A5       ; 192        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A6       ; 188        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A6       ; 188        ; 8        ; dataadr[3]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A7       ; 183        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A8       ; 177        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A9       ; 175        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A10      ; 168        ; 7        ; dataadr[5]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A10      ; 168        ; 7        ; dataadr[31]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A11      ; 161        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A12      ; 159        ; 7        ; writedata[16]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; A13      ; 153        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A12      ; 159        ; 7        ; dataadr[11]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A13      ; 153        ; 7        ; writedata[29]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A14      ; 155        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A15      ; 167        ; 7        ; writedata[0]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A15      ; 167        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A16      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; B1       ; 3          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; B1       ; 3          ; 1        ; writedata[7]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; B2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B3       ; 201        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B4       ; 197        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B5       ; 195        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B6       ; 189        ; 8        ; writedata[14]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B3       ; 201        ; 8        ; dataadr[9]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B4       ; 197        ; 8        ; writedata[2]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B5       ; 195        ; 8        ; writedata[5]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B6       ; 189        ; 8        ; writedata[31]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B7       ; 184        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B8       ; 178        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B9       ; 176        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B10      ; 169        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B11      ; 162        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B12      ; 160        ; 7        ; writedata[13]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B11      ; 162        ; 7        ; writedata[14]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 160        ; 7        ; writedata[16]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B13      ; 154        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B14      ; 156        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B16      ; 141        ; 6        ; dataadr[1]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; B16      ; 141        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; C1       ; 5          ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
-; C2       ; 4          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; C3       ; 202        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; C2       ; 4          ; 1        ; writedata[8]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; C3       ; 202        ; 8        ; writedata[1]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C4       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; C5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; C6       ; 187        ; 8        ; dataadr[10]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C6       ; 187        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C7       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; C8       ; 179        ; 8        ; writedata[22]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; C9       ; 172        ; 7        ; writedata[26]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C8       ; 179        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; C9       ; 172        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C10      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; C11      ; 163        ; 7        ; writedata[3]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C11      ; 163        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C12      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C13      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; C14      ; 149        ; 7        ; dataadr[22]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; C15      ; 147        ; 6        ; writedata[31]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; C16      ; 146        ; 6        ; writedata[8]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; D1       ; 8          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; C14      ; 149        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; C15      ; 147        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; C16      ; 146        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; D1       ; 8          ; 1        ; dataadr[7]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; D2       ; 7          ; 1        ; ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
-; D3       ; 203        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; D4       ; 0          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; D5       ; 198        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; D6       ; 199        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D3       ; 203        ; 8        ; dataadr[0]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D4       ; 0          ; 1        ; memwrite                                                  ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D5       ; 198        ; 8        ; dataadr[1]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D6       ; 199        ; 8        ; dataadr[5]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; D8       ; 180        ; 8        ; memwrite                                                  ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; D9       ; 173        ; 7        ; writedata[27]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D8       ; 180        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D9       ; 173        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D11      ; 151        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D12      ; 152        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -527,51 +517,51 @@ The pin-out file can be found in C:/Users/alexa/Documents/GitHub/mips_single_cyc
 ; E2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E3       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; E4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E5       ; 1          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; E5       ; 1          ; 1        ; writedata[0]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; E6       ; 191        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E7       ; 190        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E8       ; 181        ; 8        ; dataadr[2]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; E9       ; 174        ; 7        ; writedata[7]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; E10      ; 158        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E11      ; 157        ; 7        ; dataadr[7]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; E8       ; 181        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; E9       ; 174        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; E10      ; 158        ; 7        ; writedata[22]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; E11      ; 157        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E12      ;            ;          ; GNDA2                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E13      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E14      ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; E15      ; 128        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; E16      ; 127        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; F1       ; 12         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; F2       ; 11         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; F2       ; 11         ; 1        ; dataadr[2]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F3       ; 6          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; F4       ; 9          ; 1        ; ^nSTATUS                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; F5       ; 2          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; F5       ; 2          ; 1        ; writedata[9]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F6       ; 185        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F7       ; 186        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F8       ; 182        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F9       ; 165        ; 7        ; writedata[2]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; F10      ; 164        ; 7        ; writedata[4]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; F11      ; 166        ; 7        ; writedata[10]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; F9       ; 165        ; 7        ; dataadr[29]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; F10      ; 164        ; 7        ; dataadr[13]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; F11      ; 166        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F12      ;            ; --       ; VCCA2                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; F13      ; 138        ; 6        ; writedata[18]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F13      ; 138        ; 6        ; dataadr[27]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F14      ; 142        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; F15      ; 140        ; 6        ; writedata[6]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F15      ; 140        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F16      ; 139        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; G1       ; 14         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G1       ; 14         ; 1        ; dataadr[21]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G2       ; 13         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G3       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; G4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; G5       ; 10         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G5       ; 10         ; 1        ; dataadr[6]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G6       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G8       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G9       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G10      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; G11      ; 145        ; 6        ; writedata[12]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G11      ; 145        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G12      ; 132        ; 6        ; ^MSEL2                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; G12      ; 133        ; 6        ; ^MSEL3                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; G13      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G14      ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; G15      ; 137        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; G16      ; 136        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G16      ; 136        ; 6        ; writedata[24]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H1       ; 15         ; 1        ; ~ALTERA_DCLK~                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
 ; H2       ; 16         ; 1        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
 ; H3       ; 19         ; 1        ; #TCK                                                      ; input  ;              ;         ; --         ;                 ; --       ; --           ;
@@ -593,60 +583,60 @@ The pin-out file can be found in C:/Users/alexa/Documents/GitHub/mips_single_cyc
 ; J3       ; 22         ; 1        ; ^nCE                                                      ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J4       ; 21         ; 1        ; #TDO                                                      ; output ;              ;         ; --         ;                 ; --       ; --           ;
 ; J5       ; 20         ; 1        ; #TMS                                                      ; input  ;              ;         ; --         ;                 ; --       ; --           ;
-; J6       ; 29         ; 2        ; dataadr[15]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J6       ; 29         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J8       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; J11      ; 117        ; 5        ; dataadr[23]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J11      ; 117        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J12      ; 123        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J13      ; 124        ; 5        ; writedata[25]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J14      ; 122        ; 5        ; dataadr[28]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J15      ; 121        ; 5        ; dataadr[0]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J16      ; 120        ; 5        ; dataadr[12]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J13      ; 124        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J14      ; 122        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J15      ; 121        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J16      ; 120        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K1       ; 33         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; K2       ; 32         ; 2        ; dataadr[27]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K2       ; 32         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K3       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K5       ; 39         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; K6       ; 30         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K6       ; 30         ; 2        ; dataadr[19]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K8       ; 60         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; K9       ; 76         ; 4        ; writedata[19]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; K10      ; 87         ; 4        ; dataadr[29]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; K10      ; 87         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; K11      ; 110        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; K12      ; 105        ; 5        ; dataadr[4]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K12      ; 105        ; 5        ; writedata[23]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K13      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K14      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; K15      ; 119        ; 5        ; dataadr[20]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K16      ; 118        ; 5        ; dataadr[18]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L1       ; 35         ; 2        ; dataadr[8]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K15      ; 119        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K16      ; 118        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L1       ; 35         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L2       ; 34         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L3       ; 36         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; L4       ; 40         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L5       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L6       ; 31         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L7       ; 65         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; L8       ; 68         ; 3        ; dataadr[17]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; L8       ; 68         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L9       ; 77         ; 4        ; writedata[17]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; L10      ; 88         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L11      ; 99         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L12      ; 104        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; L13      ; 114        ; 5        ; dataadr[6]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L14      ; 113        ; 5        ; dataadr[13]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L15      ; 116        ; 5        ; dataadr[14]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L16      ; 115        ; 5        ; dataadr[16]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L13      ; 114        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L14      ; 113        ; 5        ; dataadr[28]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L15      ; 116        ; 5        ; writedata[3]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L16      ; 115        ; 5        ; dataadr[4]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M1       ; 26         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M2       ; 25         ; 2        ; reset                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M3       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M5       ;            ;          ; GNDA1                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; M6       ; 57         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; M7       ; 59         ; 3        ; dataadr[30]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; M8       ; 69         ; 3        ; writedata[30]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; M9       ; 78         ; 4        ; writedata[1]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; M10      ; 93         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; M11      ; 100        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; M6       ; 57         ; 3        ; writedata[18]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M7       ; 59         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; M8       ; 69         ; 3        ; writedata[27]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M9       ; 78         ; 4        ; writedata[26]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M10      ; 93         ; 4        ; writedata[10]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M11      ; 100        ; 4        ; dataadr[17]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M12      ; 103        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M13      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M14      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -657,64 +647,64 @@ The pin-out file can be found in C:/Users/alexa/Documents/GitHub/mips_single_cyc
 ; N3       ; 45         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N4       ;            ;          ; VCCD_PLL1                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N5       ; 55         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; N6       ; 56         ; 3        ; writedata[5]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N6       ; 56         ; 3        ; dataadr[14]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; N8       ; 70         ; 3        ; dataadr[9]                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N8       ; 70         ; 3        ; dataadr[12]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N9       ; 79         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; N11      ; 94         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N11      ; 94         ; 4        ; dataadr[30]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N12      ; 101        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N13      ; 102        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; N14      ; 106        ; 5        ; writedata[29]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N15      ; 112        ; 5        ; dataadr[11]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N16      ; 111        ; 5        ; dataadr[3]                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; P1       ; 44         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N14      ; 106        ; 5        ; writedata[20]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N15      ; 112        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N16      ; 111        ; 5        ; dataadr[23]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P1       ; 44         ; 2        ; writedata[11]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P2       ; 43         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P3       ; 46         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P4       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; P6       ; 58         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; P6       ; 58         ; 3        ; dataadr[24]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; P7       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; P8       ; 71         ; 3        ; writedata[28]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; P8       ; 71         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P9       ; 89         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P10      ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; P11      ; 90         ; 4        ; dataadr[19]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; P11      ; 90         ; 4        ; writedata[12]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; P12      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P13      ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P14      ; 98         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P15      ; 107        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; P16      ; 108        ; 5        ; dataadr[25]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P16      ; 108        ; 5        ; writedata[21]                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R1       ; 42         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R3       ; 47         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R4       ; 53         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R5       ; 61         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; R6       ; 63         ; 3        ; writedata[15]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R6       ; 63         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R7       ; 66         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; R8       ; 72         ; 3        ; writedata[9]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; R9       ; 74         ; 4        ; writedata[11]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; R10      ; 80         ; 4        ; writedata[24]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; R11      ; 83         ; 4        ; writedata[21]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; R12      ; 85         ; 4        ; dataadr[24]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R8       ; 72         ; 3        ; dataadr[16]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R9       ; 74         ; 4        ; writedata[13]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R10      ; 80         ; 4        ; dataadr[20]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R11      ; 83         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R12      ; 85         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R13      ; 91         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; R14      ; 97         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R14      ; 97         ; 4        ; dataadr[15]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; R16      ; 109        ; 5        ; dataadr[31]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R16      ; 109        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T1       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; T2       ; 52         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; T3       ; 48         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; T4       ; 54         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; T5       ; 62         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; T6       ; 64         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; T7       ; 67         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; T8       ; 73         ; 3        ; writedata[23]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T9       ; 75         ; 4        ; writedata[20]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T10      ; 81         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; T11      ; 84         ; 4        ; dataadr[21]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T12      ; 86         ; 4        ; dataadr[26]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T13      ; 92         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T5       ; 62         ; 3        ; dataadr[26]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T6       ; 64         ; 3        ; writedata[28]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T7       ; 67         ; 3        ; dataadr[22]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T8       ; 73         ; 3        ; dataadr[18]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T9       ; 75         ; 4        ; writedata[30]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T10      ; 81         ; 4        ; writedata[25]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T11      ; 84         ; 4        ; writedata[15]                                             ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T12      ; 86         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T13      ; 92         ; 4        ; writedata[4]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; T14      ; 95         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; T15      ; 96         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T15      ; 96         ; 4        ; dataadr[25]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; T16      ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
@@ -867,20 +857,17 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                            ; Entity Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------+-------------+--------------+
-; |mips_sc_org               ; 1139 (0)    ; 518 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 67   ; 0            ; 621 (0)      ; 181 (0)           ; 337 (0)          ; |mips_sc_org                                   ; mips_sc_org ; work         ;
-;    |imem:imem|             ; 33 (33)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 29 (29)      ; 0 (0)             ; 4 (4)            ; |mips_sc_org|imem:imem                         ; imem        ; work         ;
-;    |mips:cpu|              ; 1110 (0)    ; 518 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 592 (0)      ; 181 (0)           ; 337 (0)          ; |mips_sc_org|mips:cpu                          ; mips        ; work         ;
-;       |controller:c|       ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (0)       ; 0 (0)             ; 1 (0)            ; |mips_sc_org|mips:cpu|controller:c             ; controller  ; work         ;
-;          |aludec:ad|       ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 1 (1)            ; |mips_sc_org|mips:cpu|controller:c|aludec:ad   ; aludec      ; work         ;
-;          |maindec:md|      ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |mips_sc_org|mips:cpu|controller:c|maindec:md  ; maindec     ; work         ;
-;       |datapath:dp|        ; 1097 (0)    ; 518 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 579 (0)      ; 181 (0)           ; 337 (0)          ; |mips_sc_org|mips:cpu|datapath:dp              ; datapath    ; work         ;
-;          |adder:pcadd1|    ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |mips_sc_org|mips:cpu|datapath:dp|adder:pcadd1 ; adder       ; work         ;
-;          |alu:alu|         ; 293 (293)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 267 (267)    ; 0 (0)             ; 26 (26)          ; |mips_sc_org|mips:cpu|datapath:dp|alu:alu      ; alu         ; work         ;
+; |mips_sc_org               ; 20 (0)      ; 10 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 67   ; 0            ; 10 (0)       ; 0 (0)             ; 10 (0)           ; |mips_sc_org                                   ; mips_sc_org ; work         ;
+;    |imem:imem|             ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |mips_sc_org|imem:imem                         ; imem        ; work         ;
+;    |mips:cpu|              ; 17 (0)      ; 10 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 10 (0)           ; |mips_sc_org|mips:cpu                          ; mips        ; work         ;
+;       |controller:c|       ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |mips_sc_org|mips:cpu|controller:c             ; controller  ; work         ;
+;          |maindec:md|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |mips_sc_org|mips:cpu|controller:c|maindec:md  ; maindec     ; work         ;
+;       |datapath:dp|        ; 16 (0)      ; 10 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 10 (0)           ; |mips_sc_org|mips:cpu|datapath:dp              ; datapath    ; work         ;
+;          |adder:pcadd1|    ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 5 (5)            ; |mips_sc_org|mips:cpu|datapath:dp|adder:pcadd1 ; adder       ; work         ;
+;          |alu:alu|         ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |mips_sc_org|mips:cpu|datapath:dp|alu:alu      ; alu         ; work         ;
 ;          |flopr:pcreg|     ; 6 (6)       ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (6)            ; |mips_sc_org|mips:cpu|datapath:dp|flopr:pcreg  ; flopr       ; work         ;
-;          |mux2:pcmux|      ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 4 (4)            ; |mips_sc_org|mips:cpu|datapath:dp|mux2:pcmux   ; mux2        ; work         ;
-;          |mux2:srcbmux|    ; 34 (34)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 2 (2)            ; |mips_sc_org|mips:cpu|datapath:dp|mux2:srcbmux ; mux2        ; work         ;
-;          |mux2:wrmux|      ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |mips_sc_org|mips:cpu|datapath:dp|mux2:wrmux   ; mux2        ; work         ;
-;          |regfile:rf|      ; 782 (782)   ; 512 (512)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 270 (270)    ; 181 (181)         ; 331 (331)        ; |mips_sc_org|mips:cpu|datapath:dp|regfile:rf   ; regfile     ; work         ;
+;          |mux2:pcmux|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |mips_sc_org|mips:cpu|datapath:dp|mux2:pcmux   ; mux2        ; work         ;
+;          |regfile:rf|      ; 8 (8)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; |mips_sc_org|mips:cpu|datapath:dp|regfile:rf   ; regfile     ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -970,30 +957,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                      ;
-+-----------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                    ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk                                     ; PIN_E1             ; 518     ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1688 ; LCCOMB_X28_Y10_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1689 ; LCCOMB_X29_Y10_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1690 ; LCCOMB_X28_Y10_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1691 ; LCCOMB_X28_Y10_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1692 ; LCCOMB_X28_Y10_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1693 ; LCCOMB_X29_Y10_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1694 ; LCCOMB_X29_Y10_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1695 ; LCCOMB_X28_Y11_N0  ; 33      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1696 ; LCCOMB_X29_Y13_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1697 ; LCCOMB_X26_Y10_N10 ; 33      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1698 ; LCCOMB_X29_Y13_N20 ; 33      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1699 ; LCCOMB_X29_Y13_N26 ; 33      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1700 ; LCCOMB_X26_Y10_N28 ; 33      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1701 ; LCCOMB_X29_Y13_N30 ; 33      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1702 ; LCCOMB_X26_Y10_N6  ; 33      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; mips:cpu|datapath:dp|regfile:rf|rf~1703 ; LCCOMB_X29_Y10_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; reset                                   ; PIN_M2             ; 6       ; Async. clear ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-+-----------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                        ;
++--------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                       ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk                                        ; PIN_E1            ; 10      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; mips:cpu|datapath:dp|regfile:rf|always0~12 ; LCCOMB_X2_Y23_N20 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; reset                                      ; PIN_M2            ; 10      ; Async. clear ; yes    ; Global Clock         ; GCLK4            ; --                        ;
++--------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------+
@@ -1001,181 +973,134 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name  ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk   ; PIN_E1   ; 518     ; 499                                  ; Global Clock         ; GCLK2            ; --                        ;
-; reset ; PIN_M2   ; 6       ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; clk   ; PIN_E1   ; 10      ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
+; reset ; PIN_M2   ; 10      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------+
-; Routing Usage Summary                          ;
-+-----------------------+------------------------+
-; Routing Resource Type ; Usage                  ;
-+-----------------------+------------------------+
-; Block interconnects   ; 2,364 / 32,401 ( 7 % ) ;
-; C16 interconnects     ; 37 / 1,326 ( 3 % )     ;
-; C4 interconnects      ; 1,595 / 21,816 ( 7 % ) ;
-; Direct links          ; 173 / 32,401 ( < 1 % ) ;
-; Global clocks         ; 2 / 10 ( 20 % )        ;
-; Local interconnects   ; 519 / 10,320 ( 5 % )   ;
-; R24 interconnects     ; 35 / 1,289 ( 3 % )     ;
-; R4 interconnects      ; 1,865 / 28,186 ( 7 % ) ;
-+-----------------------+------------------------+
++-----------------------------------------------+
+; Routing Usage Summary                         ;
++-----------------------+-----------------------+
+; Routing Resource Type ; Usage                 ;
++-----------------------+-----------------------+
+; Block interconnects   ; 27 / 32,401 ( < 1 % ) ;
+; C16 interconnects     ; 0 / 1,326 ( 0 % )     ;
+; C4 interconnects      ; 5 / 21,816 ( < 1 % )  ;
+; Direct links          ; 16 / 32,401 ( < 1 % ) ;
+; Global clocks         ; 2 / 10 ( 20 % )       ;
+; Local interconnects   ; 12 / 10,320 ( < 1 % ) ;
+; R24 interconnects     ; 0 / 1,289 ( 0 % )     ;
+; R4 interconnects      ; 6 / 28,186 ( < 1 % )  ;
++-----------------------+-----------------------+
+
+
++---------------------------------------------------------------------------+
+; LAB Logic Elements                                                        ;
++---------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 10.00) ; Number of LABs  (Total = 2) ;
++---------------------------------------------+-----------------------------+
+; 1                                           ; 0                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 1                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 0                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 0                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 0                           ;
+; 12                                          ; 0                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 0                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 1                           ;
++---------------------------------------------+-----------------------------+
+
+
++------------------------------------------------------------------+
+; LAB-wide Signals                                                 ;
++------------------------------------+-----------------------------+
+; LAB-wide Signals  (Average = 1.00) ; Number of LABs  (Total = 2) ;
++------------------------------------+-----------------------------+
+; 1 Async. clear                     ; 1                           ;
+; 1 Clock                            ; 1                           ;
++------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
-; LAB Logic Elements                                                         ;
-+---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.66) ; Number of LABs  (Total = 90) ;
-+---------------------------------------------+------------------------------+
-; 1                                           ; 3                            ;
-; 2                                           ; 2                            ;
-; 3                                           ; 7                            ;
-; 4                                           ; 3                            ;
-; 5                                           ; 1                            ;
-; 6                                           ; 1                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 1                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 4                            ;
-; 11                                          ; 1                            ;
-; 12                                          ; 6                            ;
-; 13                                          ; 2                            ;
-; 14                                          ; 2                            ;
-; 15                                          ; 2                            ;
-; 16                                          ; 54                           ;
-+---------------------------------------------+------------------------------+
+; LAB Signals Sourced                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Signals Sourced  (Average = 15.00) ; Number of LABs  (Total = 2) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 1                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 0                           ;
+; 9                                            ; 0                           ;
+; 10                                           ; 0                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 0                           ;
+; 15                                           ; 0                           ;
+; 16                                           ; 0                           ;
+; 17                                           ; 0                           ;
+; 18                                           ; 0                           ;
+; 19                                           ; 0                           ;
+; 20                                           ; 0                           ;
+; 21                                           ; 0                           ;
+; 22                                           ; 0                           ;
+; 23                                           ; 0                           ;
+; 24                                           ; 0                           ;
+; 25                                           ; 0                           ;
+; 26                                           ; 1                           ;
++----------------------------------------------+-----------------------------+
 
 
-+-------------------------------------------------------------------+
-; LAB-wide Signals                                                  ;
-+------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.89) ; Number of LABs  (Total = 90) ;
-+------------------------------------+------------------------------+
-; 1 Async. clear                     ; 1                            ;
-; 1 Clock                            ; 85                           ;
-; 1 Clock enable                     ; 9                            ;
-; 2 Clock enables                    ; 75                           ;
-+------------------------------------+------------------------------+
++-------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                       ;
++-------------------------------------------------+-----------------------------+
+; Number of Signals Sourced Out  (Average = 8.50) ; Number of LABs  (Total = 2) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 0                           ;
+; 1                                               ; 0                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 1                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 0                           ;
+; 11                                              ; 0                           ;
+; 12                                              ; 0                           ;
+; 13                                              ; 1                           ;
++-------------------------------------------------+-----------------------------+
 
 
-+-----------------------------------------------------------------------------+
-; LAB Signals Sourced                                                         ;
-+----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 18.06) ; Number of LABs  (Total = 90) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 1                            ;
-; 1                                            ; 1                            ;
-; 2                                            ; 3                            ;
-; 3                                            ; 1                            ;
-; 4                                            ; 3                            ;
-; 5                                            ; 3                            ;
-; 6                                            ; 2                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 3                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 2                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 3                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 1                            ;
-; 17                                           ; 4                            ;
-; 18                                           ; 4                            ;
-; 19                                           ; 3                            ;
-; 20                                           ; 15                           ;
-; 21                                           ; 3                            ;
-; 22                                           ; 6                            ;
-; 23                                           ; 4                            ;
-; 24                                           ; 1                            ;
-; 25                                           ; 5                            ;
-; 26                                           ; 5                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 5                            ;
-; 29                                           ; 1                            ;
-; 30                                           ; 3                            ;
-; 31                                           ; 0                            ;
-; 32                                           ; 3                            ;
-+----------------------------------------------+------------------------------+
-
-
-+---------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                         ;
-+--------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 10.58) ; Number of LABs  (Total = 90) ;
-+--------------------------------------------------+------------------------------+
-; 0                                                ; 1                            ;
-; 1                                                ; 5                            ;
-; 2                                                ; 2                            ;
-; 3                                                ; 5                            ;
-; 4                                                ; 5                            ;
-; 5                                                ; 2                            ;
-; 6                                                ; 3                            ;
-; 7                                                ; 5                            ;
-; 8                                                ; 5                            ;
-; 9                                                ; 7                            ;
-; 10                                               ; 2                            ;
-; 11                                               ; 6                            ;
-; 12                                               ; 6                            ;
-; 13                                               ; 4                            ;
-; 14                                               ; 10                           ;
-; 15                                               ; 7                            ;
-; 16                                               ; 2                            ;
-; 17                                               ; 4                            ;
-; 18                                               ; 2                            ;
-; 19                                               ; 1                            ;
-; 20                                               ; 1                            ;
-; 21                                               ; 1                            ;
-; 22                                               ; 2                            ;
-; 23                                               ; 1                            ;
-; 24                                               ; 1                            ;
-+--------------------------------------------------+------------------------------+
-
-
-+-----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                         ;
-+----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 23.72) ; Number of LABs  (Total = 90) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 3                            ;
-; 4                                            ; 2                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 2                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 3                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 2                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 2                            ;
-; 15                                           ; 2                            ;
-; 16                                           ; 1                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 1                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 2                            ;
-; 21                                           ; 3                            ;
-; 22                                           ; 2                            ;
-; 23                                           ; 3                            ;
-; 24                                           ; 4                            ;
-; 25                                           ; 4                            ;
-; 26                                           ; 3                            ;
-; 27                                           ; 2                            ;
-; 28                                           ; 5                            ;
-; 29                                           ; 10                           ;
-; 30                                           ; 0                            ;
-; 31                                           ; 4                            ;
-; 32                                           ; 4                            ;
-; 33                                           ; 5                            ;
-; 34                                           ; 3                            ;
-; 35                                           ; 2                            ;
-; 36                                           ; 6                            ;
-; 37                                           ; 3                            ;
-+----------------------------------------------+------------------------------+
++---------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                       ;
++---------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 6.00) ; Number of LABs  (Total = 2) ;
++---------------------------------------------+-----------------------------+
+; 0                                           ; 0                           ;
+; 1                                           ; 0                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 1                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 0                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 1                           ;
++---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------+
@@ -1399,14 +1324,14 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
-Info (170195): Router estimated average interconnect usage is 4% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 7% of the available device resources in the region that extends from location X23_Y12 to location X34_Y24
+Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y12 to location X10_Y24
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
-Info (11888): Total time spent on timing analysis during the Fitter is 0.49 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1414,10 +1339,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file C:/Users/alexa/Documents/GitHub/mips_single_cycle/output_files/mips_sc_org.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6120 megabytes
-    Info: Processing ended: Wed Jun 18 13:02:11 2025
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 6089 megabytes
+    Info: Processing ended: Sun Jul 06 20:07:25 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+

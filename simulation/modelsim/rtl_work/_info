@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/alexa/Documents/GitHub/mips_single_cycle/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1750266037
+Z2 !s110 1751846861
 !i10b 1
 !s100 BbcXPMUXa_8FC;T^6eU7D0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 w1750237999
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/adder.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/adder.sv
-!i122 8
+!i122 7
 L0 1 4
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1750266037.000000
+Z6 !s108 1751846861.000000
 !s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle|C:/Users/alexa/Documents/GitHub/mips_single_cycle/adder.sv|
 !i113 1
@@ -39,17 +39,17 @@ valu
 R1
 R2
 !i10b 1
-!s100 Yja@:G^c2zcK?E:0cASA[0
+!s100 I[XD[D_=4iTJBkhTagH1U1
 R3
-IKGblh?z5Wn:?BQ@eI]M6Z1
+ITII?b?1h]4`oAh6k36hPG3
 R4
 S1
 R0
-w1750238166
+w1751845230
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/alu.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/alu.sv
-!i122 11
-L0 1 22
+!i122 10
+L0 1 24
 R5
 r1
 !s85 0
@@ -74,7 +74,7 @@ R0
 w1750237929
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/aludec.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/aludec.sv
-!i122 5
+!i122 4
 Z10 L0 1 21
 R5
 r1
@@ -89,24 +89,24 @@ R8
 R9
 vcontroller
 R1
-R2
+Z11 !s110 1751846860
 !i10b 1
-!s100 mLofUCPS^OA>;F5Nkb]0o3
+!s100 jAcWQY9=J<EYk`aF?;S]k3
 R3
-IVW1O6]<gRY>`E8YH6VJ0z3
+IilJgdZBk]g55Z]4>OSBcH2
 R4
 S1
 R0
-w1750237879
+Z12 w1751843154
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/controller.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/controller.sv
-!i122 3
-Z11 L0 1 17
+!i122 2
+L0 1 18
 R5
 r1
 !s85 0
 31
-R6
+Z13 !s108 1751846860.000000
 !s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/controller.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle|C:/Users/alexa/Documents/GitHub/mips_single_cycle/controller.sv|
 !i113 1
@@ -117,17 +117,17 @@ vdatapath
 R1
 R2
 !i10b 1
-!s100 _I5BDlZAFHhGL8n3?H7RW3
+!s100 GTQnZ>djE6HB?<==H8jUc3
 R3
-I[>Po41ZjW48We01;4BA593
+I2b84cR7;W0;@_IMo0239<0
 R4
 S1
 R0
-w1750264762
+w1751842158
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/datapath.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/datapath.sv
-!i122 6
-L0 1 51
+!i122 5
+L0 1 62
 R5
 r1
 !s85 0
@@ -141,24 +141,24 @@ R8
 R9
 vdmem
 R1
-Z12 !s110 1750266036
+Z14 !s110 1751846862
 !i10b 1
-!s100 [1JMmV1fLk48_meA@;BCb1
+!s100 >[T7gM2nVV:A[??iV5kSz0
 R3
-I]UJ3NEEnHP[aaK15M=O=Q3
+I0dgS6TT?n>5V0NWj9F?870
 R4
 S1
 R0
-w1750237823
+w1751844604
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv
-!i122 1
-Z13 L0 1 14
+!i122 13
+L0 1 20
 R5
 r1
 !s85 0
 31
-Z14 !s108 1750266036.000000
+Z15 !s108 1751846862.000000
 !s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle|C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv|
 !i113 1
@@ -178,7 +178,7 @@ R0
 w1750238110
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/flopr.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/flopr.sv
-!i122 9
+!i122 8
 L0 1 8
 R5
 r1
@@ -193,15 +193,15 @@ R8
 R9
 vimem
 R1
-Z15 !s110 1750266038
+R14
 !i10b 1
-!s100 [4=HG?DP:lgjODkb7MUL]1
+!s100 :C22RjU8b4ig0gN_jFZ`z2
 R3
-I=FSh6eXz`O`12M_<cao`g0
+ISgN9ePgAUB:D90IXMF<<h3
 R4
 S1
 R0
-w1750237836
+w1751844272
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/imem.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/imem.sv
 !i122 14
@@ -210,7 +210,7 @@ R5
 r1
 !s85 0
 31
-!s108 1750266038.000000
+R15
 !s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/imem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle|C:/Users/alexa/Documents/GitHub/mips_single_cycle/imem.sv|
 !i113 1
@@ -221,17 +221,17 @@ vmaindec
 R1
 R2
 !i10b 1
-!s100 XK^CgDd]A0HUQWL@6<la12
+!s100 _8dZMC76M9ZFLH9H5;l`;0
 R3
-IKeePJo]B;RbQ5okR89<zM3
+IO=4l]<gCccMl<zO4KknY53
 R4
 S1
 R0
-w1750237897
+R12
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/maindec.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/maindec.sv
-!i122 4
-L0 1 31
+!i122 3
+L0 1 41
 R5
 r1
 !s85 0
@@ -245,24 +245,24 @@ R8
 R9
 vmips
 R1
-R12
+R11
 !i10b 1
-!s100 ^e>7z=WM4QzZAeH6;eAIE1
+!s100 ^n8?gWg0H?Rg7:2<8DaTj3
 R3
-I3:^8hagJ1YjPTT3W5FSDf0
+I;USg:48BfZRSaHZ9MW<IB2
 R4
 S1
 R0
-w1750237866
+w1751773892
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/mips.sv
-!i122 2
+!i122 1
 R10
 R5
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle|C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips.sv|
 !i113 1
@@ -271,7 +271,7 @@ R8
 R9
 vmips_sc_org
 R1
-R12
+R11
 !i10b 1
 !s100 eHi7dlzfRJH;fco=i5VLU3
 R3
@@ -288,7 +288,7 @@ R5
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips_sc_org.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle|C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips_sc_org.sv|
 !i113 1
@@ -308,7 +308,7 @@ R0
 w1750238146
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/mux2.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/mux2.sv
-!i122 10
+!i122 9
 Z16 L0 1 6
 R5
 r1
@@ -334,7 +334,7 @@ R0
 w1750238204
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/muxBEQBNE.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/muxBEQBNE.sv
-!i122 12
+!i122 11
 R16
 R5
 r1
@@ -352,17 +352,17 @@ vregfile
 R1
 R2
 !i10b 1
-!s100 `N1`DmVQcBj;]Zz1<D=:H1
+!s100 FII1I=i<@BejKmJJLR^XV2
 R3
-IOkWiSE<ojbPIY5e:J?2ML2
+IG6UiMgn[dg]cM7bbVV@l[3
 R4
 S1
 R0
-w1750237976
+w1751845544
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/regfile.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/regfile.sv
-!i122 7
-R11
+!i122 6
+L0 1 22
 R5
 r1
 !s85 0
@@ -376,7 +376,7 @@ R8
 R9
 vshifter
 R1
-R15
+R14
 !i10b 1
 !s100 626QH9U3J`8iXA7FQbjQD3
 R3
@@ -387,8 +387,8 @@ R0
 w1750263465
 8C:/Users/alexa/Documents/GitHub/mips_single_cycle/shifter.sv
 FC:/Users/alexa/Documents/GitHub/mips_single_cycle/shifter.sv
-!i122 13
-R13
+!i122 12
+L0 1 14
 R5
 r1
 !s85 0

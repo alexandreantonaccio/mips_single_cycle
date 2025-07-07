@@ -15,6 +15,8 @@ module alu(input  logic [31:0] a, b,
       3'b011: result = a << shamt;
       default: result = 32'bx;
     endcase
+	 // Adicione esta linha dentro do always_comb do seu alu.sv
+$display("ALU DEBUG: srca=%h, srcb=%h, alucontrol=%b, result=%h", a, b, alucontrol, a + b);
   end
 
   assign zero = (result == 32'b0);

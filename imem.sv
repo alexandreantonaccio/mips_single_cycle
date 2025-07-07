@@ -4,7 +4,7 @@ module imem(input  logic [5:0] a,
   logic [31:0] RAM[63:0];
 
   initial
-      $readmemh("code.txt",RAM);
+      $readmemh("teste_sw.txt",RAM);
 
   assign rd = RAM[a];
 endmodule

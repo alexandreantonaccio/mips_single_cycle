@@ -6,7 +6,6 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips_sc_org.sv}
-vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv}
 vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips.sv}
 vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/controller.sv}
 vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/maindec.sv}
@@ -19,5 +18,6 @@ vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C
 vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/alu.sv}
 vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/muxBEQBNE.sv}
 vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/shifter.sv}
+vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv}
 vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/imem.sv}
 

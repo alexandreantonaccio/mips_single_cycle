@@ -12,153 +12,153 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips_sc_org.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:36 on Jun 18,2025
+# Start time: 20:07:40 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips_sc_org.sv 
 # -- Compiling module mips_sc_org
 # 
 # Top level modules:
 # 	mips_sc_org
-# End time: 13:00:36 on Jun 18,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:36 on Jun 18,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv 
-# -- Compiling module dmem
-# 
-# Top level modules:
-# 	dmem
-# End time: 13:00:36 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:40 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:36 on Jun 18,2025
+# Start time: 20:07:40 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips.sv 
 # -- Compiling module mips
 # 
 # Top level modules:
 # 	mips
-# End time: 13:00:36 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:40 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:40 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:40 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/maindec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/maindec.sv 
 # -- Compiling module maindec
 # 
 # Top level modules:
 # 	maindec
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/aludec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/aludec.sv 
 # -- Compiling module aludec
 # 
 # Top level modules:
 # 	aludec
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/flopr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/flopr.sv 
 # -- Compiling module flopr
 # 
 # Top level modules:
 # 	flopr
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/mux2.sv 
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/muxBEQBNE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/muxBEQBNE.sv 
 # -- Compiling module muxBEQBNE
 # 
 # Top level modules:
 # 	muxBEQBNE
-# End time: 13:00:37 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:37 on Jun 18,2025
+# Start time: 20:07:41 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/shifter.sv 
 # -- Compiling module shifter
 # 
 # Top level modules:
 # 	shifter
-# End time: 13:00:38 on Jun 18,2025, Elapsed time: 0:00:01
+# End time: 20:07:42 on Jul 06,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:07:42 on Jul 06,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 20:07:42 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:38 on Jun 18,2025
+# Start time: 20:07:42 on Jul 06,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/imem.sv 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 13:00:38 on Jun 18,2025, Elapsed time: 0:00:00
+# End time: 20:07:42 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 cd ..
@@ -168,8 +168,8 @@ pwd
 # C:/Users/alexa/Documents/GitHub/mips_single_cycle
 vlog *.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:49 on Jun 18,2025
-# vlog -reportprogress 300 adder.sv alu.sv aludec.sv controller.sv cpu_tb.sv datapath.sv dmem.sv flopr.sv imem.sv maindec.sv mips.sv mips_sc_org.sv mux2.sv muxBEQBNE.sv regfile.sv shifter.sv signext.sv sl2.sv tb_adder.sv tb_datapath_pc.sv tb_dmem.sv tb_flopr.sv tb_imem.sv tb_shifter.sv tb_singext.sv tb_sl2.sv 
+# Start time: 20:08:01 on Jul 06,2025
+# vlog -reportprogress 300 adder.sv alu.sv aludec.sv controller.sv cpu_tb.sv datapath.sv dmem.sv flopr.sv imem.sv maindec.sv mips.sv mips_sc_org.sv mux2.sv muxBEQBNE.sv regfile.sv shifter.sv signext.sv sl2.sv tb_adder.sv tb_cpu.sv tb_datapath_pc.sv tb_dmem.sv tb_flopr.sv tb_imem.sv tb_shifter.sv tb_singext.sv tb_sl2.sv 
 # -- Compiling module adder
 # -- Compiling module alu
 # -- Compiling module aludec
@@ -189,62 +189,8 @@ vlog *.sv
 # -- Compiling module signext
 # -- Compiling module sl2
 # -- Compiling module tb_adder
-# -- Compiling module tb_datapath_pc
-# -- Compiling module tb_dmem
-# -- Compiling module tb_flopr
-# -- Compiling module tb_imem
-# -- Compiling module tb_shifter
-# -- Compiling module tb_signext
-# -- Compiling module tb_sl2
-# 
-# Top level modules:
-# 	tb_cpu
-# 	tb_adder
-# 	tb_datapath_pc
-# 	tb_dmem
-# 	tb_flopr
-# 	tb_imem
-# 	tb_shifter
-# 	tb_signext
-# 	tb_sl2
-# End time: 13:00:49 on Jun 18,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim tb_imem
-# vsim tb_imem 
-# Start time: 13:00:56 on Jun 18,2025
-# Loading sv_std.std
-# Loading work.tb_imem
-# Loading work.imem
-# ** Warning: (vsim-3008) [CNNODP] - Component name (mem_array) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_imem File: tb_imem.sv Line: 30
-# ** Error: (vsim-3043) Unresolved reference to 'mem_array' in dut.mem_array.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_imem File: tb_imem.sv Line: 30
-# Error loading design
-# End time: 13:00:56 on Jun 18,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 1
-vlog *.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:02:21 on Jun 18,2025
-# vlog -reportprogress 300 adder.sv alu.sv aludec.sv controller.sv cpu_tb.sv datapath.sv dmem.sv flopr.sv imem.sv maindec.sv mips.sv mips_sc_org.sv mux2.sv muxBEQBNE.sv regfile.sv shifter.sv signext.sv sl2.sv tb_adder.sv tb_datapath_pc.sv tb_dmem.sv tb_flopr.sv tb_imem.sv tb_shifter.sv tb_singext.sv tb_sl2.sv 
-# -- Compiling module adder
-# -- Compiling module alu
-# -- Compiling module aludec
-# -- Compiling module controller
+# ** Warning: tb_cpu.sv(3): (vlog-2275) Existing module 'tb_cpu' will be overwritten.
 # -- Compiling module tb_cpu
-# -- Compiling module datapath
-# -- Compiling module dmem
-# -- Compiling module flopr
-# -- Compiling module imem
-# -- Compiling module maindec
-# -- Compiling module mips
-# -- Compiling module mips_sc_org
-# -- Compiling module mux2
-# -- Compiling module muxBEQBNE
-# -- Compiling module regfile
-# -- Compiling module shifter
-# -- Compiling module signext
-# -- Compiling module sl2
-# -- Compiling module tb_adder
 # -- Compiling module tb_datapath_pc
 # -- Compiling module tb_dmem
 # -- Compiling module tb_flopr
@@ -263,221 +209,11 @@ vlog *.sv
 # 	tb_shifter
 # 	tb_signext
 # 	tb_sl2
-# End time: 13:02:21 on Jun 18,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim tb_imem
-# vsim tb_imem 
-# Start time: 13:02:23 on Jun 18,2025
-# Loading sv_std.std
-# Loading work.tb_imem
-# Loading work.imem
-run -all
-# ===================================
-#  INÍCIO DO TESTE PARA IMEM
-# ===================================
-# Memória inicializada com valores:
-# Endereço 0: 00000000
-# Endereço 1: 11111111
-# Endereço 2: 22222222
-# Endereço 3: 33333333
-# 
-# [TESTE 1] Leitura endereço 0
-# Entrada: a= 0
-# Saída: rd=00000000
-# 
-# [TESTE 2] Leitura endereço 1
-# Entrada: a= 1
-# Saída: rd=11111111
-# 
-# [TESTE 3] Leitura endereço 2
-# Entrada: a= 2
-# Saída: rd=22222222
-# 
-# [TESTE 4] Leitura endereço fora do range (64)
-# Entrada: a= 0
-# Saída: rd=00000000
-# ** Error: Leitura fora do range falhou
-#    Time: 40 ps  Scope: tb_imem File: tb_imem.sv Line: 59
-# 
-# ===================================
-#  TODOS OS TESTES DA IMEM PASSARAM!
-# ===================================
-# ** Note: $finish    : tb_imem.sv(64)
-#    Time: 40 ps  Iteration: 0  Instance: /tb_imem
-# 1
-# Break in Module tb_imem at tb_imem.sv line 64
-vsim tb_dmem
-# End time: 13:03:09 on Jun 18,2025, Elapsed time: 0:00:46
-# Errors: 1, Warnings: 0
-# vsim tb_dmem 
-# Start time: 13:03:09 on Jun 18,2025
-# Loading sv_std.std
-# Loading work.tb_dmem
-# Loading work.dmem
-run -all
-# ===================================
-#  INÍCIO DO TESTE PARA DMEM
-# ===================================
-# 
-# [TESTE 1] Leitura inicial (memória não inicializada)
-# Entradas: we=0, a=00000000, wd=00000000
-# Saída: rd=xxxxxxxx
-# 
-# [TESTE 2] Escrita no endereço 4
-# Entradas: we=1, a=00000004, wd=a5a5a5a5
-# address 00000004 now has data a5a5a5a5
-# Leitura após escrita
-# Entradas: we=0, a=00000004
-# Saída: rd=a5a5a5a5
-# 
-# [TESTE 3] Escrita no endereço 8
-# Entradas: we=1, a=00000008, wd=5a5a5a5a
-# address 00000008 now has data 5a5a5a5a
-# Leitura após escrita
-# Entradas: we=0, a=00000008
-# Saída: rd=5a5a5a5a
-# 
-# [TESTE 4] Tentativa de escrita com we=0
-# Entradas: we=0, a=00000004, wd=deadbeef
-# Leitura do mesmo endereço
-# Saída: rd=a5a5a5a5
-# 
-# ===================================
-#  TODOS OS TESTES DA DMEM PASSARAM!
-# ===================================
-# ** Note: $finish    : tb_dmem.sv(75)
-#    Time: 60 ps  Iteration: 0  Instance: /tb_dmem
-# 1
-# Break in Module tb_dmem at tb_dmem.sv line 75
-vsim tb_signext
-# End time: 13:04:13 on Jun 18,2025, Elapsed time: 0:01:04
-# Errors: 0, Warnings: 0
-# vsim tb_signext 
-# Start time: 13:04:13 on Jun 18,2025
-# Loading sv_std.std
-# Loading work.tb_signext
-# Loading work.signext
-run -all
-# ===================================
-#  INÍCIO DO TESTE PARA SIGNEXT
-# ===================================
-# 
-# [TESTE 1] Número positivo (0x7FFF)
-# Entrada: a=7fff
-# Saída: y=00007fff
-# 
-# [TESTE 2] Número negativo (0x8000)
-# Entrada: a=8000
-# Saída: y=ffff8000
-# 
-# [TESTE 3] Zero (0x0000)
-# Entrada: a=0000
-# Saída: y=00000000
-# 
-# [TESTE 4] Valor máximo negativo (0xFFFF)
-# Entrada: a=ffff
-# Saída: y=ffffffff
-# 
-# [TESTE 5] Valor intermediário (0x1234)
-# Entrada: a=1234
-# Saída: y=00001234
-# 
-# ===================================
-#  TODOS OS TESTES DO SIGNEXT PASSARAM!
-# ===================================
-# ** Note: $finish    : tb_singext.sv(55)
-#    Time: 50 ps  Iteration: 0  Instance: /tb_signext
-# 1
-# Break in Module tb_signext at tb_singext.sv line 55
-vsim tb_shifter
-# End time: 13:04:42 on Jun 18,2025, Elapsed time: 0:00:29
-# Errors: 0, Warnings: 0
-# vsim tb_shifter 
-# Start time: 13:04:42 on Jun 18,2025
-# Loading sv_std.std
-# Loading work.tb_shifter
-# Loading work.shifter
-run -all
-# 
-# Iniciando teste do módulo shifter...
-# ====================================
-# 
-# [OK]   Deslocamento zero: Entrada = 12345678, Shamt = 0, Direção = 1, Saída = 12345678
-# [OK]   Deslocamento esquerda 1 bit: Entrada = 00000001, Shamt = 1, Direção = 1, Saída = 00000002
-# [OK]   Deslocamento esquerda 31 bits: Entrada = 00000001, Shamt = 31, Direção = 1, Saída = 80000000
-# [OK]   Deslocamento esquerda com overflow: Entrada = ffffffff, Shamt = 1, Direção = 1, Saída = fffffffe
-# [OK]   Deslocamento direita 1 bit: Entrada = 80000000, Shamt = 1, Direção = 0, Saída = 40000000
-# [OK]   Deslocamento direita 31 bits: Entrada = 80000000, Shamt = 31, Direção = 0, Saída = 00000001
-# [OK]   Deslocamento direita que zera o valor: Entrada = 00000001, Shamt = 16, Direção = 0, Saída = 00000000
-# 
-# Testes aleatórios:
-# [OK]   Teste 0: Entrada = 12153524, Shamt = 7, Direção = 1, Saída = 0a9a9200
-# [OK]   Teste 1: Entrada = 8484d609, Shamt = 28, Direção = 1, Saída = 90000000
-# [OK]   Teste 2: Entrada = 06b97b0d, Shamt = 28, Direção = 1, Saída = d0000000
-# [OK]   Teste 3: Entrada = b2c28465, Shamt = 28, Direção = 0, Saída = 0000000b
-# [OK]   Teste 4: Entrada = 00f3e301, Shamt = 8, Direção = 1, Saída = f3e30100
-# [OK]   Teste 5: Entrada = 3b23f176, Shamt = 7, Direção = 1, Saída = 91f8bb00
-# [OK]   Teste 6: Entrada = 76d457ed, Shamt = 22, Direção = 0, Saída = 000001db
-# [OK]   Teste 7: Entrada = 7cfde9f9, Shamt = 4, Direção = 0, Saída = 07cfde9f
-# [OK]   Teste 8: Entrada = e2f784c5, Shamt = 0, Direção = 0, Saída = e2f784c5
-# [OK]   Teste 9: Entrada = 72aff7e5, Shamt = 25, Direção = 1, Saída = ca000000
-# [OK]   Teste 10: Entrada = 8932d612, Shamt = 24, Direção = 1, Saída = 12000000
-# [OK]   Teste 11: Entrada = 793069f2, Shamt = 27, Direção = 0, Saída = 0000000f
-# [OK]   Teste 12: Entrada = f4007ae8, Shamt = 17, Direção = 1, Saída = f5d00000
-# [OK]   Teste 13: Entrada = 2e58495c, Shamt = 2, Direção = 1, Saída = b9612570
-# [OK]   Teste 14: Entrada = 96ab582d, Shamt = 28, Direção = 1, Saída = d0000000
-# [OK]   Teste 15: Entrada = b1ef6263, Shamt = 5, Direção = 0, Saída = 058f7b13
-# [OK]   Teste 16: Entrada = c03b2280, Shamt = 30, Direção = 0, Saída = 00000003
-# [OK]   Teste 17: Entrada = 557845aa, Shamt = 22, Direção = 1, Saída = 6a800000
-# [OK]   Teste 18: Entrada = cb203e96, Shamt = 16, Direção = 1, Saída = 3e960000
-# [OK]   Teste 19: Entrada = 86bc380d, Shamt = 23, Direção = 1, Saída = 06800000
-# 
-# ====================================
-# Testes concluídos com 0 erros
-# ====================================
-# 
-# ** Note: $finish    : tb_shifter.sv(149)
-#    Time: 270 ns  Iteration: 0  Instance: /tb_shifter
-# 1
-# Break in Module tb_shifter at tb_shifter.sv line 149
-vsim tb_datapath_pc.sv
-# OpenFile tb_datapath_pc.sv
-vsim tb_datapath_pc
-# End time: 13:06:35 on Jun 18,2025, Elapsed time: 0:01:53
-# Errors: 0, Warnings: 0
-# vsim tb_datapath_pc 
-# Start time: 13:06:35 on Jun 18,2025
-# Loading sv_std.std
-# Loading work.tb_datapath_pc
-# Loading work.datapath
-# Loading work.flopr
-# Loading work.adder
-# Loading work.shifter
-# Loading work.mux2
-# Loading work.regfile
-# Loading work.alu
-# Loading work.muxBEQBNE
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'BeqBne'. The port definition is at: muxBEQBNE.sv(1).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath_pc/dut/muxBEQBNE File: datapath.sv Line: 45
-run -all
-# Reset: PC = 00000000 (Esperado: 00000000)
-# Ciclo 1: PC = 00000004 (Esperado: 00000004)
-# Ciclo 2: PC = 00000008 (Esperado: 00000008)
-# Jump: PC = 00000028 (Esperado: 00000028)
-# Branch: PC = 0000001c (Esperado: 0000001c)
-# --- Preparando para o JR: Escrevendo 0x100 em $t0 ---
-# PC apos ADDI: 00000020 (Esperado: 00000020)
-# --- Executando JR $t0 ---
-# JR: PC = 00000100 (Esperado: 00000100)
-# ** Note: $finish    : tb_datapath_pc.sv(103)
-#    Time: 70 ns  Iteration: 0  Instance: /tb_datapath_pc
-# 1
-# Break in Module tb_datapath_pc at tb_datapath_pc.sv line 103
-vsim tb_cpu
-# End time: 13:07:50 on Jun 18,2025, Elapsed time: 0:01:15
+# End time: 20:08:01 on Jul 06,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
+vsim tb_cpu
 # vsim tb_cpu 
-# Start time: 13:07:50 on Jun 18,2025
+# Start time: 20:08:10 on Jul 06,2025
 # Loading sv_std.std
 # Loading work.tb_cpu
 # Loading work.mips_sc_org
@@ -495,112 +231,142 @@ vsim tb_cpu
 # Loading work.muxBEQBNE
 # Loading work.imem
 # Loading work.dmem
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'BeqBne'. The port definition is at: muxBEQBNE.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu/dut/cpu/dp/muxBEQBNE File: datapath.sv Line: 45
 run -all
-# t0=00000018 t1=xxxxxxxx t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
-# t0=00000018 t1=00000001 t2=xxxxxxxx t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
-# t0=00000018 t1=00000001 t2=00000002 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
-# t0=00000018 t1=00000001 t2=00000002 t3=xxxxxxxx t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
-# t0=00000018 t1=00000001 t2=00000002 t3=000000ff t4=xxxxxxxx t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
-# t0=00000018 t1=00000001 t2=00000002 t3=000000ff t4=000000aa t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
-# t0=00000018 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=xxxxxxxx t6=xxxxxxxx t7=xxxxxxxx
-# t0=00000018 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=xxxxxxxx t7=xxxxxxxx
-# t0=00000018 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=xxxxxxxx
-# t0=00000028 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=xxxxxxxx
-# t0=00000028 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=xxxxxxxx
-# t0=00000028 t1=00000001 t2=00000002 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000028 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# t0=00000030 t1=00000001 t2=00000004 t3=00000003 t4=000000aa t5=00000020 t6=00000099 t7=000000bb
-# ** Note: $finish    : cpu_tb.sv(30)
-#    Time: 1010 ns  Iteration: 0  Instance: /tb_cpu
+# ** Warning: (vsim-7) Failed to open readmem file "teste_sw_addr0.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : tb_cpu.sv(25)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu
+# ALU DEBUG: srca=xxxxxxxx, srcb=xxxxxxxx, alucontrol=xxx, result=xxxxxxxx
+# REGFILE READ: ra1= x, ra2= x
+# ALU DEBUG: srca=00000000, srcb=00000XXX, alucontrol=xxx, result=xxxxxxxx
+# ALU DEBUG: srca=00000000, srcb=000003e7, alucontrol=xxx, result=000003e7
+# ALU DEBUG: srca=00000000, srcb=000003e7, alucontrol=010, result=000003e7
+# REGFILE READ: ra1= 0, ra2= 8
+# PC=0x00000000 | $t0(val)=         0 | memwrite=0
+# 
+# =======================================================
+# --- Valor INICIAL em dmem[0x00]:         10 (0x0000000a)
+# =======================================================
+# 
+# REGFILE READ: ra1= 0, ra2= 8
+# ALU DEBUG: srca=00000000, srcb=00000000, alucontrol=010, result=00000000
+# PC=0x00000004 | $t0(val)=       999 | memwrite=1
+# REGFILE READ: ra1= 0, ra2= 8
+# DMEM WRITE: Address=0x00000000, Data=0x000003e7
+# ALU DEBUG: srca=00000000, srcb=00000002, alucontrol=010, result=00000002
+# ALU DEBUG: srca=00000000, srcb=00000000, alucontrol=010, result=00000000
+# 
+# =======================================================
+# --- Programa Finalizado (PC=00000008) ---
+# --- Valor FINAL em dmem[0x00]:        999 (0x000003e7)
+# >>> SUCESSO: O valor 999 foi escrito corretamente na memoria!
+# =======================================================
+# 
+# ** Note: $finish    : tb_cpu.sv(60)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_cpu
 # 1
-# Break in Module tb_cpu at cpu_tb.sv line 30
-# End time: 13:24:33 on Jun 18,2025, Elapsed time: 0:16:43
+# Break in Module tb_cpu at tb_cpu.sv line 60
+pwd
+# C:/Users/alexa/Documents/GitHub/mips_single_cycle
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:09:36 on Jul 06,2025
+# vlog -reportprogress 300 adder.sv alu.sv aludec.sv controller.sv cpu_tb.sv datapath.sv dmem.sv flopr.sv imem.sv maindec.sv mips.sv mips_sc_org.sv mux2.sv muxBEQBNE.sv regfile.sv shifter.sv signext.sv sl2.sv tb_adder.sv tb_cpu.sv tb_datapath_pc.sv tb_dmem.sv tb_flopr.sv tb_imem.sv tb_shifter.sv tb_singext.sv tb_sl2.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module aludec
+# -- Compiling module controller
+# -- Compiling module tb_cpu
+# -- Compiling module datapath
+# -- Compiling module dmem
+# -- Compiling module flopr
+# -- Compiling module imem
+# -- Compiling module maindec
+# -- Compiling module mips
+# -- Compiling module mips_sc_org
+# -- Compiling module mux2
+# -- Compiling module muxBEQBNE
+# -- Compiling module regfile
+# -- Compiling module shifter
+# -- Compiling module signext
+# -- Compiling module sl2
+# -- Compiling module tb_adder
+# ** Warning: tb_cpu.sv(3): (vlog-2275) Existing module 'tb_cpu' will be overwritten.
+# -- Compiling module tb_cpu
+# -- Compiling module tb_datapath_pc
+# -- Compiling module tb_dmem
+# -- Compiling module tb_flopr
+# -- Compiling module tb_imem
+# -- Compiling module tb_shifter
+# -- Compiling module tb_signext
+# -- Compiling module tb_sl2
+# 
+# Top level modules:
+# 	tb_cpu
+# 	tb_adder
+# 	tb_datapath_pc
+# 	tb_dmem
+# 	tb_flopr
+# 	tb_imem
+# 	tb_shifter
+# 	tb_signext
+# 	tb_sl2
+# End time: 20:09:37 on Jul 06,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vsim tb_cpu
+# End time: 20:09:46 on Jul 06,2025, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 1
+# vsim tb_cpu 
+# Start time: 20:09:46 on Jul 06,2025
+# Loading sv_std.std
+# Loading work.tb_cpu
+# Loading work.mips_sc_org
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.shifter
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.alu
+# Loading work.muxBEQBNE
+# Loading work.imem
+# Loading work.dmem
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "teste_sw_addr0.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : tb_cpu.sv(25)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu
+# ALU DEBUG: srca=xxxxxxxx, srcb=xxxxxxxx, alucontrol=xxx, result=xxxxxxxx
+# REGFILE READ: ra1= x, ra2= x
+# ALU DEBUG: srca=00000000, srcb=00000XXX, alucontrol=xxx, result=xxxxxxxx
+# ALU DEBUG: srca=00000000, srcb=000003e7, alucontrol=xxx, result=000003e7
+# ALU DEBUG: srca=00000000, srcb=000003e7, alucontrol=010, result=000003e7
+# REGFILE READ: ra1= 0, ra2= 8
+# PC=0x00000000 | $t0(val)=         0 | memwrite=0
+# 
+# =======================================================
+# --- Valor INICIAL em dmem[0x00]:          0 (0x00000000)
+# =======================================================
+# 
+# REGFILE READ: ra1= 0, ra2= 8
+# ALU DEBUG: srca=00000000, srcb=00000000, alucontrol=010, result=00000000
+# PC=0x00000004 | $t0(val)=       999 | memwrite=1
+# REGFILE READ: ra1= 0, ra2= 8
+# DMEM WRITE: Address=0x00000000, Data=0x000003e7
+# ALU DEBUG: srca=00000000, srcb=00000002, alucontrol=010, result=00000002
+# ALU DEBUG: srca=00000000, srcb=00000000, alucontrol=010, result=00000000
+# 
+# =======================================================
+# --- Programa Finalizado (PC=00000008) ---
+# --- Valor FINAL em dmem[0x00]:        999 (0x000003e7)
+# >>> SUCESSO: O valor 999 foi escrito corretamente na memoria!
+# =======================================================
+# 
+# ** Note: $finish    : tb_cpu.sv(60)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_cpu
+# 1
+# Break in Module tb_cpu at tb_cpu.sv line 60
+# End time: 21:07:07 on Jul 06,2025, Elapsed time: 0:57:21
 # Errors: 0, Warnings: 1
