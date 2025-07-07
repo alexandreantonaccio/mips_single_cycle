@@ -10,165 +10,167 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips_sc_org.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/mips_sc_org.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:40 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips_sc_org.sv 
+# Start time: 14:34:49 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/mips_sc_org.sv 
 # -- Compiling module mips_sc_org
 # 
 # Top level modules:
 # 	mips_sc_org
-# End time: 20:07:40 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:49 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/mips.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:40 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/mips.sv 
+# Start time: 14:34:50 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/mips.sv 
 # -- Compiling module mips
 # 
 # Top level modules:
 # 	mips
-# End time: 20:07:40 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:50 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/controller.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:40 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/controller.sv 
+# Start time: 14:34:50 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 20:07:40 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:50 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/maindec.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/maindec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/maindec.sv 
+# Start time: 14:34:50 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/maindec.sv 
 # -- Compiling module maindec
 # 
 # Top level modules:
 # 	maindec
-# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:50 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/aludec.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/aludec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/aludec.sv 
+# Start time: 14:34:50 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/aludec.sv 
 # -- Compiling module aludec
 # 
 # Top level modules:
 # 	aludec
-# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:50 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/datapath.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/datapath.sv 
+# Start time: 14:34:50 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:50 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/regfile.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/regfile.sv 
+# Start time: 14:34:51 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:51 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/adder.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/adder.sv 
+# Start time: 14:34:51 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:51 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/flopr.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/flopr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/flopr.sv 
+# Start time: 14:34:51 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/flopr.sv 
 # -- Compiling module flopr
 # 
 # Top level modules:
 # 	flopr
-# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:51 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/mux2.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/mux2.sv 
+# Start time: 14:34:51 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/mux2.sv 
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:51 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/alu.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/alu.sv 
+# Start time: 14:34:51 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:51 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/muxBEQBNE.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/muxBEQBNE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/muxBEQBNE.sv 
+# Start time: 14:34:51 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/muxBEQBNE.sv 
 # -- Compiling module muxBEQBNE
 # 
 # Top level modules:
 # 	muxBEQBNE
-# End time: 20:07:41 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:51 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/shifter.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:41 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/shifter.sv 
+# Start time: 14:34:52 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/shifter.sv 
 # -- Compiling module shifter
 # 
 # Top level modules:
 # 	shifter
-# End time: 20:07:42 on Jul 06,2025, Elapsed time: 0:00:01
+# End time: 14:34:52 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/dmem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:42 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/dmem.sv 
+# Start time: 14:34:52 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/dmem.sv 
 # -- Compiling module dmem
 # 
 # Top level modules:
 # 	dmem
-# End time: 20:07:42 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:52 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle {C:/Users/alexa/Documents/GitHub/mips_single_cycle/imem.sv}
+# vlog -sv -work work +incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle {C:/Users/alexandre/Documents/Github/mips_single_cycle/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:07:42 on Jul 06,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexa/Documents/GitHub/mips_single_cycle" C:/Users/alexa/Documents/GitHub/mips_single_cycle/imem.sv 
+# Start time: 14:34:52 on Jul 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/alexandre/Documents/Github/mips_single_cycle" C:/Users/alexandre/Documents/Github/mips_single_cycle/imem.sv 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 20:07:42 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:34:52 on Jul 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+pwd
+# C:/Users/alexandre/Documents/Github/mips_single_cycle/simulation/modelsim
 cd ..
 # reading C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
 cd ..
 pwd
-# C:/Users/alexa/Documents/GitHub/mips_single_cycle
+# C:/Users/alexandre/Documents/Github/mips_single_cycle
 vlog *.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:08:01 on Jul 06,2025
+# Start time: 14:37:35 on Jul 07,2025
 # vlog -reportprogress 300 adder.sv alu.sv aludec.sv controller.sv cpu_tb.sv datapath.sv dmem.sv flopr.sv imem.sv maindec.sv mips.sv mips_sc_org.sv mux2.sv muxBEQBNE.sv regfile.sv shifter.sv signext.sv sl2.sv tb_adder.sv tb_cpu.sv tb_datapath_pc.sv tb_dmem.sv tb_flopr.sv tb_imem.sv tb_shifter.sv tb_singext.sv tb_sl2.sv 
 # -- Compiling module adder
 # -- Compiling module alu
@@ -209,11 +211,11 @@ vlog *.sv
 # 	tb_shifter
 # 	tb_signext
 # 	tb_sl2
-# End time: 20:08:01 on Jul 06,2025, Elapsed time: 0:00:00
+# End time: 14:37:36 on Jul 07,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 vsim tb_cpu
 # vsim tb_cpu 
-# Start time: 20:08:10 on Jul 06,2025
+# Start time: 14:37:52 on Jul 07,2025
 # Loading sv_std.std
 # Loading work.tb_cpu
 # Loading work.mips_sc_org
@@ -232,141 +234,226 @@ vsim tb_cpu
 # Loading work.imem
 # Loading work.dmem
 run -all
-# ** Warning: (vsim-7) Failed to open readmem file "teste_sw_addr0.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : tb_cpu.sv(25)
-#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu
 # ALU DEBUG: srca=xxxxxxxx, srcb=xxxxxxxx, alucontrol=xxx, result=xxxxxxxx
 # REGFILE READ: ra1= x, ra2= x
-# ALU DEBUG: srca=00000000, srcb=00000XXX, alucontrol=xxx, result=xxxxxxxx
-# ALU DEBUG: srca=00000000, srcb=000003e7, alucontrol=xxx, result=000003e7
-# ALU DEBUG: srca=00000000, srcb=000003e7, alucontrol=010, result=000003e7
+# ALU DEBUG: srca=00000000, srcb=0000000X, alucontrol=xxx, result=xxxxxxxx
+# ALU DEBUG: srca=00000000, srcb=00000005, alucontrol=xxx, result=00000005
+# ALU DEBUG: srca=00000000, srcb=00000005, alucontrol=010, result=00000005
+# pc =00000000 t0=00000000 t1=00000000 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
 # REGFILE READ: ra1= 0, ra2= 8
-# PC=0x00000000 | $t0(val)=         0 | memwrite=0
-# 
-# =======================================================
-# --- Valor INICIAL em dmem[0x00]:         10 (0x0000000a)
-# =======================================================
-# 
+# pc =00000000 t0=00000000 t1=00000000 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
 # REGFILE READ: ra1= 0, ra2= 8
 # ALU DEBUG: srca=00000000, srcb=00000000, alucontrol=010, result=00000000
-# PC=0x00000004 | $t0(val)=       999 | memwrite=1
-# REGFILE READ: ra1= 0, ra2= 8
-# DMEM WRITE: Address=0x00000000, Data=0x000003e7
-# ALU DEBUG: srca=00000000, srcb=00000002, alucontrol=010, result=00000002
+# pc =00000004 t0=00000005 t1=00000000 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# ALU DEBUG: srca=00000005, srcb=00000005, alucontrol=010, result=0000000a
+# ALU DEBUG: srca=00000005, srcb=0000000a, alucontrol=010, result=0000000f
+# pc =00000014 t0=00000005 t1=00000000 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 8, ra2= 8
+# ALU DEBUG: srca=00000008, srcb=00000008, alucontrol=010, result=00000010
+# ALU DEBUG: srca=00000008, srcb=00000000, alucontrol=010, result=00000008
+# pc =00000018 t0=0000000f t1=00000000 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1=31, ra2= 0
 # ALU DEBUG: srca=00000000, srcb=00000000, alucontrol=010, result=00000000
-# 
-# =======================================================
-# --- Programa Finalizado (PC=00000008) ---
-# --- Valor FINAL em dmem[0x00]:        999 (0x000003e7)
-# >>> SUCESSO: O valor 999 foi escrito corretamente na memoria!
-# =======================================================
-# 
-# ** Note: $finish    : tb_cpu.sv(60)
-#    Time: 40 ns  Iteration: 0  Instance: /tb_cpu
+# ALU DEBUG: srca=00000000, srcb=00000064, alucontrol=010, result=00000064
+# pc =00000008 t0=0000000f t1=00000000 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 9
+# ALU DEBUG: srca=00000000, srcb=00000003, alucontrol=010, result=00000003
+# ALU DEBUG: srca=00000000, srcb=00000000, alucontrol=010, result=00000000
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# REGFILE READ: ra1= 0, ra2= 0
+# pc =0000000c t0=0000000f t1=00000064 t2=00000000 t3=00000000 t4=00000000 t5=00000000 t6=00000000 t7=00000000 memwrite0
+# ** Note: $finish    : tb_cpu.sv(56)
+#    Time: 1016 ns  Iteration: 0  Instance: /tb_cpu
 # 1
-# Break in Module tb_cpu at tb_cpu.sv line 60
-pwd
-# C:/Users/alexa/Documents/GitHub/mips_single_cycle
-vlog *.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:09:36 on Jul 06,2025
-# vlog -reportprogress 300 adder.sv alu.sv aludec.sv controller.sv cpu_tb.sv datapath.sv dmem.sv flopr.sv imem.sv maindec.sv mips.sv mips_sc_org.sv mux2.sv muxBEQBNE.sv regfile.sv shifter.sv signext.sv sl2.sv tb_adder.sv tb_cpu.sv tb_datapath_pc.sv tb_dmem.sv tb_flopr.sv tb_imem.sv tb_shifter.sv tb_singext.sv tb_sl2.sv 
-# -- Compiling module adder
-# -- Compiling module alu
-# -- Compiling module aludec
-# -- Compiling module controller
-# -- Compiling module tb_cpu
-# -- Compiling module datapath
-# -- Compiling module dmem
-# -- Compiling module flopr
-# -- Compiling module imem
-# -- Compiling module maindec
-# -- Compiling module mips
-# -- Compiling module mips_sc_org
-# -- Compiling module mux2
-# -- Compiling module muxBEQBNE
-# -- Compiling module regfile
-# -- Compiling module shifter
-# -- Compiling module signext
-# -- Compiling module sl2
-# -- Compiling module tb_adder
-# ** Warning: tb_cpu.sv(3): (vlog-2275) Existing module 'tb_cpu' will be overwritten.
-# -- Compiling module tb_cpu
-# -- Compiling module tb_datapath_pc
-# -- Compiling module tb_dmem
-# -- Compiling module tb_flopr
-# -- Compiling module tb_imem
-# -- Compiling module tb_shifter
-# -- Compiling module tb_signext
-# -- Compiling module tb_sl2
-# 
-# Top level modules:
-# 	tb_cpu
-# 	tb_adder
-# 	tb_datapath_pc
-# 	tb_dmem
-# 	tb_flopr
-# 	tb_imem
-# 	tb_shifter
-# 	tb_signext
-# 	tb_sl2
-# End time: 20:09:37 on Jul 06,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
-vsim tb_cpu
-# End time: 20:09:46 on Jul 06,2025, Elapsed time: 0:01:36
-# Errors: 0, Warnings: 1
-# vsim tb_cpu 
-# Start time: 20:09:46 on Jul 06,2025
-# Loading sv_std.std
-# Loading work.tb_cpu
-# Loading work.mips_sc_org
-# Loading work.mips
-# Loading work.controller
-# Loading work.maindec
-# Loading work.aludec
-# Loading work.datapath
-# Loading work.flopr
-# Loading work.adder
-# Loading work.shifter
-# Loading work.mux2
-# Loading work.regfile
-# Loading work.alu
-# Loading work.muxBEQBNE
-# Loading work.imem
-# Loading work.dmem
-run -all
-# ** Warning: (vsim-7) Failed to open readmem file "teste_sw_addr0.txt" in read mode.
-# No such file or directory. (errno = ENOENT)    : tb_cpu.sv(25)
-#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu
-# ALU DEBUG: srca=xxxxxxxx, srcb=xxxxxxxx, alucontrol=xxx, result=xxxxxxxx
-# REGFILE READ: ra1= x, ra2= x
-# ALU DEBUG: srca=00000000, srcb=00000XXX, alucontrol=xxx, result=xxxxxxxx
-# ALU DEBUG: srca=00000000, srcb=000003e7, alucontrol=xxx, result=000003e7
-# ALU DEBUG: srca=00000000, srcb=000003e7, alucontrol=010, result=000003e7
-# REGFILE READ: ra1= 0, ra2= 8
-# PC=0x00000000 | $t0(val)=         0 | memwrite=0
-# 
-# =======================================================
-# --- Valor INICIAL em dmem[0x00]:          0 (0x00000000)
-# =======================================================
-# 
-# REGFILE READ: ra1= 0, ra2= 8
-# ALU DEBUG: srca=00000000, srcb=00000000, alucontrol=010, result=00000000
-# PC=0x00000004 | $t0(val)=       999 | memwrite=1
-# REGFILE READ: ra1= 0, ra2= 8
-# DMEM WRITE: Address=0x00000000, Data=0x000003e7
-# ALU DEBUG: srca=00000000, srcb=00000002, alucontrol=010, result=00000002
-# ALU DEBUG: srca=00000000, srcb=00000000, alucontrol=010, result=00000000
-# 
-# =======================================================
-# --- Programa Finalizado (PC=00000008) ---
-# --- Valor FINAL em dmem[0x00]:        999 (0x000003e7)
-# >>> SUCESSO: O valor 999 foi escrito corretamente na memoria!
-# =======================================================
-# 
-# ** Note: $finish    : tb_cpu.sv(60)
-#    Time: 40 ns  Iteration: 0  Instance: /tb_cpu
-# 1
-# Break in Module tb_cpu at tb_cpu.sv line 60
-# End time: 21:07:07 on Jul 06,2025, Elapsed time: 0:57:21
-# Errors: 0, Warnings: 1
+# Break in Module tb_cpu at tb_cpu.sv line 56
+# End time: 14:49:11 on Jul 07,2025, Elapsed time: 0:11:19
+# Errors: 0, Warnings: 0
